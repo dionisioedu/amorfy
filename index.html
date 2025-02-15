@@ -249,142 +249,145 @@
             inicio: {
                 pergunta: "Você está em um relacionamento?",
                 opcoes: [
-                    { texto: "Sim, estou em um relacionamento ❤️", proximo: "nivel1_relacionamento" },
-                    { texto: "Não, estou solteiro(a) 💔", proximo: "nivel1_solteiro" }
-                ]
+                    { texto: "Sim, estou em um relacionamento ❤️", oculto: "comprometido(a)", proximo: "nivel1_relacionamento" },
+                    { texto: "Não, estou solteiro(a) 💔", oculto: "solteiro(a)", proximo: "nivel1_solteiro" }
+                ],
+                gravar: "status_relacionamento"
             },
             nivel1_relacionamento: {
                 pergunta: "Como você descreveria sua relação?",
                 opcoes: [
-                    { texto: "Harmônica e feliz", proximo: "nivel2_relacionamento_feliz" },
-                    { texto: "Oscilante e desafiadora", proximo: "nivel2_relacionamento_desafiador" },
-                    { texto: "Distante e complicada", proximo: "nivel2_relacionamento_complicado" }
-                ]
+                    { texto: "Harmônica e feliz", oculto: "satisfeito(a)", proximo: "nivel2_relacionamento_feliz" },
+                    { texto: "Oscilante e desafiadora", oculto: "preocupado(a)", proximo: "nivel2_relacionamento_desafiador" },
+                    { texto: "Distante e complicada", oculto: "desanimado(a)", proximo: "nivel2_relacionamento_complicado" }
+                ],
+                gravar: "situacao_relacionamento"
             },
             nivel1_solteiro: {
                 pergunta: "O que mais impede você de encontrar um amor?",
                 opcoes: [
-                    { texto: "Medo de se machucar", proximo: "nivel2_solteiro_medo" },
-                    { texto: "Dificuldade em confiar", proximo: "nivel2_solteiro_confianca" },
-                    { texto: "Não encontrei alguém compatível", proximo: "nivel2_solteiro_compatibilidade" }
+                    { texto: "Medo de se machucar", oculto: "ferido(a)", proximo: "nivel2_solteiro_medo" },
+                    { texto: "Dificuldade em confiar", oculto: "traumatizado(a)", proximo: "nivel2_solteiro_confianca" },
+                    { texto: "Não encontrei alguém compatível", oculto: "fechado(a)", proximo: "nivel2_solteiro_compatibilidade" }
                 ]
             },
             nivel2_relacionamento_feliz: {
                 pergunta: "O que mais te motiva a manter esse relacionamento?",
                 opcoes: [
-                    { texto: "A conexão emocional profunda", proximo: "nivel3" },
-                    { texto: "A parceria e o apoio mútuo", proximo: "nivel3" },
-                    { texto: "A alegria e a leveza que ele traz", proximo: "nivel3" }
+                    { texto: "A conexão emocional profunda", oculto: "almas gêmeas", proximo: "nivel3" },
+                    { texto: "A parceria e o apoio mútuo", oculto: "parceiros", proximo: "nivel3" },
+                    { texto: "A alegria e a leveza que ele traz", oculto: "feitos um para o outro", proximo: "nivel3" }
                 ],
                 gravar: "motivacao_relacionamento"
             },
             nivel2_relacionamento_desafiador: {
                 pergunta: "O que você acha que falta para melhorar sua relação?",
                 opcoes: [
-                    { texto: "Mais diálogo e compreensão", proximo: "nivel3" },
-                    { texto: "Mais tempo juntos e conexão", proximo: "nivel3" },
-                    { texto: "Mais paciência e aceitação", proximo: "nivel3" }
+                    { texto: "Mais diálogo e compreensão", oculto: "comunicação", proximo: "nivel3" },
+                    { texto: "Mais tempo juntos e conexão", oculto: "momentos de qualidade", proximo: "nivel3" },
+                    { texto: "Mais paciência e aceitação", oculto: "carinho e afeto", proximo: "nivel3" }
                 ],
                 gravar: "desafio_relacionamento"
             },
             nivel2_relacionamento_complicado: {
                 pergunta: "O que mais te prende nesse relacionamento?",
                 opcoes: [
-                    { texto: "O medo de ficar sozinho(a)", proximo: "nivel3" },
-                    { texto: "O apego emocional", proximo: "nivel3" },
-                    { texto: "A esperança de que as coisas melhorem", proximo: "nivel3" }
+                    { texto: "O medo de ficar sozinho(a)", oculto: "carência", proximo: "nivel3" },
+                    { texto: "O apego emocional", oculto: "baixa autoestima", proximo: "nivel3" },
+                    { texto: "A esperança de que as coisas melhorem", oculto: "falta de amor próprio", proximo: "nivel3" }
                 ],
                 gravar: "dilema_relacionamento"
             },
             nivel2_solteiro_medo: {
                 pergunta: "O que você acredita que poderia ajudar a superar esse medo?",
                 opcoes: [
-                    { texto: "Terapia e autoconhecimento", proximo: "nivel3" },
-                    { texto: "Viver novas experiências", proximo: "nivel3" },
-                    { texto: "Conhecer alguém que me entenda", proximo: "nivel3" }
+                    { texto: "Terapia e autoconhecimento", oculto: "alto", proximo: "nivel3" },
+                    { texto: "Viver novas experiências", oculto: "médio", proximo: "nivel3" },
+                    { texto: "Conhecer alguém que me entenda", oculto: "baixo", proximo: "nivel3" }
                 ],
                 gravar: "superacao_medo"
             },
             nivel2_solteiro_confianca: {
                 pergunta: "O que você acha que poderia reconstruir sua confiança?",
                 opcoes: [
-                    { texto: "Tempo e paciência", proximo: "nivel3" },
-                    { texto: "Relacionamentos mais leves e sem pressão", proximo: "nivel3" },
-                    { texto: "Trabalhar minha autoestima", proximo: "nivel3" }
+                    { texto: "Tempo e paciência", oculto: "baixo", proximo: "nivel3" },
+                    { texto: "Relacionamentos mais leves e sem pressão", oculto: "médio", proximo: "nivel3" },
+                    { texto: "Trabalhar minha autoestima", oculto: "alto", proximo: "nivel3" }
                 ],
                 gravar: "reconstrucao_confianca"
             },
             nivel2_solteiro_compatibilidade: {
                 pergunta: "O que você busca em um parceiro(a)?",
                 opcoes: [
-                    { texto: "Alguém que me complete", proximo: "nivel3" },
-                    { texto: "Alguém com quem eu possa crescer", proximo: "nivel3" },
-                    { texto: "Alguém que me entenda e me aceite", proximo: "nivel3" }
+                    { texto: "Alguém que me complete", oculto: "baixo", proximo: "nivel3" },
+                    { texto: "Alguém com quem eu possa crescer", oculto: "médio", proximo: "nivel3" },
+                    { texto: "Alguém que me entenda e me aceite", oculto: "alto", proximo: "nivel3" }
                 ],
                 gravar: "busca_parceiro"
             },
             nivel3: {
                 pergunta: "Qual dessas palavras melhor descreve você?",
                 opcoes: [
-                    { texto: "Calmo e racional", proximo: "nivel4" },
-                    { texto: "Emocional e intenso", proximo: "nivel4" },
-                    { texto: "Espontâneo e brincalhão", proximo: "nivel4" }
+                    { texto: "Calmo e racional", oculto: "fleumática", proximo: "nivel4" },
+                    { texto: "Emocional e intenso", oculto: "colérica", proximo: "nivel4" },
+                    { texto: "Espontâneo e brincalhão", oculto: "sanguínea", proximo: "nivel4" },
+                    { texto: "Sensível e detalhista", oculto: "melancólica", proximo: "nivel4" },
                 ],
                 gravar: "temperamento"
             },
             nivel4: {
                 pergunta: "Como você lida com o amor?",
                 opcoes: [
-                    { texto: "Com entrega e dedicação", proximo: "nivel5" },
-                    { texto: "Com equilíbrio e cautela", proximo: "nivel5" },
-                    { texto: "Com independência e liberdade", proximo: "nivel5" }
+                    { texto: "Com entrega e dedicação", oculto: "incondicional", proximo: "nivel5" },
+                    { texto: "Com equilíbrio e cautela", oculto: "racional", proximo: "nivel5" },
+                    { texto: "Com independência e liberdade", oculto: "libertário", proximo: "nivel5" }
                 ],
                 gravar: "abordagem_ao_amor"
             },
             nivel5: {
                 pergunta: "Qual é o seu maior desejo no amor?",
                 opcoes: [
-                    { texto: "Encontrar um amor verdadeiro", proximo: "nivel6" },
-                    { texto: "Viver uma paixão intensa", proximo: "nivel6" },
-                    { texto: "Construir uma parceria duradoura", proximo: "nivel6" }
+                    { texto: "Encontrar um amor verdadeiro", oculto: "busca por conexão profunda", proximo: "nivel6" },
+                    { texto: "Viver uma paixão intensa", oculto: "busca por emoção e adrenalina", proximo: "nivel6" },
+                    { texto: "Construir uma parceria duradoura", oculto: "busca por estabilidade e segurança", proximo: "nivel6" }
                 ],
                 gravar: "desejo_amor"
             },
             nivel6: {
                 pergunta: "Qual é o seu signo do zodíaco?",
                 opcoes: [
-                    { texto: "Áries, Leão ou Sagitário (Fogo)", proximo: "nivel7" },
-                    { texto: "Touro, Virgem ou Capricórnio (Terra)", proximo: "nivel7" },
-                    { texto: "Gêmeos, Libra ou Aquário (Ar)", proximo: "nivel7" },
-                    { texto: "Câncer, Escorpião ou Peixes (Água)", proximo: "nivel7" }
+                    { texto: "Áries, Leão ou Sagitário", oculto: "fogo", proximo: "nivel7" },
+                    { texto: "Touro, Virgem ou Capricórnio", oculto: "terra", proximo: "nivel7" },
+                    { texto: "Gêmeos, Libra ou Aquário", oculto: "ar", proximo: "nivel7" },
+                    { texto: "Câncer, Escorpião ou Peixes", oculto: "água", proximo: "nivel7" }
                 ],
                 gravar: "elemento_astrologico"
             },
             nivel7: {
                 pergunta: "Qual carta do tarot você escolhe?",
                 opcoes: [
-                    { texto: "O Louco (Novos começos)", proximo: "nivel8" },
-                    { texto: "O Enamorado (Escolhas e relacionamentos)", proximo: "nivel8" },
-                    { texto: "A Estrela (Esperança e inspiração)", proximo: "nivel8" },
-                    { texto: "A Torre (Mudanças bruscas)", proximo: "nivel8" }
+                    { texto: "O Louco", oculto: "louco", proximo: "nivel8" },
+                    { texto: "O Enamorado", oculto: "enamorado", proximo: "nivel8" },
+                    { texto: "A Estrela", oculto: "estrela", proximo: "nivel8" },
+                    { texto: "A Torre", oculto: "torre", proximo: "nivel8" }
                 ],
                 gravar: "carta_tarot"
             },
             nivel8: {
                 pergunta: "Qual é a sua maior virtude no amor?",
                 opcoes: [
-                    { texto: "Sou leal e dedicado(a)", proximo: "nivel9" },
-                    { texto: "Sou compreensivo(a) e paciente", proximo: "nivel9" },
-                    { texto: "Sou apaixonado(a) e intenso(a)", proximo: "nivel9" }
+                    { texto: "Sou leal e dedicado(a)", oculto: "fidelidade e compromisso", proximo: "nivel9" },
+                    { texto: "Sou compreensivo(a) e paciente", oculto: "empatia e tolerância", proximo: "nivel9" },
+                    { texto: "Sou apaixonado(a) e intenso(a)", oculto: "intensidade e entrega", proximo: "nivel9" }
                 ],
                 gravar: "virtude_amor"
             },
             nivel9: {
                 pergunta: "O que você mais valoriza em um relacionamento?",
                 opcoes: [
-                    { texto: "Confiança e respeito", proximo: "nivel10" },
-                    { texto: "Paixão e conexão", proximo: "nivel10" },
-                    { texto: "Liberdade e individualidade", proximo: "nivel10" }
+                    { texto: "Confiança e respeito", oculto: "segurança emocional", proximo: "nivel10" },
+                    { texto: "Paixão e conexão", oculto: "intensidade e intimidade", proximo: "nivel10" },
+                    { texto: "Liberdade e individualidade", oculto: "autonomia e crescimento", proximo: "nivel10" }
                 ],
                 gravar: "valor_relacionamento"
             },
@@ -399,45 +402,66 @@
                 mensagem: () => {
                     let mensagem = "As energias do universo indicam que você é uma pessoa ";
                     if (userProfile.temperamento) {
-                        mensagem += userProfile.temperamento.toLowerCase() + ", influenciando sua forma de amar. ";
+                        mensagem += userProfile.temperamento.toLowerCase() + ", influenciando sua forma de amar. <br>";
                     }
                     if (userProfile.abordagem_ao_amor) {
-                        mensagem += "Você encara o amor " + userProfile.abordagem_ao_amor.toLowerCase() + ". ";
+                        mensagem += "Para você o amor é algo " + userProfile.abordagem_ao_amor.toLowerCase() + ". <br>";
                     }
                     if (userProfile.desejo_amor) {
-                        mensagem += "Seu maior desejo no amor é " + userProfile.desejo_amor.toLowerCase() + ". ";
+                        mensagem += "Seu maior desejo no amor é " + userProfile.desejo_amor.toLowerCase() + ". <br>";
                     }
                     if (userProfile.elemento_astrologico) {
                         mensagem += "Seu elemento astrológico (" + userProfile.elemento_astrologico + ") sugere que você busca ";
-                        if (userProfile.elemento_astrologico.includes("Fogo")) {
-                            mensagem += "paixão e aventura. ";
-                        } else if (userProfile.elemento_astrologico.includes("Terra")) {
-                            mensagem += "estabilidade e segurança. ";
-                        } else if (userProfile.elemento_astrologico.includes("Ar")) {
-                            mensagem += "liberdade e comunicação. ";
-                        } else if (userProfile.elemento_astrologico.includes("Água")) {
-                            mensagem += "emoção e profundidade. ";
+                        if (userProfile.elemento_astrologico.includes("fogo")) {
+                            mensagem += "paixão e aventura. <br>";
+                        } else if (userProfile.elemento_astrologico.includes("terra")) {
+                            mensagem += "estabilidade e segurança. <br>";
+                        } else if (userProfile.elemento_astrologico.includes("ar")) {
+                            mensagem += "liberdade e comunicação. <br>";
+                        } else if (userProfile.elemento_astrologico.includes("água")) {
+                            mensagem += "emoção e profundidade. <br>";
                         }
                     }
                     if (userProfile.carta_tarot) {
-                        mensagem += "A carta do tarot que você escolheu (" + userProfile.carta_tarot + ") indica ";
-                        if (userProfile.carta_tarot.includes("Louco")) {
-                            mensagem += "que novos começos estão por vir. ";
-                        } else if (userProfile.carta_tarot.includes("Enamorado")) {
-                            mensagem += "que escolhas amorosas importantes estão no seu caminho. ";
-                        } else if (userProfile.carta_tarot.includes("Estrela")) {
-                            mensagem += "que a esperança e a inspiração guiarão seu coração. ";
-                        } else if (userProfile.carta_tarot.includes("Torre")) {
-                            mensagem += "que mudanças transformadoras estão próximas. ";
+                        mensagem += "A carta do tarot que você escolheu indica ";
+                        if (userProfile.carta_tarot.includes("louco")) {
+                            mensagem += "que novos começos estão por vir. <br>";
+                        } else if (userProfile.carta_tarot.includes("enamorado")) {
+                            mensagem += "que escolhas amorosas importantes estão no seu caminho. <br>";
+                        } else if (userProfile.carta_tarot.includes("estrela")) {
+                            mensagem += "que a esperança e a inspiração guiarão seu coração. <br>";
+                        } else if (userProfile.carta_tarot.includes("torre")) {
+                            mensagem += "que mudanças transformadoras estão próximas. <br>";
                         }
                     }
                     if (userProfile.virtude_amor) {
-                        mensagem += "Sua maior virtude no amor é ser " + userProfile.virtude_amor.toLowerCase() + ". ";
+                        mensagem += "Sua maior virtude no amor é " + userProfile.virtude_amor.toLowerCase() + ". ";
                     }
                     if (userProfile.valor_relacionamento) {
                         mensagem += "Você valoriza " + userProfile.valor_relacionamento.toLowerCase() + " acima de tudo. ";
                     }
-                    mensagem += "O universo está alinhado para trazer surpresas no amor! ✨";
+
+                    // Insight personalizado sobre o futuro amoroso
+                    mensagem += "<br><br><strong>Sobre o seu futuro amoroso...</strong> ";
+                    if (userProfile.status_relacionamento === "comprometido(a)") {
+                        if (userProfile.situacao_relacionamento === "satisfeito(a)") {
+                            mensagem += "Seu relacionamento está em um bom caminho, mas o universo reserva momentos de renovação e crescimento para vocês. Estejam abertos a novas experiências juntos!";
+                        } else if (userProfile.situacao_relacionamento === "preocupado(a)") {
+                            mensagem += "O futuro do seu relacionamento depende da sua capacidade de superar os desafios atuais. Comunicação e paciência serão suas maiores aliadas.";
+                        } else if (userProfile.situacao_relacionamento === "desanimado(a)") {
+                            mensagem += "O universo sugere que é hora de refletir sobre o que realmente te faz feliz. Mudanças podem ser necessárias para encontrar o equilíbrio.";
+                        }
+                    } else if (userProfile.status_relacionamento === "solteiro(a)") {
+                        if (userProfile.superacao_medo === "alto") {
+                            mensagem += "O autoconhecimento será sua chave para superar medos e encontrar um amor verdadeiro. O universo está alinhado para trazer alguém especial em breve.";
+                        } else if (userProfile.superacao_medo === "médio") {
+                            mensagem += "Novas experiências estão no seu caminho, e elas podem te ajudar a reconstruir sua confiança. Esteja aberto(a) ao inesperado!";
+                        } else if (userProfile.superacao_medo === "baixo") {
+                            mensagem += "O amor está mais próximo do que você imagina. Trabalhe sua autoestima e esteja pronto(a) para receber alguém que te entenda profundamente.";
+                        }
+                    }
+
+                    mensagem += "<br><br>O universo está alinhado para trazer surpresas no amor! ✨";
                     return mensagem;
                 }
             }
@@ -482,7 +506,7 @@
                 button.classList.add("btn", "btn-lg", "d-block", "mb-2");
                 button.onclick = () => {
                     if (questionData.gravar) {
-                        userProfile[questionData.gravar] = option.texto;
+                        userProfile[questionData.gravar] = option.oculto || option.texto;
                     }
                     currentStep = option.proximo;
                     loadQuestion();
