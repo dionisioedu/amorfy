@@ -119,8 +119,8 @@
     </div>
 
     <!-- Sons para interações -->
-    <audio id="click-sound" src="https://www.soundjay.com/buttons/button-3.mp3"></audio>
-    <audio id="success-sound" src="https://www.soundjay.com/misc/success-bell-1.mp3"></audio>
+    <audio id="click-sound" src="button.mp3"></audio>
+    <audio id="success-sound" src="bell-ringing.mp3"></audio>
 
     <script>
         let userProfile = {};
@@ -327,8 +327,9 @@
 
         const totalSteps = Object.keys(questions).length - 1; // Excluindo o "resultado"
 
-        function playSound(soundId) {
+        function playSound(soundId, volume = 0.5) {
             const sound = document.getElementById(soundId);
+            sound.volume = volume; // Define o volume do som
             sound.currentTime = 0;
             sound.play();
         }
@@ -367,6 +368,7 @@
                     }
                     currentStep = option.proximo;
                     loadQuestion();
+                    playSound("click-sound", 0.3);
                 };
                 optionsContainer.appendChild(button);
                 });
