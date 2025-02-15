@@ -249,8 +249,8 @@
             inicio: {
                 pergunta: "Você está em um relacionamento?",
                 opcoes: [
-                    { texto: "Sim, estou em um relacionamento ❤️", oculto: "comprometido(a)", proximo: "nivel1_relacionamento" },
-                    { texto: "Não, estou solteiro(a) 💔", oculto: "solteiro(a)", proximo: "nivel1_solteiro" }
+                    { texto: "Sim, estou em um relacionamento ❤️", oculto: "comprometido", proximo: "nivel1_relacionamento" },
+                    { texto: "Não, estou solteiro(a) 💔", oculto: "solteiro", proximo: "nivel1_solteiro" }
                 ],
                 gravar: "status_relacionamento"
             },
@@ -442,26 +442,41 @@
                     }
 
                     // Insight personalizado sobre o futuro amoroso
-                    mensagem += "<br><br><strong>Sobre o seu futuro amoroso...</strong> ";
-                    if (userProfile.status_relacionamento === "comprometido(a)") {
-                        if (userProfile.situacao_relacionamento === "satisfeito(a)") {
-                            mensagem += "Seu relacionamento está em um bom caminho, mas o universo reserva momentos de renovação e crescimento para vocês. Estejam abertos a novas experiências juntos!";
-                        } else if (userProfile.situacao_relacionamento === "preocupado(a)") {
-                            mensagem += "O futuro do seu relacionamento depende da sua capacidade de superar os desafios atuais. Comunicação e paciência serão suas maiores aliadas.";
-                        } else if (userProfile.situacao_relacionamento === "desanimado(a)") {
-                            mensagem += "O universo sugere que é hora de refletir sobre o que realmente te faz feliz. Mudanças podem ser necessárias para encontrar o equilíbrio.";
-                        }
-                    } else if (userProfile.status_relacionamento === "solteiro(a)") {
-                        if (userProfile.superacao_medo === "alto") {
-                            mensagem += "O autoconhecimento será sua chave para superar medos e encontrar um amor verdadeiro. O universo está alinhado para trazer alguém especial em breve.";
-                        } else if (userProfile.superacao_medo === "médio") {
-                            mensagem += "Novas experiências estão no seu caminho, e elas podem te ajudar a reconstruir sua confiança. Esteja aberto(a) ao inesperado!";
-                        } else if (userProfile.superacao_medo === "baixo") {
-                            mensagem += "O amor está mais próximo do que você imagina. Trabalhe sua autoestima e esteja pronto(a) para receber alguém que te entenda profundamente.";
-                        }
-                    }
+                    mensagem += "<br><br><strong>Sobre o seu futuro amoroso...</strong> <br><br>";
 
-                    mensagem += "<br><br>O universo está alinhado para trazer surpresas no amor! ✨";
+                    // Gerar uma mensagem aleatória com base nas respostas
+                    const insights_solteiros = [
+                        "O amor está prestes a bater à sua porta! Prepare-se para viver uma conexão profunda e transformadora. O universo está trabalhando para trazer alguém especial para sua vida.",
+                        "Seu coração está pronto para um novo ciclo. Em breve, você encontrará alguém que compartilha seus valores e sonhos. Esteja aberto(a) para o inesperado!",
+                        "O futuro reserva encontros marcantes. Alguém com uma energia incrível está no seu caminho, e essa pessoa pode mudar sua vida para sempre.",
+                        "O universo está alinhando as estrelas para você. Em breve, uma paixão intensa e duradoura entrará em sua vida. Esteja preparado(a) para se surpreender!",
+                        "Seu amor próprio será a chave para atrair relacionamentos saudáveis. Trabalhe sua autoestima e veja como o universo responde com amor e abundância.",
+                        "O destino está preparando um encontro especial. Alguém que te entende e te valoriza está chegando. Esteja atento(a) aos sinais!",
+                        "O amor está mais próximo do que você imagina. Em breve, você encontrará alguém que complementa sua vida de maneira única e especial.",
+                        "Seu futuro amoroso está cheio de surpresas. Prepare-se para viver momentos mágicos e inesquecíveis ao lado de alguém especial.",
+                        "O universo está trabalhando para trazer equilíbrio ao seu coração. Em breve, você encontrará alguém que te faz sentir completo(a) e feliz.",
+                        "Seu caminho amoroso está cheio de possibilidades. Esteja aberto(a) para novas experiências e veja como o amor floresce em sua vida."
+                    ];
+
+                    const insights_comprometidos = [
+                        "Seu relacionamento está em uma fase de crescimento. A paciência e a compreensão fortalecerão ainda mais a conexão entre vocês.",
+                        "O amor verdadeiro exige equilíbrio. Reserve um tempo para ouvir e compreender seu parceiro(a) com mais profundidade.",
+                        "A paixão ainda vive dentro do seu relacionamento! Pequenos gestos de carinho podem reacender a chama entre vocês.",
+                        "Grandes mudanças estão a caminho. Seja flexível e aberto(a) para adaptar-se a novas fases do amor.",
+                        "O segredo para um relacionamento duradouro está no respeito mútuo. Continue investindo em comunicação e cumplicidade.",
+                        "Seu parceiro(a) valoriza sua presença mais do que imagina. Pequenos momentos juntos podem ser mais significativos do que grandes gestos.",
+                        "O amor é um ciclo de altos e baixos. Se houver desafios, lembre-se de que cada obstáculo superado fortalece a união de vocês.",
+                        "A confiança é a base de um relacionamento sólido. Fortaleça-a com transparência e demonstrações genuínas de afeto.",
+                        "O universo está conspirando para fortalecer seu amor. Momentos inesquecíveis estão por vir, aproveite cada instante ao lado de quem você ama.",
+                        "Amor é sobre crescer juntos. Valorize os aprendizados que o relacionamento tem proporcionado e continue evoluindo com seu parceiro(a)."
+                    ];
+
+                    const insights = userProfile.status_relacionamento === "solteiro" ? insights_solteiros : insights_comprometidos;
+
+                    // Escolher um insight aleatório
+                    const randomInsight = insights[Math.floor(Math.random() * insights.length)];
+                    mensagem += randomInsight + " ✨";
+
                     return mensagem;
                 }
             }
