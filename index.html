@@ -18,6 +18,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
             max-width: 600px;
@@ -27,6 +29,36 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
             transition: transform 0.3s ease, opacity 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .info-box {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            margin-top: 30px;
+        }
+        .ads-banner {
+            width: 100%;
+            height: 90px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 0px;
+            border-radius: 8px;
+        }
+        .info-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-family: 'Dancing Script', cursive;
@@ -102,11 +134,28 @@
             width: 0;
             transition: width 0.5s ease;
         }
+        .text-left {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
+    <div class="ads-banner">AdSense Banner Placeholder</div>
+
     <div class="container mt-5 p-4 shadow-lg fade-in">
-        <h1 onclick="window.location.reload();">Bem-vindo ao Amorfy! 💖</h1>
+        <h1 onclick="window.location.reload();">Amorfy - Descubra o seu amor 💖</h1>
         <div class="progress-bar">
             <div class="progress" id="progress-bar"></div>
         </div>
@@ -116,6 +165,75 @@
             <h2 id="result-text" class="result-text"></h2>
             <button id="share-button" class="btn btn-lg btn-primary mt-3">Compartilhar 🔗</button>
         </div>
+    </div>
+
+    <div class="ads-banner" style="margin-top: 20px;">AdSense Banner Placeholder</div>
+
+    <div class="info-box">
+        <h2>Para que serve o Amorfy?</h2>
+        <p>O Amorfy é uma ferramenta interativa que ajuda você a entender melhor sua vida amorosa. Por meio de perguntas cuidadosamente elaboradas, ele avalia aspectos emocionais, psicológicos e comportamentais que influenciam seus relacionamentos.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>A quem se destina?</h2>
+        <p>O Amorfy é para todos que querem explorar sua personalidade no amor. Seja solteiro(a), em um relacionamento ou buscando respostas, este teste pode te ajudar a compreender seus padrões e expectativas.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Como funciona?</h2>
+        <p>O teste tem 10 níveis de perguntas, cada uma revelando aspectos da sua personalidade e visão sobre o amor. No final, você receberá uma mensagem baseada nas suas respostas, oferecendo um insight místico e reflexivo.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>As cinco linguagens do amor</h2>
+        <ul class="text-left">
+            <li><strong>Palavras de Afirmação:</strong> Pessoas que valorizam elogios, palavras gentis e declarações de amor.</li>
+            <li><strong>Tempo de Qualidade:</strong> Para aqueles que sentem amor quando compartilham momentos significativos.</li>
+            <li><strong>Presentes:</strong> Pequenos gestos materiais como símbolo de carinho e lembrança.</li>
+            <li><strong>Atos de Serviço:</strong> Demonstrar amor ajudando o outro no dia a dia.</li>
+            <li><strong>Toque Físico:</strong> Abraços, beijos e proximidade física são essenciais para a conexão emocional.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Os quatro temperamentos</h2>
+        <ul class="text-left">
+            <li><strong>Colérico:</strong> Líder natural, determinado e intenso emocionalmente.</li>
+            <li><strong>Melancólico:</strong> Sensível, introspectivo e detalhista.</li>
+            <li><strong>Fleumático:</strong> Pacífico, calmo e avesso a conflitos.</li>
+            <li><strong>Sanguíneo:</strong> Extrovertido, entusiasmado e cheio de energia.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Os principais traços de caráter</h2>
+        <p>Cada pessoa desenvolve traços de caráter que influenciam sua forma de se relacionar:</p>
+        <ul class="text-left">
+            <li><strong>Autoconfiante:</strong> Segue seus instintos e sabe o que quer.</li>
+            <li><strong>Independente:</strong> Valoriza sua liberdade e autonomia.</li>
+            <li><strong>Empático:</strong> Se coloca no lugar do outro e sente profundamente.</li>
+            <li><strong>Idealista:</strong> Busca um amor perfeito e intenso.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Astrologia e os signos</h2>
+        <p>Os signos influenciam a maneira como nos relacionamos no amor:</p>
+        <ul class="text-left">
+            <li><strong>Fogo (Áries, Leão, Sagitário):</strong> Intensos, apaixonados e aventureiros.</li>
+            <li><strong>Terra (Touro, Virgem, Capricórnio):</strong> Práticos, leais e estáveis.</li>
+            <li><strong>Ar (Gêmeos, Libra, Aquário):</strong> Comunicativos, livres e racionais.</li>
+            <li><strong>Água (Câncer, Escorpião, Peixes):</strong> Emotivos, profundos e intuitivos.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Compartilhe com seus amigos!</h2>
+        <p>Convide seus amigos para fazer o teste e compare os resultados! Compartilhe sua mensagem mística e descubra como cada pessoa vê o amor de maneira única.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Amorfy. Todos os direitos reservados. Desenvolvido por <a href="https://dionisio.dev" target="_blank">Dionisio Software</a>.
     </div>
 
     <!-- Sons para interações -->
