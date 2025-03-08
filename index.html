@@ -134,14 +134,14 @@
         .progress-bar {
             width: 100%;
             height: 10px;
-            background-color: #e0e0e0;
+            background-color: #cfc9c3;
             border-radius: 5px;
             margin: 20px 0;
             overflow: hidden;
         }
         .progress {
             height: 100%;
-            background-color: #FF69B4;
+            background-color: red;
             width: 0;
             transition: width 0.5s ease;
         }
@@ -615,7 +615,7 @@
             }
         };
 
-        const totalSteps = Object.keys(questions).length - 1; // Excluindo o "resultado"
+        const totalSteps = 10;
 
         function playSound(soundId, volume = 0.5) {
             const sound = document.getElementById(soundId);
@@ -657,8 +657,10 @@
                         userProfile[questionData.gravar] = option.oculto || option.texto;
                     }
                     currentStep = option.proximo;
+                    currentStepIndex++;
                     loadQuestion();
                     playSound("click-sound", 0.3);
+                    updateProgressBar();
                 };
                 optionsContainer.appendChild(button);
                 });
