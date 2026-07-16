@@ -1,693 +1,273 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amorfy 💖</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858130394830057"
-     crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #343434);
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            max-width: 600px;
-            background: #584e4e;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            margin-bottom: 30px;
-        }
-        .info-box {
-            max-width: 600px;
-            background: linear-gradient(135deg, #1e1e1e, #343434);;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            margin-top: 30px;
-            align-items: center;
-            justify-content: center;
-        }
-        .ads-banner {
-            width: 100%;
-            height: 90px;
-            background-color: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 0px;
-            border-radius: 8px;
-        }
-        .info-section {
-            margin-top: 20px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-family: 'Oswald';
-            font-size: 42px;
-            color: #cfa877;
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #FF69B4;
-            color: #fff;
-            border: none;
-            padding: 15px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            margin: 10px;
-            width: 100%;
-            transition: transform 0.2s ease, background-color 0.3s ease;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-        }
-        button:hover {
-            background-color: #D81B60;
-            transform: scale(1.05);
-        }
-        button:focus {
-            outline: 3px solid #fff;
-            outline-offset: 3px;
-        }
-        .btn {
-            color: #ddd;
-            background-color: #343434;
-        }
-        .btn:hover {
-            background-color: #343434;;
-        }
-        .fade-in {
-            animation: fadeIn 0.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .fade-out {
-            animation: fadeOut 0.5s ease-in-out;
-        }
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-        .result-text {
-            font-size: 20px;
-            line-height: 1.6;
-            margin-top: 20px;
-        }
-        .highlight {
-            color: #D81B60;
-            font-weight: bold;
-        }
-        .mystic {
-            font-style: italic;
-            color: #6a1b9a;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #777;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 10px;
-            background-color: #cfc9c3;
-            border-radius: 5px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background-color: red;
-            width: 0;
-            transition: width 0.5s ease;
-        }
-        .text-left {
-            text-align: left;
-            padding-left: 20px;
-        }
-        .footer {
-            margin-top: 20px;
-            padding: 15px;
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-            background: rgba(255, 255, 255, 0.9);
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .image {
-            float: left;
-            margin-right: 20px;
-            border-radius: 10%;
-        }
-        .heart {
-            position: fixed;
-            bottom: -50px;
-            font-size: 24px;
-            color: red;
-            opacity: 0.7;
-            animation: floatUp 5s linear infinite;
-        }
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0) scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100vh) scale(1.5);
-                opacity: 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amorfy 💖 — Descubra o Amor, Relacionamentos e Autoconhecimento</title>
+  <meta name="description" content="Amorfy é o seu guia completo sobre relacionamentos. Testes de personalidade amorosa, artigos sobre narcisismo, borderline, temperamentos, sexualidade e muito mais. Descubra-se no amor!">
+  <meta name="keywords" content="relacionamentos, amor, teste de personalidade amorosa, narcisismo, borderline, temperamentos, linguagens do amor, sexualidade, autoconhecimento">
+  <meta name="author" content="Amorfy">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://amorfy.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amorfy 💖 — Descubra o Amor, Relacionamentos e Autoconhecimento">
+  <meta property="og:description" content="Testes, artigos e histórias reais sobre relacionamentos. Entenda narcisismo, temperamentos, sexualidade e muito mais.">
+  <meta property="og:url" content="https://amorfy.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://amorfy.com.br/images/og-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amorfy 💖 — Descubra o Amor, Relacionamentos e Autoconhecimento">
+  <meta name="twitter:description" content="Testes, artigos e histórias reais sobre relacionamentos. Entenda narcisismo, temperamentos, sexualidade e muito mais.">
+  <meta name="twitter:image" content="https://amorfy.com.br/images/og-home.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858130394830057" crossorigin="anonymous"></script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Amorfy",
+    "url": "https://amorfy.com.br",
+    "description": "Guia completo sobre relacionamentos, testes de personalidade amorosa e artigos sobre amor.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://amorfy.com.br/busca?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
-    <!--div class="ads-banner">AdSense Banner Placeholder</div-->
 
-    <div class="container mt-5 p-4 shadow-lg fade-in">
-        <h1 onclick="window.location.reload();">
-            <span><img src="logo.png" width="100"/></span>Descubra o seu amor</h1>
-        <div class="progress-bar">
-            <div class="progress" id="progress-bar"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Amorfy — Página inicial">
+      <img src="/favicon.svg" alt="" width="38" height="38" aria-hidden="true">
+      <span>Amorfy</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/">Início</a></li>
+        <li><a href="/testes/">Testes</a></li>
+        <li><a href="/artigos/">Artigos</a></li>
+        <li><a href="/casos/">Casos Reais</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Descubra os Segredos do Amor</h1>
+      <p>Testes interativos, artigos profundos e histórias reais para você entender melhor seus relacionamentos, suas emoções e a si mesmo.</p>
+      <div class="hero-buttons">
+        <a href="/testes/personalidade-amorosa.html" class="btn btn-primary btn-lg">✨ Fazer Teste de Personalidade</a>
+        <a href="/artigos/" class="btn btn-secondary btn-lg">📚 Ler Artigos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-2">🧪 Nossos Testes</h2>
+      <p class="text-center mb-3" style="color:var(--text-secondary);max-width:600px;margin-left:auto;margin-right:auto">Descubra mais sobre você e sua forma de amar com nossos testes interativos gratuitos.</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag rose">Quiz</span>
+            <h3 class="card-title"><a href="/testes/personalidade-amorosa.html">Teste de Personalidade Amorosa</a></h3>
+            <p class="card-text">Descubra seu perfil no amor com 10 perguntas sobre temperamento, desejos, astrologia e tarot.</p>
+            <a href="/testes/personalidade-amorosa.html" class="btn btn-primary" style="margin-top:.75rem">Fazer teste →</a>
+          </div>
         </div>
-        <p id="question-text">Vamos entender melhor o seu momento emocional e te dar uma mensagem especial no final! 😊</p>
-        <div id="options-container"></div>
-        <div id="result-container" class="mt-4 d-none">
-            <h2 id="result-text" class="result-text"></h2>
-            <button id="share-button" class="btn btn-lg btn-primary mt-3">Compartilhar 🔗</button>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag purple">Quiz</span>
+            <h3 class="card-title"><a href="/testes/linguagem-do-amor.html">Qual é a sua Linguagem do Amor?</a></h3>
+            <p class="card-text">Baseado no best-seller de Gary Chapman. Descubra como você demonstra e recebe amor.</p>
+            <a href="/testes/linguagem-do-amor.html" class="btn btn-purple" style="margin-top:.75rem">Descobrir →</a>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag pink">Quiz</span>
+            <h3 class="card-title"><a href="/testes/narcisista.html">Você está em um Relacionamento Narcisista?</a></h3>
+            <p class="card-text">Identifique sinais de abuso narcisista e entenda se seu relacionamento é saudável.</p>
+            <a href="/testes/narcisista.html" class="btn btn-primary" style="margin-top:.75rem">Avaliar →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag gold">Quiz</span>
+            <h3 class="card-title"><a href="/testes/compatibilidade.html">Teste de Compatibilidade Amorosa</a></h3>
+            <p class="card-text">Descubra seu estilo de apego, valores e o que realmente importa em um parceiro ideal.</p>
+            <a href="/testes/compatibilidade.html" class="btn btn-gold" style="margin-top:.75rem">Calcular →</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!--div class="ads-banner" style="margin-top: 20px;">AdSense Banner Placeholder</div-->
-    <div class="info-box">
-        <h2>Para que serve o Amorfy?</h2><br/>
-        <img src="images/anthony-tran.webp" class="image" width="200"/>
-        <p>O Amorfy é uma ferramenta interativa que ajuda você a entender melhor sua vida amorosa. Por meio de perguntas cuidadosamente elaboradas, ele avalia aspectos emocionais, psicológicos e comportamentais que influenciam seus relacionamentos.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>A quem se destina?</h2>
-        <p>O Amorfy é para todos que querem explorar sua personalidade no amor. Seja solteiro(a), em um relacionamento ou buscando respostas, este teste pode te ajudar a compreender seus padrões e expectativas.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Como funciona?</h2>
-        <p>O teste tem 10 níveis de perguntas, cada uma revelando aspectos da sua personalidade e visão sobre o amor. No final, você receberá uma mensagem baseada nas suas respostas, oferecendo um insight místico e reflexivo.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>As cinco linguagens do amor</h2>
-        <ul class="text-left">
-            <li><strong>Palavras de Afirmação:</strong> Pessoas que valorizam elogios, palavras gentis e declarações de amor.</li>
-            <li><strong>Tempo de Qualidade:</strong> Para aqueles que sentem amor quando compartilham momentos significativos.</li>
-            <li><strong>Presentes:</strong> Pequenos gestos materiais como símbolo de carinho e lembrança.</li>
-            <li><strong>Atos de Serviço:</strong> Demonstrar amor ajudando o outro no dia a dia.</li>
-            <li><strong>Toque Físico:</strong> Abraços, beijos e proximidade física são essenciais para a conexão emocional.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>Os quatro temperamentos</h2>
-        <ul class="text-left">
-            <li><strong>Colérico:</strong> Líder natural, determinado e intenso emocionalmente.</li>
-            <li><strong>Melancólico:</strong> Sensível, introspectivo e detalhista.</li>
-            <li><strong>Fleumático:</strong> Pacífico, calmo e avesso a conflitos.</li>
-            <li><strong>Sanguíneo:</strong> Extrovertido, entusiasmado e cheio de energia.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>Os principais traços de caráter</h2>
-        <p>Cada pessoa desenvolve traços de caráter que influenciam sua forma de se relacionar:</p>
-        <ul class="text-left">
-            <li><strong>Autoconfiante:</strong> Segue seus instintos e sabe o que quer.</li>
-            <li><strong>Independente:</strong> Valoriza sua liberdade e autonomia.</li>
-            <li><strong>Empático:</strong> Se coloca no lugar do outro e sente profundamente.</li>
-            <li><strong>Idealista:</strong> Busca um amor perfeito e intenso.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>Astrologia e os signos</h2>
-        <p>Os signos influenciam a maneira como nos relacionamos no amor:</p>
-        <ul class="text-left">
-            <li><strong>Fogo (Áries, Leão, Sagitário):</strong> Intensos, apaixonados e aventureiros.</li>
-            <li><strong>Terra (Touro, Virgem, Capricórnio):</strong> Práticos, leais e estáveis.</li>
-            <li><strong>Ar (Gêmeos, Libra, Aquário):</strong> Comunicativos, livres e racionais.</li>
-            <li><strong>Água (Câncer, Escorpião, Peixes):</strong> Emotivos, profundos e intuitivos.</li>
-        </ul>
-    </div>
-    
-    <!-- Conteúdo adicional -->
-    
-    <div class="info-box">
-        <h2>A importância da inteligência emocional</h2>
-        <p>Entender e gerenciar suas emoções é essencial para manter relacionamentos saudáveis. A inteligência emocional permite reconhecer sentimentos, tanto em si mesmo quanto no parceiro, facilitando a comunicação e o entendimento mútuo.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Fases de um relacionamento</h2>
-        <p>Os relacionamentos passam por diversas fases, desde a paixão inicial até a construção de uma parceria sólida. Cada etapa traz desafios e aprendizados que contribuem para o crescimento pessoal e emocional.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Como lidar com conflitos</h2>
-        <ul class="text-left">
-            <li><strong>Comunicação aberta:</strong> Fale sobre seus sentimentos sem acusações.</li>
-            <li><strong>Empatia:</strong> Tente entender o ponto de vista do outro.</li>
-            <li><strong>Respeito mútuo:</strong> Mantenha o diálogo mesmo nos momentos de tensão.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>Os quatro pilares do relacionamento</h2>
-        <p>Um relacionamento duradouro se apoia em pilares fundamentais, como confiança, comunicação, respeito e intimidade. Fortalecer esses elementos pode transformar a forma como você se relaciona.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Estilos de comunicação no amor</h2>
-        <ul class="text-left">
-            <li><strong>Afirmativo:</strong> Expressa sentimentos e expectativas de forma clara.</li>
-            <li><strong>Passivo:</strong> Evita conflitos, mas pode reprimir emoções.</li>
-            <li><strong>Agressivo:</strong> Impõe suas opiniões, muitas vezes causando tensão.</li>
-            <li><strong>Assertivo:</strong> Equilibra a expressão pessoal com o respeito pelo outro.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>O impacto das experiências passadas</h2>
-        <p>As experiências anteriores, sejam boas ou ruins, moldam nossa visão sobre o amor e os relacionamentos. Reconhecer esses padrões é o primeiro passo para superá-los e construir relações mais saudáveis.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>A influência dos valores pessoais</h2>
-        <p>Nossos valores, crenças e expectativas influenciam como percebemos o amor e escolhemos nossos parceiros. Alinhar esses valores pode ser decisivo para a compatibilidade e longevidade do relacionamento.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Mitos e verdades sobre o amor</h2>
-        <ul class="text-left">
-            <li><strong>Mito:</strong> "Amor à primeira vista é a prova de um destino." – Nem sempre o sentimento inicial se traduz em um relacionamento duradouro.</li>
-            <li><strong>Verdade:</strong> "O amor se constrói dia após dia." – Relações sólidas são formadas por ações e compromissos constantes.</li>
-            <li><strong>Mito:</strong> "O parceiro perfeito existe." – A perfeição é uma construção, e o amor real envolve aceitar as imperfeições.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>A importância do autoconhecimento</h2>
-        <p>Conhecer a si mesmo é fundamental para entender o que se busca em um relacionamento. O autoconhecimento permite identificar padrões, fortalecer a autoestima e tomar decisões mais conscientes no amor.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Como construir a confiança</h2>
-        <ul class="text-left">
-            <li><strong>Transparência:</strong> Compartilhe seus sentimentos e pensamentos abertamente.</li>
-            <li><strong>Consistência:</strong> Aja de forma coerente com seus valores e promessas.</li>
-            <li><strong>Respeito:</strong> Valorize a individualidade e o espaço do outro.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>O papel da empatia nos relacionamentos</h2>
-        <p>A empatia permite que você se coloque no lugar do outro, criando uma conexão mais profunda e compreensiva. Essa habilidade é essencial para resolver conflitos e fortalecer a intimidade emocional.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>Como o estresse afeta o relacionamento</h2>
-        <p>O estresse, tanto individual quanto compartilhado, pode impactar negativamente a dinâmica do relacionamento. Técnicas de relaxamento e comunicação eficaz podem ajudar a mitigar esses efeitos e promover um ambiente mais harmonioso.</p>
-    </div>
-    
-    <div class="info-box">
-        <h2>A influência da família e da cultura</h2>
-        <p>Os valores familiares e culturais moldam nossa visão sobre o amor e os papéis nos relacionamentos. Compreender essa influência pode ajudar a identificar expectativas e superar barreiras emocionais.</p>
-        <ul class="text-left">
-            <li><strong>Tradições:</strong> Costumes passados podem influenciar a forma de demonstrar afeto.</li>
-            <li><strong>Expectativas sociais:</strong> Normas culturais podem definir papéis e comportamentos.</li>
-            <li><strong>Herança emocional:</strong> Experiências familiares impactam a forma de amar e se relacionar.</li>
-        </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>Dicas para fortalecer a conexão emocional</h2>
-        <ul class="text-left">
-            <li><strong>Diálogo constante:</strong> Mantenha uma comunicação honesta e aberta.</li>
-            <li><strong>Atividades em conjunto:</strong> Compartilhe hobbies e momentos que fortaleçam a intimidade.</li>
-            <li><strong>Surpresas e gestos carinhosos:</strong> Pequenas ações podem reforçar o sentimento de cuidado e atenção.</li>
-        </ul>
-    </div>
+  <!-- Ad -->
+  <div class="container">
+    <div class="ad-label">Publicidade</div>
+    <div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6858130394830057" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+  </div>
 
-    <div class="info-box">
-        <h2>Compartilhe com seus amigos!</h2>
-        <p>Convide seus amigos para fazer o teste e compare os resultados! Compartilhe sua mensagem mística e descubra como cada pessoa vê o amor de maneira única.</p>
+  <!-- Latest Articles -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-2">📝 Artigos Recentes</h2>
+      <p class="text-center mb-3" style="color:var(--text-secondary);max-width:600px;margin-left:auto;margin-right:auto">Conteúdo profundo sobre psicologia dos relacionamentos, escrito com rigor e empatia.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag rose">Psicologia</span>
+            <h3 class="card-title"><a href="/artigos/temperamentos.html">Os 4 Temperamentos e o Amor</a></h3>
+            <p class="card-text">Colérico, melancólico, fleumático e sanguíneo. Como cada temperamento ama e se relaciona.</p>
+            <div class="card-meta"><span>📅 8 min de leitura</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag purple">Alerta</span>
+            <h3 class="card-title"><a href="/artigos/narcisismo.html">Narcisismo nos Relacionamentos</a></h3>
+            <p class="card-text">Como identificar um parceiro narcisista, os sinais de alerta e como se proteger do abuso emocional.</p>
+            <div class="card-meta"><span>📅 12 min de leitura</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag pink">Saúde Mental</span>
+            <h3 class="card-title"><a href="/artigos/borderline.html">Transtorno Borderline e Relacionamentos</a></h3>
+            <p class="card-text">Entenda o transtorno de personalidade borderline, seu impacto nas relações e caminhos para a estabilidade.</p>
+            <div class="card-meta"><span>📅 10 min de leitura</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag gold">Essencial</span>
+            <h3 class="card-title"><a href="/artigos/linguagens-do-amor.html">As 5 Linguagens do Amor</a></h3>
+            <p class="card-text">Palavras de afirmação, tempo de qualidade, presentes, atos de serviço e toque físico. Qual é a sua?</p>
+            <div class="card-meta"><span>📅 7 min de leitura</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag rose">Relacionamento</span>
+            <h3 class="card-title"><a href="/artigos/fases-relacionamento.html">As Fases de um Relacionamento</a></h3>
+            <p class="card-text">Da paixão à parceria madura. Entenda cada etapa e saiba como navegar os desafios de cada fase.</p>
+            <div class="card-meta"><span>📅 6 min de leitura</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-tag purple">Íntimo</span>
+            <h3 class="card-title"><a href="/artigos/sexualidade.html">Sexualidade e Conexão no Relacionamento</a></h3>
+            <p class="card-text">A importância da intimidade sexual, comunicação sobre desejos e como manter a chama acesa.</p>
+            <div class="card-meta"><span>📅 9 min de leitura</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <a href="/artigos/" class="btn btn-secondary">Ver todos os artigos →</a>
+      </div>
     </div>
+  </section>
 
-    <div class="footer">
-        &copy; 2025 Amorfy. Todos os direitos reservados. Desenvolvido por <a href="https://dionisio.dev" target="_blank">Dionisio Software</a>.
+  <!-- Ad -->
+  <div class="container">
+    <div class="ad-label">Publicidade</div>
+    <div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6858130394830057" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+  </div>
+
+  <!-- Real Stories -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-2">💬 Histórias Reais</h2>
+      <p class="text-center mb-3" style="color:var(--text-secondary);max-width:600px;margin-left:auto;margin-right:auto">Relatos de pessoas que transformaram sua vida amorosa. Inspire-se com casos de superação e aprendizado.</p>
+      <div class="grid grid-2">
+        <div class="story-card">
+          <p class="story-author">Marina, 34 anos</p>
+          <p class="story-role">Superou relacionamento abusivo</p>
+          <p class="story-text">"Passei 5 anos com um narcisista e só percebi depois de fazer o teste do Amorfy. Hoje estou em terapia e me reconstruindo."</p>
+        </div>
+        <div class="story-card purple">
+          <p class="story-author">Carlos, 28 anos</p>
+          <p class="story-role">Descobriu sua linguagem do amor</p>
+          <p class="story-text">"Sempre achei que dar presentes era suficiente. Depois que entendi que a linguagem da minha esposa era tempo de qualidade, tudo mudou."</p>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <a href="/casos/" class="btn btn-secondary">Ver mais histórias →</a>
+      </div>
     </div>
+  </section>
 
-    <!-- Sons para interações -->
-    <audio id="click-sound" src="button.mp3"></audio>
-    <audio id="success-sound" src="bell-ringing.mp3"></audio>
+  <!-- Newsletter -->
+  <section class="container">
+    <div class="newsletter">
+      <h3>💌 Receba conteúdos exclusivos</h3>
+      <p>Dicas semanais sobre relacionamentos, testes novos e artigos direto no seu e-mail. Sem spam, só amor.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" placeholder="Seu melhor e-mail" required aria-label="E-mail para newsletter">
+        <button type="submit" class="btn btn-primary">Inscrever</button>
+      </form>
+    </div>
+  </section>
+</main>
 
-    <script>
-        let userProfile = {};
-        let currentStep = "inicio";
-        let currentStepIndex = 0;
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Amorfy 💖</h4>
+      <p style="color:var(--text-secondary);font-size:.9rem">Seu guia completo sobre relacionamentos, autoconhecimento e amor próprio.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegue</h4>
+      <ul>
+        <li><a href="/testes/">Testes</a></li>
+        <li><a href="/artigos/">Artigos</a></li>
+        <li><a href="/casos/">Casos Reais</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacidade.html">Política de Privacidade</a></li>
+        <li><a href="/termos.html">Termos de Uso</a></li>
+        <li><a href="/sobre.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Amorfy. Todos os direitos reservados. Desenvolvido por <a href="https://dionisio.dev" target="_blank" rel="noopener">Dionisio Software</a>.
+  </div>
+</footer>
 
-        const questions = {
-            inicio: {
-                pergunta: "Você está em um relacionamento?",
-                opcoes: [
-                    { texto: "Sim, estou em um relacionamento ❤️", oculto: "comprometido", proximo: "nivel1_relacionamento" },
-                    { texto: "Não, estou solteiro(a) 💔", oculto: "solteiro", proximo: "nivel1_solteiro" }
-                ],
-                gravar: "status_relacionamento"
-            },
-            nivel1_relacionamento: {
-                pergunta: "Como você descreveria sua relação?",
-                opcoes: [
-                    { texto: "Harmônica e feliz", oculto: "satisfeito(a)", proximo: "nivel2_relacionamento_feliz" },
-                    { texto: "Oscilante e desafiadora", oculto: "preocupado(a)", proximo: "nivel2_relacionamento_desafiador" },
-                    { texto: "Distante e complicada", oculto: "desanimado(a)", proximo: "nivel2_relacionamento_complicado" }
-                ],
-                gravar: "situacao_relacionamento"
-            },
-            nivel1_solteiro: {
-                pergunta: "O que mais impede você de encontrar um amor?",
-                opcoes: [
-                    { texto: "Medo de se machucar", oculto: "ferido(a)", proximo: "nivel2_solteiro_medo" },
-                    { texto: "Dificuldade em confiar", oculto: "traumatizado(a)", proximo: "nivel2_solteiro_confianca" },
-                    { texto: "Não encontrei alguém compatível", oculto: "fechado(a)", proximo: "nivel2_solteiro_compatibilidade" }
-                ]
-            },
-            nivel2_relacionamento_feliz: {
-                pergunta: "O que mais te motiva a manter esse relacionamento?",
-                opcoes: [
-                    { texto: "A conexão emocional profunda", oculto: "almas gêmeas", proximo: "nivel3" },
-                    { texto: "A parceria e o apoio mútuo", oculto: "parceiros", proximo: "nivel3" },
-                    { texto: "A alegria e a leveza que ele traz", oculto: "feitos um para o outro", proximo: "nivel3" }
-                ],
-                gravar: "motivacao_relacionamento"
-            },
-            nivel2_relacionamento_desafiador: {
-                pergunta: "O que você acha que falta para melhorar sua relação?",
-                opcoes: [
-                    { texto: "Mais diálogo e compreensão", oculto: "comunicação", proximo: "nivel3" },
-                    { texto: "Mais tempo juntos e conexão", oculto: "momentos de qualidade", proximo: "nivel3" },
-                    { texto: "Mais paciência e aceitação", oculto: "carinho e afeto", proximo: "nivel3" }
-                ],
-                gravar: "desafio_relacionamento"
-            },
-            nivel2_relacionamento_complicado: {
-                pergunta: "O que mais te prende nesse relacionamento?",
-                opcoes: [
-                    { texto: "O medo de ficar sozinho(a)", oculto: "carência", proximo: "nivel3" },
-                    { texto: "O apego emocional", oculto: "baixa autoestima", proximo: "nivel3" },
-                    { texto: "A esperança de que as coisas melhorem", oculto: "falta de amor próprio", proximo: "nivel3" }
-                ],
-                gravar: "dilema_relacionamento"
-            },
-            nivel2_solteiro_medo: {
-                pergunta: "O que você acredita que poderia ajudar a superar esse medo?",
-                opcoes: [
-                    { texto: "Terapia e autoconhecimento", oculto: "alto", proximo: "nivel3" },
-                    { texto: "Viver novas experiências", oculto: "médio", proximo: "nivel3" },
-                    { texto: "Conhecer alguém que me entenda", oculto: "baixo", proximo: "nivel3" }
-                ],
-                gravar: "superacao_medo"
-            },
-            nivel2_solteiro_confianca: {
-                pergunta: "O que você acha que poderia reconstruir sua confiança?",
-                opcoes: [
-                    { texto: "Tempo e paciência", oculto: "baixo", proximo: "nivel3" },
-                    { texto: "Relacionamentos mais leves e sem pressão", oculto: "médio", proximo: "nivel3" },
-                    { texto: "Trabalhar minha autoestima", oculto: "alto", proximo: "nivel3" }
-                ],
-                gravar: "reconstrucao_confianca"
-            },
-            nivel2_solteiro_compatibilidade: {
-                pergunta: "O que você busca em um parceiro(a)?",
-                opcoes: [
-                    { texto: "Alguém que me complete", oculto: "baixo", proximo: "nivel3" },
-                    { texto: "Alguém com quem eu possa crescer", oculto: "médio", proximo: "nivel3" },
-                    { texto: "Alguém que me entenda e me aceite", oculto: "alto", proximo: "nivel3" }
-                ],
-                gravar: "busca_parceiro"
-            },
-            nivel3: {
-                pergunta: "Qual dessas palavras melhor descreve você?",
-                opcoes: [
-                    { texto: "Calmo e racional", oculto: "fleumática", proximo: "nivel4" },
-                    { texto: "Emocional e intenso", oculto: "colérica", proximo: "nivel4" },
-                    { texto: "Espontâneo e brincalhão", oculto: "sanguínea", proximo: "nivel4" },
-                    { texto: "Sensível e detalhista", oculto: "melancólica", proximo: "nivel4" },
-                ],
-                gravar: "temperamento"
-            },
-            nivel4: {
-                pergunta: "Como você lida com o amor?",
-                opcoes: [
-                    { texto: "Com entrega e dedicação", oculto: "incondicional", proximo: "nivel5" },
-                    { texto: "Com equilíbrio e cautela", oculto: "racional", proximo: "nivel5" },
-                    { texto: "Com independência e liberdade", oculto: "libertário", proximo: "nivel5" }
-                ],
-                gravar: "abordagem_ao_amor"
-            },
-            nivel5: {
-                pergunta: "Qual é o seu maior desejo no amor?",
-                opcoes: [
-                    { texto: "Encontrar um amor verdadeiro", oculto: "busca por conexão profunda", proximo: "nivel6" },
-                    { texto: "Viver uma paixão intensa", oculto: "busca por emoção e adrenalina", proximo: "nivel6" },
-                    { texto: "Construir uma parceria duradoura", oculto: "busca por estabilidade e segurança", proximo: "nivel6" }
-                ],
-                gravar: "desejo_amor"
-            },
-            nivel6: {
-                pergunta: "Qual é o seu signo do zodíaco?",
-                opcoes: [
-                    { texto: "Áries, Leão ou Sagitário", oculto: "fogo", proximo: "nivel7" },
-                    { texto: "Touro, Virgem ou Capricórnio", oculto: "terra", proximo: "nivel7" },
-                    { texto: "Gêmeos, Libra ou Aquário", oculto: "ar", proximo: "nivel7" },
-                    { texto: "Câncer, Escorpião ou Peixes", oculto: "água", proximo: "nivel7" }
-                ],
-                gravar: "elemento_astrologico"
-            },
-            nivel7: {
-                pergunta: "Qual carta do tarot você escolhe?",
-                opcoes: [
-                    { texto: "O Louco", oculto: "louco", proximo: "nivel8" },
-                    { texto: "O Enamorado", oculto: "enamorado", proximo: "nivel8" },
-                    { texto: "A Estrela", oculto: "estrela", proximo: "nivel8" },
-                    { texto: "A Torre", oculto: "torre", proximo: "nivel8" }
-                ],
-                gravar: "carta_tarot"
-            },
-            nivel8: {
-                pergunta: "Qual é a sua maior virtude no amor?",
-                opcoes: [
-                    { texto: "Sou leal e dedicado(a)", oculto: "fidelidade e compromisso", proximo: "nivel9" },
-                    { texto: "Sou compreensivo(a) e paciente", oculto: "empatia e tolerância", proximo: "nivel9" },
-                    { texto: "Sou apaixonado(a) e intenso(a)", oculto: "intensidade e entrega", proximo: "nivel9" }
-                ],
-                gravar: "virtude_amor"
-            },
-            nivel9: {
-                pergunta: "O que você mais valoriza em um relacionamento?",
-                opcoes: [
-                    { texto: "Confiança e respeito", oculto: "segurança emocional", proximo: "nivel10" },
-                    { texto: "Paixão e conexão", oculto: "intensidade e intimidade", proximo: "nivel10" },
-                    { texto: "Liberdade e individualidade", oculto: "autonomia e crescimento", proximo: "nivel10" }
-                ],
-                gravar: "valor_relacionamento"
-            },
-            nivel10: {
-                pergunta: "Parabéns! Você completou sua jornada. Veja sua mensagem!",
-                opcoes: [
-                    { texto: "Descubra sua mensagem mística!", proximo: "resultado" }
-                ]
-            },
-            resultado: {
-                pergunta: "Seu destino no amor está revelado!",
-                mensagem: () => {
-                    let mensagem = "As energias do universo indicam que você é uma pessoa ";
-                    if (userProfile.temperamento) {
-                        mensagem += userProfile.temperamento.toLowerCase() + ", influenciando sua forma de amar. <br>";
-                    }
-                    if (userProfile.abordagem_ao_amor) {
-                        mensagem += "Para você o amor é algo " + userProfile.abordagem_ao_amor.toLowerCase() + ". <br>";
-                    }
-                    if (userProfile.desejo_amor) {
-                        mensagem += "Seu maior desejo no amor é " + userProfile.desejo_amor.toLowerCase() + ". <br>";
-                    }
-                    if (userProfile.elemento_astrologico) {
-                        mensagem += "Seu elemento astrológico (" + userProfile.elemento_astrologico + ") sugere que você busca ";
-                        if (userProfile.elemento_astrologico.includes("fogo")) {
-                            mensagem += "paixão e aventura. <br>";
-                        } else if (userProfile.elemento_astrologico.includes("terra")) {
-                            mensagem += "estabilidade e segurança. <br>";
-                        } else if (userProfile.elemento_astrologico.includes("ar")) {
-                            mensagem += "liberdade e comunicação. <br>";
-                        } else if (userProfile.elemento_astrologico.includes("água")) {
-                            mensagem += "emoção e profundidade. <br>";
-                        }
-                    }
-                    if (userProfile.carta_tarot) {
-                        mensagem += "A carta do tarot que você escolheu indica ";
-                        if (userProfile.carta_tarot.includes("louco")) {
-                            mensagem += "que novos começos estão por vir. <br>";
-                        } else if (userProfile.carta_tarot.includes("enamorado")) {
-                            mensagem += "que escolhas amorosas importantes estão no seu caminho. <br>";
-                        } else if (userProfile.carta_tarot.includes("estrela")) {
-                            mensagem += "que a esperança e a inspiração guiarão seu coração. <br>";
-                        } else if (userProfile.carta_tarot.includes("torre")) {
-                            mensagem += "que mudanças transformadoras estão próximas. <br>";
-                        }
-                    }
-                    if (userProfile.virtude_amor) {
-                        mensagem += "Sua maior virtude no amor é " + userProfile.virtude_amor.toLowerCase() + ". ";
-                    }
-                    if (userProfile.valor_relacionamento) {
-                        mensagem += "Você valoriza " + userProfile.valor_relacionamento.toLowerCase() + " acima de tudo. ";
-                    }
-
-                    // Insight personalizado sobre o futuro amoroso
-                    mensagem += "<br><br><strong>Sobre o seu futuro amoroso...</strong> <br><br>";
-
-                    // Gerar uma mensagem aleatória com base nas respostas
-                    const insights_solteiros = [
-                        "O amor está prestes a bater à sua porta! Prepare-se para viver uma conexão profunda e transformadora. O universo está trabalhando para trazer alguém especial para sua vida.",
-                        "Seu coração está pronto para um novo ciclo. Em breve, você encontrará alguém que compartilha seus valores e sonhos. Esteja aberto(a) para o inesperado!",
-                        "O futuro reserva encontros marcantes. Alguém com uma energia incrível está no seu caminho, e essa pessoa pode mudar sua vida para sempre.",
-                        "O universo está alinhando as estrelas para você. Em breve, uma paixão intensa e duradoura entrará em sua vida. Esteja preparado(a) para se surpreender!",
-                        "Seu amor próprio será a chave para atrair relacionamentos saudáveis. Trabalhe sua autoestima e veja como o universo responde com amor e abundância.",
-                        "O destino está preparando um encontro especial. Alguém que te entende e te valoriza está chegando. Esteja atento(a) aos sinais!",
-                        "O amor está mais próximo do que você imagina. Em breve, você encontrará alguém que complementa sua vida de maneira única e especial.",
-                        "Seu futuro amoroso está cheio de surpresas. Prepare-se para viver momentos mágicos e inesquecíveis ao lado de alguém especial.",
-                        "O universo está trabalhando para trazer equilíbrio ao seu coração. Em breve, você encontrará alguém que te faz sentir completo(a) e feliz.",
-                        "Seu caminho amoroso está cheio de possibilidades. Esteja aberto(a) para novas experiências e veja como o amor floresce em sua vida."
-                    ];
-
-                    const insights_comprometidos = [
-                        "Seu relacionamento está em uma fase de crescimento. A paciência e a compreensão fortalecerão ainda mais a conexão entre vocês.",
-                        "O amor verdadeiro exige equilíbrio. Reserve um tempo para ouvir e compreender seu parceiro(a) com mais profundidade.",
-                        "A paixão ainda vive dentro do seu relacionamento! Pequenos gestos de carinho podem reacender a chama entre vocês.",
-                        "Grandes mudanças estão a caminho. Seja flexível e aberto(a) para adaptar-se a novas fases do amor.",
-                        "O segredo para um relacionamento duradouro está no respeito mútuo. Continue investindo em comunicação e cumplicidade.",
-                        "Seu parceiro(a) valoriza sua presença mais do que imagina. Pequenos momentos juntos podem ser mais significativos do que grandes gestos.",
-                        "O amor é um ciclo de altos e baixos. Se houver desafios, lembre-se de que cada obstáculo superado fortalece a união de vocês.",
-                        "A confiança é a base de um relacionamento sólido. Fortaleça-a com transparência e demonstrações genuínas de afeto.",
-                        "O universo está conspirando para fortalecer seu amor. Momentos inesquecíveis estão por vir, aproveite cada instante ao lado de quem você ama.",
-                        "Amor é sobre crescer juntos. Valorize os aprendizados que o relacionamento tem proporcionado e continue evoluindo com seu parceiro(a)."
-                    ];
-
-                    const insights = userProfile.status_relacionamento === "solteiro" ? insights_solteiros : insights_comprometidos;
-
-                    // Escolher um insight aleatório
-                    const randomInsight = insights[Math.floor(Math.random() * insights.length)];
-                    mensagem += randomInsight + " ✨";
-
-                    return mensagem;
-                }
-            }
-        };
-
-        const totalSteps = 10;
-
-        function playSound(soundId, volume = 0.5) {
-            const sound = document.getElementById(soundId);
-            sound.volume = volume; // Define o volume do som
-            sound.currentTime = 0;
-            sound.play();
-        }
-
-        function updateProgressBar() {
-            const progress = (currentStepIndex / totalSteps) * 100;
-            document.getElementById("progress-bar").style.width = `${progress}%`;
-        }
-
-        function loadQuestion() {
-            const questionData = questions[currentStep];
-            const container = document.querySelector(".container");
-            container.classList.remove("fade-in");
-            container.classList.add("fade-out");
-
-            setTimeout(() => {
-                document.getElementById("question-text").innerText = questionData.pergunta;
-                const optionsContainer = document.getElementById("options-container");
-                optionsContainer.innerHTML = "";
-
-                if (questionData.mensagem) {
-                    document.getElementById("question-text").innerText = questionData.pergunta;
-                    document.getElementById("result-container").classList.remove("d-none");
-                    document.getElementById("result-text").innerHTML = questionData.mensagem();
-                    playSound("success-sound");
-                    return;
-                }
-
-                questionData.opcoes.forEach(option => {
-                const button = document.createElement("button");
-                button.innerText = option.texto;
-                button.classList.add("btn", "btn-lg", "d-block", "mb-2");
-                button.onclick = () => {
-                    if (questionData.gravar) {
-                        userProfile[questionData.gravar] = option.oculto || option.texto;
-                    }
-                    currentStep = option.proximo;
-                    currentStepIndex++;
-                    loadQuestion();
-                    playSound("click-sound", 0.3);
-                    updateProgressBar();
-                };
-                optionsContainer.appendChild(button);
-                });
-            });
-        }
-        
-        document.addEventListener("DOMContentLoaded", loadQuestion);
-
-        function createHeart() {
-            const heartTypes = ["❤️", "❤️"];
-            const heart = document.createElement('div');
-            heart.innerHTML = heartTypes[Math.floor(Math.random() * heartTypes.length)];
-            heart.classList.add('heart');
-            document.body.appendChild(heart);
-            
-            const startPos = Math.random() * window.innerWidth;
-            heart.style.left = `${startPos}px`;
-            
-            const duration = Math.random() * 3 + 3; // Entre 3 e 6 segundos
-            heart.style.animationDuration = `${duration}s`;
-            
-            setTimeout(() => {
-                heart.remove();
-            }, duration * 1000);
-        }
-
-        setInterval(createHeart, 500);
-    </script>
+<script src="/js/main.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </body>
 </html>
