@@ -7,6 +7,7 @@ HEAD = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-6858130394830057">
   <title>{title}</title>
   <meta name="description" content="{desc}">
   <meta name="robots" content="index, follow">
