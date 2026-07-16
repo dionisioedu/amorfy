@@ -83,16 +83,50 @@
     </div>
   </section>
 
-  <section class="container" style="margin-bottom:3rem">
-    <div class="newsletter">
-      <h3>&#128140; Tem uma hist&oacute;ria para contar?</h3>
-      <p>Novas hist&oacute;rias toda semana. Inscreva-se para receber os pr&oacute;ximos casos.</p>
-      <form class="newsletter-form" action="#" method="post">
-        <input type="email" placeholder="Seu melhor e-mail" required>
-        <button type="submit" class="btn btn-primary">Inscrever</button>
+  <section class="container" id="conte-sua-historia" style="margin-bottom:3rem;max-width:760px">
+    <div class="card"><div class="card-body">
+      <h2 style="margin-bottom:.5rem">&#128140; Conte a sua hist&oacute;ria</h2>
+      <p style="color:var(--text-secondary);margin-bottom:1.25rem">Sua experi&ecirc;ncia pode ajudar outras pessoas. Escreva abaixo e envie &mdash; a hist&oacute;ria vai direto para o nosso e-mail. Se publicada, ser&aacute; <strong>an&ocirc;nima</strong>, com nomes e detalhes alterados.</p>
+      <form id="story-form">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-bottom:1rem">
+          <label style="display:block">
+            <span style="font-weight:600;font-size:.9rem">Seu nome (ou "An&ocirc;nimo")</span>
+            <input type="text" id="story-name" placeholder="Como podemos te chamar?" style="width:100%;padding:.75rem;border:2px solid var(--border);border-radius:var(--radius);font-family:var(--font-sans);font-size:1rem;margin-top:.35rem">
+          </label>
+          <label style="display:block">
+            <span style="font-weight:600;font-size:.9rem">Tema da hist&oacute;ria</span>
+            <select id="story-theme" style="width:100%;padding:.75rem;border:2px solid var(--border);border-radius:var(--radius);font-family:var(--font-sans);font-size:1rem;margin-top:.35rem;background:var(--surface)">
+              <option>Supera&ccedil;&atilde;o</option>
+              <option>Recome&ccedil;o</option>
+              <option>Reconstru&ccedil;&atilde;o do casal</option>
+              <option>Relacionamento abusivo</option>
+              <option>Depend&ecirc;ncia emocional</option>
+              <option>Outro</option>
+            </select>
+          </label>
+        </div>
+        <label style="display:block;margin-bottom:1rem">
+          <span style="font-weight:600;font-size:.9rem">Sua hist&oacute;ria</span>
+          <textarea id="story-text" rows="8" placeholder="Escreva aqui com suas palavras. N&atilde;o se preocupe com formata&ccedil;&atilde;o &mdash; o importante &eacute; a experi&ecirc;ncia." style="width:100%;padding:.75rem;border:2px solid var(--border);border-radius:var(--radius);font-family:var(--font-sans);font-size:1rem;margin-top:.35rem;resize:vertical"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg">&#128232; Enviar minha hist&oacute;ria</button>
+        <p style="font-size:.85rem;color:var(--text-secondary);margin-top:.75rem">O bot&atilde;o abre seu aplicativo de e-mail com tudo preenchido &mdash; basta enviar. Se preferir, escreva direto para <a href="mailto:dionisiosoftware@gmail.com?subject=%5BAmorfy%5D%20Minha%20Hist%C3%B3ria"><strong>dionisiosoftware@gmail.com</strong></a> com o assunto <em>"[Amorfy] Minha Hist&oacute;ria"</em>.</p>
       </form>
-    </div>
+    </div></div>
   </section>
+
+  <script>
+  document.getElementById('story-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('story-name').value.trim() || 'An\u00f4nimo';
+    var theme = document.getElementById('story-theme').value;
+    var text = document.getElementById('story-text').value.trim();
+    if (!text) { document.getElementById('story-text').focus(); return; }
+    var subject = '[Amorfy] Minha Hist\u00f3ria \u2014 ' + theme + ' \u2014 ' + name;
+    var body = 'Nome: ' + name + '\nTema: ' + theme + '\n\nMinha hist\u00f3ria:\n\n' + text + '\n\n---\nAutorizo a publica\u00e7\u00e3o an\u00f4nima desta hist\u00f3ria no Amorfy, com nomes e detalhes alterados.';
+    window.location.href = 'mailto:dionisiosoftware@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+  </script>
 </main>
 
 <footer class="site-footer">
