@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Artigo: Como Manter um Relacionamento Saudável com uma Pessoa Borderline."""
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+from article_template import write_article
+
+ARTIGO = {
+"slug": "relacionamento-borderline",
+"title": "Como Manter um Relacionamento Saudável com uma Pessoa Borderline",
+"desc": "Guia prático para quem ama alguém com TPB: comunicação validante, limites saudáveis, manejo de crises, autocuidado e quando buscar ajuda. Amar alguém com borderline é possível — com as ferramentas certas.",
+"breadcrumb": "Relacionamento com Pessoa Borderline",
+"tag": "Saúde Mental", "tag_color": "pink",
+"date": "2025-07-16", "date_human": "16 Jul 2025", "read_min": "12",
+"body": """<p>Amar alguém com Transtorno de Personalidade Borderline (TPB) pode ser uma das experiências mais intensas da vida — para o bem e para o mal. Num dia, você é amado com uma profundidade que nunca conheceu; no outro, é o alvo de uma raiva que parece vinda do nada. Se você vive isso, saiba de duas coisas: <strong>não é culpa sua, e um relacionamento saudável é possível</strong> — mas exige conhecimento, ferramentas e limites.</p>
+
+<p>Este guia é para parceiros e parceiras de pessoas com TPB (diagnosticado ou com fortes traços). Se você ainda está entendendo o transtorno, comece pelo nosso <a href="/artigos/borderline.html">guia completo sobre borderline</a>.</p>
+
+<h2>Primeiro: entenda o que está acontecendo</h2>
+
+<p>A pessoa com TPB não escolhe ser assim. O transtorno geralmente nasce da combinação de vulnerabilidade biológica (um sistema emocional hipersensível) com experiências invalidantes ou traumáticas na infância. O resultado é um cérebro que:</p>
+
+<ul>
+  <li><strong>Sente as emoções com o volume no máximo:</strong> o que para você é decepção, para ela é devastação</li>
+  <li><strong>Demora muito mais para voltar ao equilíbrio:</strong> a "descida" da emoção leva horas, não minutos</li>
+  <li><strong>Interpreta ameaças de abandono em tudo:</strong> um atraso, um tom de voz, uma mensagem seca</li>
+  <li><strong>Alterna entre extremos:</strong> o mecanismo de "splitting" (divisão) faz a pessoa te ver como todo bom ou todo mau — sem meio-termo</li>
+</ul>
+
+<div class="highlight-box">
+  <h3>💡 A chave que muda tudo</h3>
+  <p>A raiva, as acusações e o drama raramente são sobre você. São a expressão desorganizada de uma dor real: o pânico de ser abandonado, a vergonha crônica, o vazio. Entender isso não desculpa comportamentos abusivos — mas te tira do lugar de "inimigo" e te coloca no lugar de quem entende o mecanismo.</p>
+</div>
+
+<h2>Comunicação: a técnica da validação</h2>
+
+<p>A ferramenta mais poderosa com uma pessoa borderline é a <strong>validação emocional</strong> — reconhecer o sentimento dela como real e compreensível, mesmo quando você discorda dos fatos ou da reação.</p>
+
+<h3>O que NÃO funciona (e piora tudo):</h3>
+<ul>
+  <li>"Você está exagerando" / "Não é para tanto" — invalidação direta, gasolina na fogueira</li>
+  <li>"Calma!" — nunca, em toda a história, acalmou alguém</li>
+  <li>Argumentar com lógica durante a crise — o cérebro emocional não processa lógica em ebulição</li>
+  <li>Ameaçar término durante brigas — ativa o pânico de abandono e escala a crise</li>
+</ul>
+
+<h3>O que funciona:</h3>
+<ul>
+  <li><strong>Valide o sentimento:</strong> "Eu vejo que você está sofrendo muito com isso" / "Faz sentido você ter ficado magoada, dado como você entendeu a situação"</li>
+  <li><strong>Só depois, com calma restaurada, trate os fatos:</strong> a conversa sobre o que realmente aconteceu deve esperar o fim da tempestade</li>
+  <li><strong>Fale de forma direta e previsível:</strong> ambiguidade alimenta interpretações catastróficas. Avise atrasos, explique mudanças de planos, seja consistente</li>
+  <li><strong>Reassegure sem se anular:</strong> "Eu não vou embora. E preciso que a gente converse sobre isso com respeito"</li>
+</ul>
+
+<h2>Limites: amor sem limites vira refém</h2>
+
+<p>Este é o ponto onde a maioria dos parceiros se perde. Com medo das crises, vão cedendo: aceitam gritos, cancelam a própria vida, escondem amizades, pisam em ovos. O resultado é duplo: <strong>você adoece, e a pessoa com TPB piora</strong> — porque descobre que as crises funcionam.</p>
+
+<h3>Como estabelecer limites que funcionam:</h3>
+<ol>
+  <li><strong>Defina o limite em momento de calma</strong>, nunca durante a crise: "Eu quero te ouvir sempre, mas não vou continuar conversas com gritos ou ofensas"</li>
+  <li><strong>Anuncie a consequência, não a punição:</strong> "Se começar a gritar, vou sair da sala e a gente retoma quando estiver mais calmo" — e diga quando volta (senão ativa o abandono)</li>
+  <li><strong>Cumpra SEMPRE:</strong> limite aplicado às vezes é pior que limite nenhum — vira loteria que incentiva testar</li>
+  <li><strong>Limites inegociáveis:</strong> violência física, humilhação pública, sabotagem do seu trabalho ou amizades. Nesses pontos, não há flexibilidade possível</li>
+</ol>
+
+<div class="highlight-box">
+  <h3>💡 Limite não é rejeição</h3>
+  <p>Para a pessoa com TPB, limite pode soar como abandono. Ajude a separar as coisas: "Eu estou dizendo não a esse comportamento, não a você. Eu continuo aqui." Com o tempo e repetição, essa diferença se aprende.</p>
+</div>
+
+<h2>Durante a crise: o protocolo prático</h2>
+
+<ol>
+  <li><strong>Não escale:</strong> voz baixa, corpo calmo, frases curtas. Seu sistema nervoso regulado é o melhor "medicamento" disponível no momento</li>
+  <li><strong>Valide primeiro:</strong> "Eu entendo que isso doeu muito"</li>
+  <li><strong>Não se defenda ponto a ponto:</strong> cada argumento é lenha nova. Guarde os esclarecimentos para depois</li>
+  <li><strong>Se houver ofensas, aplique o limite:</strong> saia do ambiente anunciando retorno: "Volto em 30 minutos e conversamos"</li>
+  <li><strong>Depois da crise, quando houver calma real:</strong> converse sobre o que aconteceu, sem tom de julgamento, focando no padrão e não no episódio</li>
+</ol>
+
+<p><strong>Se houver ameaça de suicídio ou autoagressão:</strong> leve sempre a sério. Não é "manipulação" — pessoas com TPB têm risco real. Acione o CVV (188), familiares próximos ou emergência (SAMU 192) se necessário. Você não deve — e não consegue — carregar esse risco sozinho.</p>
+
+<h2>O tratamento importa (muito)</h2>
+
+<p>Um relacionamento com uma pessoa borderline <strong>em tratamento</strong> e outra <strong>sem tratamento</strong> são realidades completamente diferentes. A Terapia Comportamental Dialética (DBT), criada especificamente para o TPB, ensina exatamente as habilidades que faltam: regulação emocional, tolerância ao mal-estar, efetividade interpessoal.</p>
+
+<ul>
+  <li><strong>Incentive sem impor:</strong> "Eu vejo o quanto você sofre e quero que você tenha apoio de verdade" funciona melhor que ultimatos</li>
+  <li><strong>Nunca use o diagnóstico como arma:</strong> "lá vem seu borderline" destrói a confiança e afasta do tratamento</li>
+  <li><strong>Considere terapia de casal</strong> com profissional experiente em TPB</li>
+  <li><strong>Faça terapia você também:</strong> não é luxo. Você precisa de um espaço seu para processar, aprender habilidades e não se perder na relação</li>
+</ul>
+
+<h2>Autocuidado: o oxigênio é seu primeiro</h2>
+
+<p>Parceiros de pessoas com TPB têm taxas elevadas de ansiedade, depressão e burnout emocional. Os sinais de que você está se perdendo:</p>
+
+<ul>
+  <li>Sua vida social sumiu (ou você a esconde para evitar crises)</li>
+  <li>Você sente alívio quando a pessoa não está em casa</li>
+  <li>Seu humor depende 100% do humor dela</li>
+  <li>Você mente para amigos e família sobre como a relação é</li>
+  <li>Você não lembra da última vez que fez algo só para você</li>
+</ul>
+
+<p>Antídotos: mantenha amizades e hobbies inegociáveis, durma e se exercite (regulação emocional começa no corpo), tenha pelo menos uma pessoa com quem você fala a verdade completa, e terapia individual.</p>
+
+<h2>Quando o relacionamento não é sustentável</h2>
+
+<p>Este artigo é sobre manter um relacionamento saudável — mas honestidade exige dizer: <strong>nem sempre é possível</strong>. Considere seriamente a saída se:</p>
+
+<ul>
+  <li>Há violência física ou ameaças à sua integridade</li>
+  <li>A pessoa recusa qualquer tratamento por anos, apesar do sofrimento de ambos</li>
+  <li>Sua saúde mental está colapsando (depressão, pânico, ideação suicida sua)</li>
+  <li>Há filhos sendo expostos a um ambiente de crises constantes sem perspectiva de mudança</li>
+</ul>
+
+<p>Sair de uma relação com alguém com TPB exige planejamento e apoio — o pânico de abandono pode gerar reações intensas. Faça isso com suporte de terapeuta e rede de apoio. E lembre: escolher a própria saúde não é abandonar o outro — é reconhecer que você não é o tratamento dele.</p>
+
+<h2>A mensagem final: vale a pena?</h2>
+
+<p>Muitos relacionamentos com pessoas borderline em tratamento são profundos, leais e genuinamente felizes. A mesma sensibilidade que produz as crises produz também uma capacidade rara de amar, perceber e se conectar. Com tratamento adequado, habilidades de comunicação e limites saudáveis dos dois lados, o TPB é um desafio manejável — não uma sentença.</p>
+
+<p>O que não funciona é amor como sacrifício unilateral. A equação saudável tem três partes: <strong>ela(e) se trata, você se cuida, e os dois constroem as regras juntos</strong>.</p>
+
+<p>Continue se informando: <a href="/artigos/borderline.html">guia completo sobre TPB</a>, <a href="/testes/parceiro-borderline.html">teste de sinais no parceiro(a)</a> e <a href="/artigos/comunicacao.html">comunicação não-violenta</a>.</p>"""
+}
+
+if __name__ == "__main__":
+    write_article(ARTIGO)
