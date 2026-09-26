@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Casos reais: 4 story pages (article template adapted) + generated via replacement."""
-from article_template import TEMPLATE
+from article_template import render_article
 import os
 
 OUT = "/home/eduardo/projects/amorfy/casos"
 os.makedirs(OUT, exist_ok=True)
 
 def write_caso(meta):
-    html = TEMPLATE.format(**meta)
+    html = render_article(meta)
     html = html.replace('href="https://amorfy.com.br/artigos/' + meta["slug"], 'href="https://amorfy.com.br/casos/' + meta["slug"])
     html = html.replace('content="https://amorfy.com.br/artigos/' + meta["slug"], 'content="https://amorfy.com.br/casos/' + meta["slug"])
     html = html.replace('<li><a href="/artigos/">Artigos</a></li>\n      <li>' + meta["breadcrumb"], '<li><a href="/casos/">Casos Reais</a></li>\n      <li>' + meta["breadcrumb"])

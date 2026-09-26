@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Shared template for Amorfy article generation."""
 
+import html
+import json
+
 TEMPLATE = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -29,8 +32,8 @@ TEMPLATE = """<!DOCTYPE html>
   {{
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "{title}",
-    "description": "{desc}",
+    "headline": {title_json},
+    "description": {desc_json},
     "author": {{"@type": "Organization", "name": "Amorfy"}},
     "publisher": {{"@type": "Organization", "name": "Amorfy", "logo": {{"@type": "ImageObject", "url": "https://amorfy.com.br/favicon.svg"}}}},
     "datePublished": "{date}",
@@ -102,8 +105,16 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def render_article(meta):
+    values = dict(meta)
+    for key in ("title", "desc"):
+        values[key] = html.escape(meta[key], quote=True)
+        values[key + "_json"] = json.dumps(meta[key], ensure_ascii=False).replace("<", "\\u003c")
+    return TEMPLATE.format(**values)
+
+
 def write_article(meta, out_dir="/home/eduardo/projects/amorfy/artigos"):
-    html = TEMPLATE.format(**meta)
+    html = render_article(meta)
     path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
