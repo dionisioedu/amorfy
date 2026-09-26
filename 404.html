@@ -1,33 +1,25 @@
-#!/usr/bin/env python3
-"""Shared template for Amorfy article generation."""
-
-import html
-import json
-from pathlib import Path
-
-TEMPLATE = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-6858130394830057">
-  <title>{title}</title>
-  <meta name="description" content="{desc}">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://amorfy.com.br/artigos/{slug}.html">
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{desc}">
-  <meta property="og:url" content="https://amorfy.com.br/artigos/{slug}.html">
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="pt_BR">
+  <title>Página não encontrada — Amorfy</title>
+  <meta name="description" content="A página que você procura não existe ou foi movida. Volte para a página inicial do Amorfy e continue explorando testes, artigos e histórias reais sobre relacionamentos.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://amorfy.com.br/404.html">
+  <meta property="og:title" content="Página não encontrada — Amorfy">
+  <meta property="og:description" content="A página que você procura não existe ou foi movida. Volte para a página inicial do Amorfy.">
+  <meta property="og:url" content="https://amorfy.com.br/404.html">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="https://amorfy.com.br/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Amorfy — testes, artigos e histórias reais sobre relacionamentos">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{title}">
-  <meta name="twitter:description" content="{desc}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Página não encontrada — Amorfy">
+  <meta name="twitter:description" content="A página que você procura não existe ou foi movida. Volte para a página inicial do Amorfy.">
   <meta name="twitter:image" content="https://amorfy.com.br/og.png">
   <meta name="twitter:image:alt" content="Amorfy">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,18 +28,6 @@ TEMPLATE = """<!DOCTYPE html>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6858130394830057" crossorigin="anonymous"></script>
-  <script type="application/ld+json">
-  {{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": {title_json},
-    "description": {desc_json},
-    "author": {{"@type": "Organization", "name": "Amorfy"}},
-    "publisher": {{"@type": "Organization", "name": "Amorfy", "logo": {{"@type": "ImageObject", "url": "https://amorfy.com.br/favicon.svg"}}}},
-    "datePublished": "{date}",
-    "dateModified": "{date_modified}"
-  }}
-  </script>
 </head>
 <body>
 
@@ -66,35 +46,27 @@ TEMPLATE = """<!DOCTYPE html>
 </header>
 
 <main>
-  <nav class="container" aria-label="Breadcrumb">
-    <ol class="breadcrumbs">
-      <li><a href="/">In&iacute;cio</a></li>
-      <li><a href="/artigos/">Artigos</a></li>
-      <li>{breadcrumb}</li>
-    </ol>
-  </nav>
-
   <article>
     <header class="article-header">
-      <span class="card-tag {tag_color}" style="margin-bottom:1rem;display:inline-block">{tag}</span>
-      <h1>{title}</h1>
-      <div class="article-meta">
-        <span>&#9997;&#65039; Equipe Amorfy</span>
-        <span>&#128197; {date_human}</span>
-        <span>&#128214; {read_min} min de leitura</span>
-      </div>
+      <h1>Página não encontrada</h1>
     </header>
-
-    <div class="ad-container ad-article-top">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6858130394830057" data-ad-slot="auto" data-ad-format="auto"></ins>
-    </div>
-    <div class="ad-label">Publicidade</div>
-
     <div class="article-body">
-{body}
+<p>Ops! A página que você procura não existe, foi movida ou o endereço está incorreto. &#128148;</p>
+
+<p>Não se preocupe — o Amorfy está cheio de conteúdo sobre relacionamentos, autoconhecimento e amor para você explorar:</p>
+
+<ul>
+  <li><strong><a href="/testes/">Testes interativos:</a></strong> personalidade amorosa, linguagens do amor, sinais de relacionamento narcisista e compatibilidade</li>
+  <li><strong><a href="/artigos/">Artigos aprofundados:</a></strong> guias completos sobre psicologia dos relacionamentos</li>
+  <li><strong><a href="/casos/">Casos reais:</a></strong> histórias de superação e recomeço</li>
+</ul>
+
+<div class="highlight-box">
+  <h3>&#127968; Perdeu-se?</h3>
+  <p>Volte para a <a href="/">página inicial</a> e continue sua jornada de autoconhecimento.</p>
+</div>
     </div>
   </article>
-
 </main>
 
 <footer class="site-footer">
@@ -107,26 +79,5 @@ TEMPLATE = """<!DOCTYPE html>
 </footer>
 
 <script src="/js/main.js"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
 </body>
 </html>
-"""
-
-
-def render_article(meta):
-    values = dict(meta)
-    for key in ("title", "desc"):
-        values[key] = html.escape(meta[key], quote=True)
-        values[key + "_json"] = json.dumps(meta[key], ensure_ascii=False).replace("<", "\\u003c")
-    values["date_modified"] = meta.get("date_modified", meta["date"])
-    return TEMPLATE.format(**values)
-
-
-def write_article(meta, out_dir=None):
-    out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "artigos"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    html = render_article(meta)
-    path = f"{out_dir}/{meta['slug']}.html"
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"OK {path} ({len(html)} bytes)")
