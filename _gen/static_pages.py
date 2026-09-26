@@ -31,8 +31,8 @@ HEAD = """<!DOCTYPE html>
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo"><img src="/favicon.svg" alt="" width="38" height="38">Amorfy</a>
-    <button class="nav-toggle" aria-label="Abrir menu">&#9776;</button>
-    <nav><ul class="nav-links">
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-navigation">&#9776;</button>
+    <nav><ul class="nav-links" id="site-navigation">
       <li><a href="/">In&iacute;cio</a></li>
       <li><a href="/testes/">Testes</a></li>
       <li><a href="/artigos/">Artigos</a></li>

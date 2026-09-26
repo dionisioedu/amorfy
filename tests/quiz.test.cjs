@@ -11,12 +11,13 @@ function readQuiz(slug) {
   return JSON.parse(page.match(/window.QUIZ_DATA = (.*?);\s*<\/script>/s)[1]);
 }
 
-function start(data) {
-  let html = '', buttons = [], retry;
+function start(data, reducedMotion = false) {
+  let html = '', buttons = [], retry, focusCount = 0, scroll;
   const timers = [];
   const root = {
     offsetTop: 100,
     querySelectorAll() { return buttons; },
+    querySelector() { return { focus() { focusCount++; } }; },
     set innerHTML(value) {
       html = value;
       buttons = [...value.matchAll(/data-i="(\d+)"/g)].map(match => ({
@@ -27,7 +28,10 @@ function start(data) {
     }
   };
   vm.runInNewContext(source, {
-    window: { QUIZ_DATA: data, location: { pathname: '/testes/' }, scrollTo() {} },
+    window: {
+      QUIZ_DATA: data, location: { pathname: '/testes/' },
+      scrollTo(value) { scroll = value; }, matchMedia() { return { matches: reducedMotion }; }
+    },
     document: {
       readyState: 'complete',
       getElementById(id) {
@@ -38,6 +42,7 @@ function start(data) {
   });
   return {
     get html() { return html; }, get buttons() { return buttons; }, timers,
+    get focusCount() { return focusCount; }, get scroll() { return scroll; },
     answer(i) { buttons[i].click(); timers.shift()(); }, retry() { retry(); }
   };
 }
@@ -95,6 +100,20 @@ for (const mode of ['sum', 'category']) {
     first[0].click();
     assert.equal(quiz.timers.length, 0);
     quiz.answer(1);
-    assert(quiz.html.includes('<h2>Correct</h2>'));
+    assert(quiz.html.includes('>Correct</h2>'));
   });
 }
+
+test('keyboard focus follows question, result and retry; reduced motion is respected', () => {
+  const data = readQuiz('compatibilidade'), quiz = start(data, true);
+  assert.equal(quiz.focusCount, 0, 'initial render must not steal focus');
+  assert(quiz.html.includes('role="progressbar"'));
+  assert(quiz.html.includes('aria-describedby="quiz-step"'));
+  for (let i = 0; i < data.questions.length; i++) {
+    quiz.answer(0);
+    assert.equal(quiz.focusCount, i + 1);
+    assert.equal(quiz.scroll.behavior, 'auto');
+  }
+  quiz.retry();
+  assert.equal(quiz.focusCount, data.questions.length + 1);
+});

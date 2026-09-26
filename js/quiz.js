@@ -14,20 +14,25 @@
     var scores = {};
     var total = 0;
 
-    function render() {
+    function focusHeading() {
+      root.querySelector('h2').focus({ preventScroll: true });
+    }
+
+    function render(moveFocus) {
       if (current >= data.questions.length) return renderResult();
       var q = data.questions[current];
       var pct = Math.round((current / data.questions.length) * 100);
       var html = '<div class="quiz-card">';
-      html += '<div class="quiz-progress"><div class="quiz-progress-bar" style="width:' + pct + '%"></div></div>';
-      html += '<p style="color:var(--text-secondary);font-size:.85rem;margin-bottom:.75rem">Pergunta ' + (current + 1) + ' de ' + data.questions.length + '</p>';
-      html += '<h2 class="quiz-question">' + q.q + '</h2>';
+      html += '<div class="quiz-progress" role="progressbar" aria-label="Perguntas respondidas" aria-valuemin="0" aria-valuemax="' + data.questions.length + '" aria-valuenow="' + current + '"><div class="quiz-progress-bar" style="width:' + pct + '%"></div></div>';
+      html += '<p id="quiz-step" style="color:var(--text-secondary);font-size:.85rem;margin-bottom:.75rem">Pergunta ' + (current + 1) + ' de ' + data.questions.length + '</p>';
+      html += '<h2 class="quiz-question" tabindex="-1" aria-describedby="quiz-step">' + q.q + '</h2>';
       html += '<div class="quiz-options">';
       q.options.forEach(function(opt, i) {
         html += '<button class="quiz-option" data-i="' + i + '">' + opt.text + '</button>';
       });
       html += '</div></div>';
       root.innerHTML = html;
+      if (moveFocus) focusHeading();
 
       var answered = false;
       var options = root.querySelectorAll('.quiz-option');
@@ -48,9 +53,9 @@
               renderResult(data.supportResult);
             } else {
               current++;
-              render();
+              render(true);
             }
-            window.scrollTo({top: root.offsetTop - 100, behavior: 'smooth'});
+            window.scrollTo({top: root.offsetTop - 100, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
           }, 350);
         });
       });
@@ -76,7 +81,7 @@
       }
       var html = '<div class="quiz-card"><div class="quiz-result">';
       html += '<div style="font-size:3.5rem;margin-bottom:.5rem">' + (res.emoji || '💖') + '</div>';
-      html += '<h2>' + res.title + '</h2>';
+      html += '<h2 tabindex="-1">' + res.title + '</h2>';
       html += '<div class="result-text">' + res.text + '</div>';
       if (res.link) html += '<a href="' + res.link + '" class="btn btn-primary" style="margin-bottom:1rem">' + (res.linkText || 'Saiba mais') + '</a>';
       html += '<div class="share-buttons">';
@@ -84,9 +89,10 @@
       html += '<a class="btn btn-purple" href="https://wa.me/?text=' + encodeURIComponent(data.shareText + ' https://amorfy.com.br' + window.location.pathname) + '" target="_blank" rel="noopener">📲 Compartilhar</a>';
       html += '</div></div></div>';
       root.innerHTML = html;
+      focusHeading();
       var retry = document.getElementById('quiz-retry');
       if (retry) retry.addEventListener('click', function() {
-        current = 0; scores = {}; total = 0; render();
+        current = 0; scores = {}; total = 0; render(true);
       });
       // Refresh ads after result
       try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
