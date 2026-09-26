@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Static pages: sobre.html (com contato), privacidade.html, termos.html."""
 
+from pathlib import Path
+
 HEAD = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -198,10 +200,15 @@ PAGES = [
 },
 ]
 
+def write_page(meta, out_dir=None):
+    out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+    html = HEAD.format(**meta) + FOOT
+    path = out_dir / f"{meta['slug']}.html"
+    path.write_text(html, encoding="utf-8")
+    print(f"OK {path} ({len(html)} bytes)")
+
+
 if __name__ == "__main__":
     for p in PAGES:
-        html = HEAD.format(**p) + FOOT
-        path = f"/home/eduardo/projects/amorfy/{p['slug']}.html"
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"OK {path} ({len(html)} bytes)")
+        write_page(p)

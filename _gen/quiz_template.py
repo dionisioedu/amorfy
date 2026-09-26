@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Shared template for Amorfy quiz pages."""
 
+from pathlib import Path
+
 TEMPLATE = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -110,8 +112,9 @@ window.QUIZ_DATA = {quiz_data};
 DISCLAIMER = """<p style="text-align:center;color:var(--text-secondary);font-size:.85rem;margin-top:1rem">&#9878;&#65039; Este teste tem car&aacute;ter informativo e educacional. N&atilde;o substitui avalia&ccedil;&atilde;o, diagn&oacute;stico ou tratamento por profissional de sa&uacute;de mental.</p>"""
 
 
-def write_quiz(meta, out_dir="/home/eduardo/projects/amorfy/testes"):
+def write_quiz(meta, out_dir=None):
     import os, json
+    out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "testes"
     os.makedirs(out_dir, exist_ok=True)
     meta = dict(meta)
     meta["quiz_data"] = json.dumps(meta["quiz_data"], ensure_ascii=False, indent=2)

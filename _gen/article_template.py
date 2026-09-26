@@ -3,6 +3,7 @@
 
 import html
 import json
+from pathlib import Path
 
 TEMPLATE = """<!DOCTYPE html>
 <html lang="pt-BR">
@@ -113,7 +114,9 @@ def render_article(meta):
     return TEMPLATE.format(**values)
 
 
-def write_article(meta, out_dir="/home/eduardo/projects/amorfy/artigos"):
+def write_article(meta, out_dir=None):
+    out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "artigos"
+    out_dir.mkdir(parents=True, exist_ok=True)
     html = render_article(meta)
     path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:

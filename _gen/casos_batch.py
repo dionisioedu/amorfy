@@ -2,20 +2,29 @@
 # -*- coding: utf-8 -*-
 """Casos reais: 4 story pages (article template adapted) + generated via replacement."""
 from article_template import render_article
-import os
+from pathlib import Path
 
-OUT = "/home/eduardo/projects/amorfy/casos"
-os.makedirs(OUT, exist_ok=True)
-
-def write_caso(meta):
+def write_caso(meta, out_dir=None):
+    out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "casos"
+    out_dir.mkdir(parents=True, exist_ok=True)
     html = render_article(meta)
     html = html.replace('href="https://amorfy.com.br/artigos/' + meta["slug"], 'href="https://amorfy.com.br/casos/' + meta["slug"])
     html = html.replace('content="https://amorfy.com.br/artigos/' + meta["slug"], 'content="https://amorfy.com.br/casos/' + meta["slug"])
     html = html.replace('<li><a href="/artigos/">Artigos</a></li>\n      <li>' + meta["breadcrumb"], '<li><a href="/casos/">Casos Reais</a></li>\n      <li>' + meta["breadcrumb"])
-    path = f"{OUT}/{meta['slug']}.html"
+    html = html.replace('</main>', STORY_CTA + '</main>')
+    path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"OK {path} ({len(html)} bytes)")
+
+STORY_CTA = """  <section class="container" style="margin-bottom:3rem">
+    <div class="highlight-box" style="text-align:center">
+      <h3>&#128172; Voc&ecirc; tamb&eacute;m tem uma hist&oacute;ria?</h3>
+      <p>Compartilhe sua experi&ecirc;ncia com nossos leitores. Publicamos de forma an&ocirc;nima, com nomes e detalhes alterados.</p>
+      <a href="/casos/#conte-sua-historia" class="btn btn-primary" style="margin-top:.75rem">Contar minha hist&oacute;ria</a>
+    </div>
+  </section>
+"""
 
 DISCLAIMER = '<p style="font-size:.85rem;color:var(--text-secondary)"><em>Hist&oacute;ria baseada em relatos reais. Nomes e detalhes foram alterados para preservar a privacidade dos envolvidos.</em></p>'
 
