@@ -43,7 +43,15 @@
           } else {
             total += opt.value || 0;
           }
-          setTimeout(function() { current++; render(); window.scrollTo({top: root.offsetTop - 100, behavior: 'smooth'}); }, 350);
+          setTimeout(function() {
+            if (opt.showSupport && data.supportResult) {
+              renderResult(data.supportResult);
+            } else {
+              current++;
+              render();
+            }
+            window.scrollTo({top: root.offsetTop - 100, behavior: 'smooth'});
+          }, 350);
         });
       });
     }
@@ -56,11 +64,11 @@
       return best;
     }
 
-    function renderResult() {
-      var res;
-      if (data.mode === 'category') {
+    function renderResult(override) {
+      var res = override;
+      if (!res && data.mode === 'category') {
         res = data.results[winner()];
-      } else {
+      } else if (!res) {
         for (var i = 0; i < data.results.length; i++) {
           if (total <= data.results[i].max) { res = data.results[i]; break; }
         }

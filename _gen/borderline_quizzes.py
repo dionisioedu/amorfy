@@ -19,6 +19,7 @@ AUTO = {
 "quiz_data": {
   "mode": "sum",
   "shareText": "Fiz o teste de traços de borderline do Amorfy. Vale a reflexão:",
+  "supportResult": {"emoji": "💛", "title": "Sua segurança merece atenção", "text": "<p>Você mencionou pensamentos ou experiências de autoagressão. Esse relato merece acolhimento independentemente de qualquer pontuação. Converse com um profissional de saúde e, se possível, com alguém de confiança. Este questionário não determina diagnóstico nem avalia seu risco atual.</p><p>Se houver risco imediato ou ferimento, ligue <a href=\"tel:192\">SAMU 192</a> ou procure uma UPA ou pronto-socorro. Para apoio emocional, o <a href=\"tel:188\">CVV 188</a> atende gratuitamente, 24 horas.</p><p><a href=\"https://www.gov.br/saude/pt-br/composicao/saes/samu-192\">Atendimento de urgência — Ministério da Saúde</a></p>"},
   "questions": [
     {"q": "Com que intensidade você sente medo de ser abandonado(a) ou rejeitado(a) por pessoas importantes?", "options": [
       {"text": "Quase nenhum — lido bem com separações e distância", "value": 0},
@@ -46,9 +47,9 @@ AUTO = {
     ]},
     {"q": "Você já se machucou de propósito ou pensou em se machucar em momentos de crise emocional?", "options": [
       {"text": "Nunca — essa ideia é completamente estranha para mim", "value": 0},
-      {"text": "Já pensei vagamente, mas nunca fiz", "value": 1},
-      {"text": "Sim, já me machuquei em momentos de desespero", "value": 2},
-      {"text": "Isso acontece com frequência — é uma forma de aliviar a dor emocional", "value": 3}
+      {"text": "Já pensei vagamente, mas nunca fiz", "value": 1, "showSupport": True},
+      {"text": "Sim, já me machuquei em momentos de desespero", "value": 2, "showSupport": True},
+      {"text": "Isso acontece com frequência — é uma forma de aliviar a dor emocional", "value": 3, "showSupport": True}
     ]},
     {"q": "Suas emoções mudam rápido e com intensidade? (ex.: da euforia para a raiva ou tristeza profunda em horas)", "options": [
       {"text": "Meu humor é relativamente estável", "value": 0},
@@ -94,7 +95,7 @@ AUTO = {
     ]}
   ],
   "results": [
-    {"max": 8, "emoji": "💚", "title": "Poucos traços de TPB", "text": "Suas respostas indicam estabilidade emocional, senso de identidade consistente e relacionamentos geralmente estáveis. Os altos e baixos que você experimenta estão dentro da variação humana normal. Continue cuidando da sua saúde mental — prevenção é sempre o melhor caminho.", "link": "/artigos/inteligencia-emocional.html", "linkText": "Fortalecer: Inteligência Emocional no Amor"},
+    {"max": 8, "emoji": "💚", "title": "Poucos traços de TPB", "text": "Você marcou poucas das situações descritas neste questionário. Esse resultado não confirma estabilidade emocional nem exclui dificuldades ou transtornos. Se algo causa sofrimento ou prejudica sua vida, procure avaliação profissional, independentemente da pontuação.", "link": "/artigos/inteligencia-emocional.html", "linkText": "Fortalecer: Inteligência Emocional no Amor"},
     {"max": 16, "emoji": "⚠️", "title": "Alguns traços presentes — atenção recomendada", "text": "Suas respostas indicam a presença de alguns traços associados ao TPB: certa instabilidade emocional, dificuldades com identidade ou relacionamentos que merecem atenção. <strong>Isso não significa que você tem borderline</strong> — esses traços podem estar relacionados a estresse, ansiedade, depressão ou fase de vida. Se esses padrões causam sofrimento significativo ou prejuízo na sua vida, uma avaliação com psicólogo ou psiquiatra pode trazer clareza e alívio.", "link": "/artigos/borderline.html", "linkText": "Ler: Tudo Sobre Borderline"},
     {"max": 24, "emoji": "🔶", "title": "Traços significativos de TPB", "text": "Suas respostas indicam múltiplos traços compatíveis com Transtorno de Personalidade Borderline, com instabilidade em várias áreas da vida e sofrimento emocional importante. <strong>Isso não é um diagnóstico</strong> — apenas um profissional de saúde mental pode diagnosticar, e somente após avaliação clínica completa. A boa notícia: o TPB tem tratamento eficaz. A Terapia Comportamental Dialética (DBT) foi desenvolvida especificamente para borderline e tem resultados sólidos. Procure um psicólogo ou psiquiatra. Você não está sozinho(a) e a melhora é possível. Em crise: <strong>CVV 188</strong> (24h, gratuito).", "link": "/artigos/borderline.html", "linkText": "Ler: Guia completo sobre Borderline"},
     {"max": 99, "emoji": "🔴", "title": "Traços intensos — buscar ajuda é urgente", "text": "Suas respostas indicam sofrimento emocional intenso com múltiplos traços de TPB, incluindo possíveis comportamentos de risco. Isto não substitui avaliação profissional, mas mostra que a busca por ajuda deve ser prioridade. <strong>Não enfrente isso sozinho(a).</strong> Procure hoje mesmo: CAPS da sua cidade (gratuito, sem agendamento), psicólogo particular, ou plano de saúde. Em crise com risco de autoagressão: <strong>CVV 188</strong> ou procure o pronto-socorro mais próximo. O borderline tem tratamento, e a vida pode ser muito mais estável do que parece possível agora. Dê o primeiro passo.", "link": "/artigos/borderline.html", "linkText": "Ler: Tratamentos e recuperação"}
@@ -116,6 +117,7 @@ PARCEIRO = {
 "quiz_data": {
   "mode": "sum",
   "shareText": "Fiz um teste sobre traços de borderline no parceiro(a). Reflexão importante:",
+  "supportResult": {"emoji": "💛", "title": "Esse relato merece acolhimento", "text": "<p>Você mencionou pensamentos, ameaças ou episódios de autoagressão no seu parceiro ou parceira. Incentive a busca de ajuda profissional e cuide também da sua segurança. Este questionário não determina diagnóstico nem avalia o risco atual da pessoa.</p><p>Se houver risco imediato ou ferimento, ligue <a href=\"tel:192\">SAMU 192</a> ou procure uma UPA ou pronto-socorro. Para apoio emocional, o <a href=\"tel:188\">CVV 188</a> atende gratuitamente, 24 horas.</p><p><a href=\"https://www.gov.br/saude/pt-br/composicao/saes/samu-192\">Atendimento de urgência — Ministério da Saúde</a></p>"},
   "questions": [
     {"q": "Seu parceiro(a) demonstra medo intenso de abandono — real ou imaginário — com reações extremas?", "options": [
       {"text": "Não — lida de forma equilibrada com separações e distância", "value": 0},
@@ -143,9 +145,9 @@ PARCEIRO = {
     ]},
     {"q": "Já houve ameaças de automutilação ou suicídio, ou comportamentos de autoagressão?", "options": [
       {"text": "Nunca — isso nunca fez parte da nossa relação", "value": 0},
-      {"text": "Já mencionou pensamentos, mas sem ação", "value": 1},
-      {"text": "Sim, já aconteceu em momentos de crise", "value": 2},
-      {"text": "Sim, com frequência — é algo que me assusta e preocupa constantemente", "value": 3}
+      {"text": "Já mencionou pensamentos, mas sem ação", "value": 1, "showSupport": True},
+      {"text": "Sim, já aconteceu em momentos de crise", "value": 2, "showSupport": True},
+      {"text": "Sim, com frequência — é algo que me assusta e preocupa constantemente", "value": 3, "showSupport": True}
     ]},
     {"q": "O humor dele(a) muda de forma rápida e intensa — euforia, raiva, tristeza profunda em questão de horas?", "options": [
       {"text": "Não — o humor é relativamente estável", "value": 0},

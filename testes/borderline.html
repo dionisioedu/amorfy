@@ -98,6 +98,11 @@
 window.QUIZ_DATA = {
   "mode": "sum",
   "shareText": "Fiz o teste de traços de borderline do Amorfy. Vale a reflexão:",
+  "supportResult": {
+    "emoji": "💛",
+    "title": "Sua segurança merece atenção",
+    "text": "<p>Você mencionou pensamentos ou experiências de autoagressão. Esse relato merece acolhimento independentemente de qualquer pontuação. Converse com um profissional de saúde e, se possível, com alguém de confiança. Este questionário não determina diagnóstico nem avalia seu risco atual.</p><p>Se houver risco imediato ou ferimento, ligue <a href=\"tel:192\">SAMU 192</a> ou procure uma UPA ou pronto-socorro. Para apoio emocional, o <a href=\"tel:188\">CVV 188</a> atende gratuitamente, 24 horas.</p><p><a href=\"https://www.gov.br/saude/pt-br/composicao/saes/samu-192\">Atendimento de urgência — Ministério da Saúde</a></p>"
+  },
   "questions": [
     {
       "q": "Com que intensidade você sente medo de ser abandonado(a) ou rejeitado(a) por pessoas importantes?",
@@ -192,15 +197,18 @@ window.QUIZ_DATA = {
         },
         {
           "text": "Já pensei vagamente, mas nunca fiz",
-          "value": 1
+          "value": 1,
+          "showSupport": true
         },
         {
           "text": "Sim, já me machuquei em momentos de desespero",
-          "value": 2
+          "value": 2,
+          "showSupport": true
         },
         {
           "text": "Isso acontece com frequência — é uma forma de aliviar a dor emocional",
-          "value": 3
+          "value": 3,
+          "showSupport": true
         }
       ]
     },
@@ -357,7 +365,7 @@ window.QUIZ_DATA = {
       "max": 8,
       "emoji": "💚",
       "title": "Poucos traços de TPB",
-      "text": "Suas respostas indicam estabilidade emocional, senso de identidade consistente e relacionamentos geralmente estáveis. Os altos e baixos que você experimenta estão dentro da variação humana normal. Continue cuidando da sua saúde mental — prevenção é sempre o melhor caminho.",
+      "text": "Você marcou poucas das situações descritas neste questionário. Esse resultado não confirma estabilidade emocional nem exclui dificuldades ou transtornos. Se algo causa sofrimento ou prejudica sua vida, procure avaliação profissional, independentemente da pontuação.",
       "link": "/artigos/inteligencia-emocional.html",
       "linkText": "Fortalecer: Inteligência Emocional no Amor"
     },

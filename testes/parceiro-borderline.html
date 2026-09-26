@@ -98,6 +98,11 @@
 window.QUIZ_DATA = {
   "mode": "sum",
   "shareText": "Fiz um teste sobre traços de borderline no parceiro(a). Reflexão importante:",
+  "supportResult": {
+    "emoji": "💛",
+    "title": "Esse relato merece acolhimento",
+    "text": "<p>Você mencionou pensamentos, ameaças ou episódios de autoagressão no seu parceiro ou parceira. Incentive a busca de ajuda profissional e cuide também da sua segurança. Este questionário não determina diagnóstico nem avalia o risco atual da pessoa.</p><p>Se houver risco imediato ou ferimento, ligue <a href=\"tel:192\">SAMU 192</a> ou procure uma UPA ou pronto-socorro. Para apoio emocional, o <a href=\"tel:188\">CVV 188</a> atende gratuitamente, 24 horas.</p><p><a href=\"https://www.gov.br/saude/pt-br/composicao/saes/samu-192\">Atendimento de urgência — Ministério da Saúde</a></p>"
+  },
   "questions": [
     {
       "q": "Seu parceiro(a) demonstra medo intenso de abandono — real ou imaginário — com reações extremas?",
@@ -192,15 +197,18 @@ window.QUIZ_DATA = {
         },
         {
           "text": "Já mencionou pensamentos, mas sem ação",
-          "value": 1
+          "value": 1,
+          "showSupport": true
         },
         {
           "text": "Sim, já aconteceu em momentos de crise",
-          "value": 2
+          "value": 2,
+          "showSupport": true
         },
         {
           "text": "Sim, com frequência — é algo que me assusta e preocupa constantemente",
-          "value": 3
+          "value": 3,
+          "showSupport": true
         }
       ]
     },
