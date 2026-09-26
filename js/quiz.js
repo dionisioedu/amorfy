@@ -29,8 +29,13 @@
       html += '</div></div>';
       root.innerHTML = html;
 
-      root.querySelectorAll('.quiz-option').forEach(function(btn) {
+      var answered = false;
+      var options = root.querySelectorAll('.quiz-option');
+      options.forEach(function(btn) {
         btn.addEventListener('click', function() {
+          if (answered) return;
+          answered = true;
+          options.forEach(function(option) { option.disabled = true; });
           btn.classList.add('selected');
           var opt = q.options[parseInt(btn.dataset.i, 10)];
           if (data.mode === 'category') {
