@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="90%">
+      <stop offset="0%" stop-color="#d4548f" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#d4548f" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#faf6f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4548f"/>
+      <stop offset="100%" stop-color="#7b4fb5"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1200" height="600" fill="#faf6f1"/>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <circle cx="232" cy="204" r="150" fill="#d4548f" opacity="0.14" filter="url(#blur)"/>
+    <circle cx="932" cy="536" r="190" fill="#7b4fb5" opacity="0.12" filter="url(#blur)"/>
+    <circle cx="548" cy="356" r="90" fill="#7b4fb5" opacity="0.10" filter="url(#blur)"/>
+  <path d="M150 270 C 320 215, 420 325, 620 270 S 920 215, 1050 270" stroke="#a02460" fill="none" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M150 325 C 320 270, 420 380, 620 325 S 920 270, 1050 325" stroke="#a02460" fill="none" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+    <path d="M150 380 C 320 325, 420 435, 620 380 S 920 325, 1050 380" stroke="#a02460" fill="none" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <path d="M150 435 C 320 380, 420 490, 620 435 S 920 380, 1050 435" stroke="#a02460" fill="none" stroke-width="4" stroke-linecap="round" opacity="0.3500000000000001"/>
+    <circle cx="300" cy="150" r="10" fill="#d4548f" opacity="0.6"/>
+  <rect width="1200" height="600" filter="url(#grain)" opacity="1"/>
+</svg>

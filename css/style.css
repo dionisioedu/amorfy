@@ -263,6 +263,28 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
   .quiz-question{font-size:1.1rem}
 }
 
+/* === Categoria tags (chips) === */
+.cat-chip{display:inline-block;padding:.18rem .65rem;border-radius:100px;font-size:.7rem;font-weight:600;letter-spacing:.02em;border:1px solid;margin:0 .4rem .4rem 0;transition:background .2s,color .2s,transform .2s;line-height:1.4}
+.cat-chip:hover{transform:translateY(-1px)}
+.cat-relacionamentos{color:var(--rose);border-color:var(--rose-light);background:var(--rose-bg)}
+.cat-relacionamentos:hover{background:var(--rose);color:#fff}
+.cat-borderline{color:var(--pink);border-color:var(--pink-light);background:var(--pink-bg)}
+.cat-borderline:hover{background:var(--pink);color:#fff}
+.cat-narcisismo{color:var(--purple);border-color:var(--purple-light);background:var(--purple-bg)}
+.cat-narcisismo:hover{background:var(--purple);color:#fff}
+.cat-bipolaridade{color:#96601a;border-color:var(--gold-light);background:var(--gold-bg)}
+.cat-bipolaridade:hover{background:var(--gold);color:#fff}
+.article-cats{margin:-.1rem 0 1.1rem}
+.card-cats{margin-top:.6rem}
+
+/* === Hero image do artigo === */
+.article-hero{margin:0 0 2rem;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border-light)}
+.article-hero img{display:block;width:100%;height:auto}
+
+/* === Página de tema (/temas/) === */
+.tema-hero{padding:3rem 0 2rem}
+.tema-list{margin-top:1.5rem}
+
 /* === Print === */
 @media print{
   .site-header,.site-footer,.ad-container,.newsletter,.nav-links,.nav-toggle{display:none}

@@ -5,6 +5,14 @@ import html
 import json
 from pathlib import Path
 
+# Categorias/temas canônicos (chips clicáveis → /temas/<slug>.html).
+CATEGORIES = {
+    "relacionamentos": ("Relacionamentos", "cat-relacionamentos"),
+    "borderline": ("Borderline", "cat-borderline"),
+    "narcisismo": ("Narcisismo", "cat-narcisismo"),
+    "bipolaridade": ("Bipolaridade", "cat-bipolaridade"),
+}
+
 TEMPLATE = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -75,8 +83,10 @@ TEMPLATE = """<!DOCTYPE html>
   </nav>
 
   <article>
+    {hero_html}
     <header class="article-header">
       <span class="card-tag {tag_color}" style="margin-bottom:1rem;display:inline-block">{tag}</span>
+      {categories_block}
       <h1>{title}</h1>
       <div class="article-meta">
         <span>&#9997;&#65039; Equipe Amorfy</span>
@@ -113,12 +123,35 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def _categories_html(cats):
+    parts = []
+    for c in cats or []:
+        label, cls = CATEGORIES.get(c, (c, "cat-relacionamentos"))
+        parts.append(f'<a class="cat-chip {cls}" href="/temas/{c}.html">{label}</a>')
+    return "".join(parts)
+
+
+def _hero_html(meta):
+    img = meta.get("image")
+    if not img:
+        return ""
+    alt = html.escape(meta.get("image_alt") or meta["title"], quote=True)
+    return (
+        f'<figure class="article-hero">'
+        f'<img src="{img}" alt="{alt}" width="1200" height="600" loading="eager" decoding="async">'
+        f'</figure>'
+    )
+
+
 def render_article(meta):
     values = dict(meta)
     for key in ("title", "desc"):
         values[key] = html.escape(meta[key], quote=True)
         values[key + "_json"] = json.dumps(meta[key], ensure_ascii=False).replace("<", "\\u003c")
     values["date_modified"] = meta.get("date_modified", meta["date"])
+    cats = _categories_html(meta.get("categories"))
+    values["categories_block"] = f'<div class="article-cats">{cats}</div>' if cats else ""
+    values["hero_html"] = _hero_html(meta)
     return TEMPLATE.format(**values)
 
 
