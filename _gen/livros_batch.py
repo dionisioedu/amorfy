@@ -51,6 +51,13 @@ ARTICLES = [
 <p><em>Sexo no Cativeiro</em> não é um manual de técnicas sexuais nem uma promessa de desejo eterno. É um convite a repensar o desejo como algo que <strong>oscila naturalmente</strong> — que tem fases e marés, e que não funciona como um interruptor. Abandonar a expectativa de que o desejo deve ser espontâneo e constante já é, por si só, um alívio para muitos casais.</p>
 <p>Se a falta de desejo vier acompanhada de sofrimento persistente, dor, conflito ou história de trauma, vale buscar ajuda especializada. Sobre o lado mais amplo da vida sexual a dois, leia também <a href="/artigos/sexualidade.html">sexualidade e conexão no relacionamento</a>.</p>
 
+<div class="highlight-box" style="border-color:var(--gold-light);background:var(--gold-bg)">
+  <h3>📖 Quer ler o livro completo?</h3>
+  <p>Esta resenha é só a porta de entrada. Para mergulhar na obra inteira de Esther Perel, adquira <strong>Sexo no Cativeiro</strong>:</p>
+  <p><a class="btn btn-primary" href="https://meli.la/2ZhYqit" target="_blank" rel="sponsored nofollow noopener">Comprar o livro</a></p>
+  <p style="font-size:.78rem;color:var(--text-muted);margin-top:.6rem">Link patrocinado: o Amorfy pode receber uma comissão pela compra, sem custo extra para você.</p>
+</div>
+
 <div class="highlight-box">
   <h3>Continue sua leitura</h3>
   <p>Para aprofundar: <a href="/artigos/sexualidade.html">Sexualidade e Conexão no Relacionamento</a>, <a href="/artigos/libidos-diferentes-no-casal.html">Libidos Diferentes no Casal</a>, <a href="/artigos/estilos-de-apego-no-amor.html">Estilos de Apego no Amor</a> e <a href="/artigos/inteligencia-emocional.html">Inteligência Emocional no Amor</a>.</p>
