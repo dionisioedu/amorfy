@@ -43,6 +43,18 @@ SPONSORED_BOOKS = [
             "confianca",
         ],
     },
+    {
+        "book": "Amar ou Depender?",
+        "author": "Walter Riso",
+        "url": "https://meli.la/2vMe52j",
+        "tagline": "a referência para entender a diferença entre amor e dependência emocional — e como amar sem se anular",
+        "slugs": [
+            "dependencia-emocional-psicanalise",
+            "amor-proprio-narcisismo-saudavel",
+            "repeticao-compulsiva-no-amor",
+            "luto-do-termino",
+        ],
+    },
 ]
 
 
