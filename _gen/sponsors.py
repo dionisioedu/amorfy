@@ -18,6 +18,19 @@ SPONSORED_BOOKS = [
             "capacidade-de-ficar-so",
         ],
     },
+    {
+        "book": "Mentes que Amam Demais",
+        "author": "Ana Beatriz Barbosa Silva",
+        "url": "https://meli.la/1hUkCJp",
+        "tagline": "um guia essencial para entender o Transtorno de Personalidade Borderline (TPB) e conviver com quem o tem",
+        "slugs": [
+            "borderline",
+            "relacionamento-borderline",
+            "borderline-na-familia",
+            "tenho-borderline-e-quero-amar",
+            "desregulacao-emocional-no-casal",
+        ],
+    },
 ]
 
 
