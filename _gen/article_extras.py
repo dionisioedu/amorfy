@@ -38,6 +38,8 @@ EXTRAS = {
     "libidos-diferentes-no-casal": {"categories": ["relacionamentos"]},
     "sexualidade-alem-da-norma-lgbtqia": {"categories": ["relacionamentos"]},
     "estilos-de-apego-no-amor": {"categories": ["relacionamentos"]},
+    # --- livros/referências ---
+    "sexo-no-cativeiro": {"categories": ["relacionamentos"]},
 }
 
 
