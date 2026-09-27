@@ -18,6 +18,9 @@ from temas_batch1 import ARTICLES as TEMAS1
 from temas_batch2 import ARTICLES as TEMAS2
 from temas_batch3 import ARTICLES as TEMAS3
 from livros_batch import ARTICLES as LIVROS
+from psicanalise_batch1 import ARTICLES as PSI1
+from psicanalise_batch2 import ARTICLES as PSI2
+from psicanalise_batch3 import ARTICLES as PSI3
 from quiz_batch1 import PERSONALIDADE, LINGUAGEM
 from quiz_batch2 import NARCISISTA, COMPATIBILIDADE
 from borderline_quizzes import AUTO, PARCEIRO
@@ -29,7 +32,7 @@ from sitemap import write_sitemap
 
 def build(output):
     articles = []
-    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS]:
+    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3]:
         article = apply_extras(raw)
         articles.append(article)
         write_article(article, output / "artigos")

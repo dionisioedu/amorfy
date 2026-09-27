@@ -35,7 +35,7 @@ def source_slugs():
     """Map each content section to the slugs declared in the _gen source modules."""
     articles, quizzes, casos = [], [], []
 
-    for name in ("batch1", "batch2", "batch3", "manual_batch", "temas_batch1", "temas_batch2", "temas_batch3", "livros_batch"):
+    for name in ("batch1", "batch2", "batch3", "manual_batch", "temas_batch1", "temas_batch2", "temas_batch3", "livros_batch", "psicanalise_batch1", "psicanalise_batch2", "psicanalise_batch3"):
         mod = _import_gen(name)
         if mod is not None:
             articles.extend(entry["slug"] for entry in mod.ARTICLES)

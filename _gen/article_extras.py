@@ -38,6 +38,19 @@ EXTRAS = {
     "libidos-diferentes-no-casal": {"categories": ["relacionamentos"]},
     "sexualidade-alem-da-norma-lgbtqia": {"categories": ["relacionamentos"]},
     "estilos-de-apego-no-amor": {"categories": ["relacionamentos"]},
+    # --- novos (psicanálise) ---
+    "amor-proprio-narcisismo-saudavel": {"categories": ["relacionamentos"]},
+    "fantasia-e-desejo-no-casal": {"categories": ["relacionamentos"]},
+    "capacidade-de-ficar-so": {"categories": ["relacionamentos"]},
+    "amor-na-era-dos-aplicativos": {"categories": ["relacionamentos"]},
+    "repeticao-compulsiva-no-amor": {"categories": ["relacionamentos"]},
+    "amor-e-odio-ambivalencia": {"categories": ["relacionamentos"]},
+    "dependencia-emocional-psicanalise": {"categories": ["relacionamentos"]},
+    "transferencia-por-que-nos-apaixonamos": {"categories": ["relacionamentos"]},
+    "arte-de-amar-erich-fromm": {"categories": ["relacionamentos"]},
+    "ciume-o-que-ele-revela": {"categories": ["relacionamentos"]},
+    "medo-de-amar-contraintimidade": {"categories": ["relacionamentos"]},
+    "luto-do-termino": {"categories": ["relacionamentos"]},
     # --- livros/referências ---
     "sexo-no-cativeiro": {"categories": ["relacionamentos"]},
 }
