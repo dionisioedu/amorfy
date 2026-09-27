@@ -31,6 +31,18 @@ SPONSORED_BOOKS = [
             "desregulacao-emocional-no-casal",
         ],
     },
+    {
+        "book": "Casos e Casos",
+        "author": "Esther Perel",
+        "url": "https://meli.la/2nndt4K",
+        "tagline": "a referência para repensar a infidelidade e entender o que os casos revelam sobre nós",
+        "slugs": [
+            "por-que-as-pessoas-traem",
+            "descobri-uma-traicao-e-agora",
+            "reconstruir-a-confianca-depois-da-traicao",
+            "confianca",
+        ],
+    },
 ]
 
 

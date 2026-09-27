@@ -63,4 +63,57 @@ ARTICLES = [
   <p>Para aprofundar: <a href="/artigos/sexualidade.html">Sexualidade e Conexão no Relacionamento</a>, <a href="/artigos/libidos-diferentes-no-casal.html">Libidos Diferentes no Casal</a>, <a href="/artigos/estilos-de-apego-no-amor.html">Estilos de Apego no Amor</a> e <a href="/artigos/inteligencia-emocional.html">Inteligência Emocional no Amor</a>.</p>
 </div>""",
     },
+    {
+        "slug": "casos-e-casos-repensando-a-infidelidade",
+        "title": "Casos e Casos — Repensando a Infidelidade: O Que Esther Perel Ensina Sobre Traição",
+        "desc": "Resenha de 'Casos e Casos', de Esther Perel: por que as pessoas traem, como atravessar a descoberta e se é possível reconstruir a confiança depois da infidelidade.",
+        "breadcrumb": "Casos e Casos",
+        "tag": "Clássico",
+        "tag_color": "gold",
+        "date": "2026-09-26",
+        "date_human": "26 Set 2026",
+        "read_min": 11,
+        "body": """<p>Descobrir uma traição é uma das experiências mais devastadoras de uma vida a dois. E, paradoxalmente, também é uma das mais comuns. É sobre esse território — o da infidelidade — que Esther Perel mergulha em <strong>Casos e Casos: Repensando a Infidelidade</strong> (no original, <em>The State of Affairs</em>). Como em <em>Sexo no Cativeiro</em>, a terapeuta belga recusa o julgamento fácil e oferece uma leitura ao mesmo tempo corajosa e compassiva do assunto.</p>
+
+<p>A tese central é desconfortável: <strong>a traição nem sempre é o sintoma de um relacionamento ruim — e o traído nem sempre é a única vítima da história</strong>. Perel não justifica a infidelidade; ela a investiga. E é justamente essa recusa em demonizar que torna o livro tão útil para quem quer entender, em vez de apenas condenar.</p>
+
+<h2>Por que as pessoas traem — mesmo em relacionamentos felizes</h2>
+<p>O senso comum diz que se trai porque falta sexo ou amor em casa. Perel mostra que a realidade é mais complexa: muitas pessoas traem <strong>apesar</strong> de amarem o parceiro. O caso, muitas vezes, não é sobre o parceiro — é sobre a própria pessoa que trai.</p>
+<ul>
+  <li><strong>Busca por um "eu" perdido</strong>: o caso reacende uma versão de si que ficou para trás — aventureira, desejada, livre.</li>
+  <li><strong>Novidade e vitalidade</strong>: o erótico se alimenta do novo, e a rotina apaga a sensação de estar vivo.</li>
+  <li><strong>Fuga de si mesmo</strong>: às vezes o caso é uma fuga de uma dor, de uma crise, de uma insatisfação com a própria vida.</li>
+  <li><strong>Validação</strong>: ser desejado por outro pode preencher uma ferida de autoestima que o parceiro não consegue alcançar.</li>
+</ul>
+<p>Por isso, a pergunta que mais importa não é apenas "o que vocês fizeram?", mas <strong>"o que o caso significou para você?"</strong>.</p>
+
+<h2>O caso como sintoma, não como doença</h2>
+<p>Perel propõe uma inversão poderosa: em vez de perguntar "quem é o culpado?", perguntar "o que o caso revela?". A infidelidade, muitas vezes, é o sintoma de algo que já estava acontecendo — um distanciamento, uma insatisfação, um desejo silenciado. Não para tirar a responsabilidade de quem traiu, mas para ampliar a compreensão do que levou até ali.</p>
+<blockquote>O caso é uma traição, mas também pode ser uma janela para entender o que estava quebrado.</blockquote>
+
+<h2>As três fases da travessia</h2>
+<p>O livro organiza o processo de reconstrução em três etapas:</p>
+<ul>
+  <li><strong>A crise</strong>: o momento da descoberta — choque, raiva e sintomas parecidos com os de trauma (pensamentos intrusivos, hipervigilância).</li>
+  <li><strong>A busca de sentido</strong>: entender o porquê — o que o caso significou, o que estava faltando.</li>
+  <li><strong>A visão</strong>: decidir o que fazer — ficar e reconstruir, ou partir e recomeçar.</li>
+</ul>
+<p>Perel insiste que <strong>não existe decisão certa universal</strong>: há casais que se fortalecem depois do caso, e há os que se separam com dignidade. Os dois caminhos são legítimos.</p>
+
+<h2>É possível reconstruir a confiança?</h2>
+<p>Sim — mas não é automático. A reconstrução exige que a pessoa que traiu assuma <strong>responsabilidade total</strong>, ofereça transparência e se torne a "guardiã da confiança" do parceiro ferido. E exige, do lado traído, tempo para processar sem pressa de perdoar. O segredo e a mentira costumam doer mais do que o ato em si — e é a honestidade, não o esquecimento, que reconstrói o vínculo.</p>
+<p>Se este tema toca a sua história, entenda como <a href="/artigos/confianca.html">construir e reconstruir a confiança</a> e o processo de <a href="/artigos/descobri-uma-traicao-e-agora.html">lidar com a descoberta de uma traição</a>.</p>
+
+<div class="highlight-box" style="border-color:var(--gold-light);background:var(--gold-bg)">
+  <h3>📖 Quer ler o livro completo?</h3>
+  <p>Esta resenha é só a porta de entrada. Para mergulhar na obra inteira de Esther Perel, adquira <strong>Casos e Casos</strong>:</p>
+  <p><a class="btn btn-primary" href="https://meli.la/2nndt4K" target="_blank" rel="sponsored nofollow noopener">Comprar o livro</a></p>
+  <p style="font-size:.78rem;color:var(--text-muted);margin-top:.6rem">Link patrocinado: o Amorfy pode receber uma comissão pela compra, sem custo extra para você.</p>
+</div>
+
+<div class="highlight-box">
+  <h3>Continue sua leitura</h3>
+  <p>Para aprofundar: <a href="/artigos/por-que-as-pessoas-traem.html">Por Que as Pessoas Traem</a>, <a href="/artigos/descobri-uma-traicao-e-agora.html">Descobri uma Traição. E Agora?</a>, <a href="/artigos/reconstruir-a-confianca-depois-da-traicao.html">Reconstruir a Confiança Depois da Traição</a> e <a href="/artigos/confianca.html">Construir e Reconstruir a Confiança</a>.</p>
+</div>""",
+    },
 ]

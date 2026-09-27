@@ -22,6 +22,7 @@ from livros_batch import ARTICLES as LIVROS
 from psicanalise_batch1 import ARTICLES as PSI1
 from psicanalise_batch2 import ARTICLES as PSI2
 from psicanalise_batch3 import ARTICLES as PSI3
+from infidelidade_batch import ARTICLES as INFID
 from quiz_batch1 import PERSONALIDADE, LINGUAGEM
 from quiz_batch2 import NARCISISTA, COMPATIBILIDADE
 from borderline_quizzes import AUTO, PARCEIRO
@@ -33,7 +34,7 @@ from sitemap import write_sitemap
 
 def build(output):
     articles = []
-    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3]:
+    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID]:
         article = inject_sponsored(apply_extras(raw))
         articles.append(article)
         write_article(article, output / "artigos")

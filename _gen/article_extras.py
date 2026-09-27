@@ -51,8 +51,13 @@ EXTRAS = {
     "ciume-o-que-ele-revela": {"categories": ["psicanalise"]},
     "medo-de-amar-contraintimidade": {"categories": ["psicanalise"]},
     "luto-do-termino": {"categories": ["psicanalise"]},
+    # --- infidelidade ---
+    "por-que-as-pessoas-traem": {"categories": ["relacionamentos"]},
+    "descobri-uma-traicao-e-agora": {"categories": ["relacionamentos"]},
+    "reconstruir-a-confianca-depois-da-traicao": {"categories": ["relacionamentos"]},
     # --- livros/referências ---
     "sexo-no-cativeiro": {"categories": ["relacionamentos"]},
+    "casos-e-casos-repensando-a-infidelidade": {"categories": ["relacionamentos"]},
 }
 
 
