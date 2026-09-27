@@ -25,6 +25,10 @@ META = {
         "desc": "Artigos sobre Transtorno Bipolar: ciclos, relacionamentos, família e tratamento. Entenda e cuide de quem você ama — ou de si mesmo.",
         "intro": "Compreenda os ciclos do transtorno bipolar e aprenda a construir vínculos estáveis entre a crise e a calmaria.",
     },
+    "psicanalise": {
+        "desc": "Psicanálise aplicada ao amor: Freud, Melanie Klein, Lacan, Winnicott e Erich Fromm para entender desejo, vínculo, repetição e luto.",
+        "intro": "Aprofunde-se na psicanálise do amor — conceitos que explicam por que amamos, repetimos e sofremos nos vínculos.",
+    },
 }
 
 TEMPLATE = """<!DOCTYPE html>
@@ -108,7 +112,7 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-EMOJI = {"relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗"}
+EMOJI = {"relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️"}
 
 
 def short_title(title):

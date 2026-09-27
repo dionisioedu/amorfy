@@ -11,6 +11,7 @@ CATEGORIES = {
     "borderline": ("Borderline", "cat-borderline"),
     "narcisismo": ("Narcisismo", "cat-narcisismo"),
     "bipolaridade": ("Bipolaridade", "cat-bipolaridade"),
+    "psicanalise": ("Psicanálise", "cat-psicanalise"),
 }
 
 TEMPLATE = """<!DOCTYPE html>

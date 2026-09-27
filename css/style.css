@@ -21,6 +21,9 @@
   --pink: #d4548f;
   --pink-light: #efb2ce;
   --pink-bg: #fbf0f5;
+  --slate: #475569;
+  --slate-light: #94a3b8;
+  --slate-bg: #f1f5f9;
 
   /* Warm paper neutrals */
   --bg: #faf6f1;
@@ -274,6 +277,8 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 .cat-narcisismo:hover{background:var(--purple);color:#fff}
 .cat-bipolaridade{color:#96601a;border-color:var(--gold-light);background:var(--gold-bg)}
 .cat-bipolaridade:hover{background:var(--gold);color:#fff}
+.cat-psicanalise{color:var(--slate);border-color:var(--slate-light);background:var(--slate-bg)}
+.cat-psicanalise:hover{background:var(--slate);color:#fff}
 .article-cats{margin:-.1rem 0 1.1rem}
 .card-cats{margin-top:.6rem}
 
