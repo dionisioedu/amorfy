@@ -235,6 +235,226 @@ LANDING = {
             {"q": "Estou exausto(a). Isso é normal?", "a": "<p>É comum, mas não é saudável nem inevitável. Esgotamento do cuidador é um fenômeno documentado, com sintomas de ansiedade, insônia e perda de interesse. Isso é um sinal claro de que você precisa de apoio próprio — veja <a href=\"/artigos/capacidade-de-ficar-so.html\">capacidade de ficar só</a> e <a href=\"/artigos/dependencia-emocional-psicanalise.html\">dependência emocional</a>.</p>"},
         ],
     },
+    "meus-tracos-narcisistas": {
+        "dimensions": [
+            {"label": "Autoimagem saudável (0–7)", "min": 0, "max": 7},
+            {"label": "Traços presentes (8–15)", "min": 8, "max": 15},
+            {"label": "Traços acentuados (16–24)", "min": 16, "max": 24},
+            {"label": "Padrão severo (25+)", "min": 25, "max": 35},
+        ],
+        "sections": [
+            {
+                "heading": "Por que fazer um teste de traços narcisistas em si mesmo?",
+                "html": "<p>A maioria dos testes sobre narcisismo pergunta sobre o <em>outro</em>. Este inverte o espelho — e é aí que mora o valor. O narcisismo é um espectro presente em todos nós em algum grau: o que separa o traço saudável do problemático não é a presença, é a <strong>rigidez</strong> e o <strong>custo para os outros</strong>.</p>"
+                "<p>Responder com honestidade é mais difícil do que parece, porque o próprio padrão narcísico tende a proteger a autoimagem da crítica. Se você chegou até aqui e respondeu de verdade, já está à frente da maioria.</p>",
+            },
+            {
+                "heading": "O que o teste avalia",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Tolerância à crítica", "body": "<p>Como você recebe um apontamento. Traços narcísicos se revelam na reação desproporcional a uma crítica pequena: raiva, frieza, desejo de revanche ou distorção da memória para sair como vítima.</p>"},
+                    {"title": "Capacidade de empatia", "body": "<p>Conseguir se colocar no lugar do outro sem transformar tudo em você. A dificuldade de escutar uma dor sem competir (&quot;isso não é nada, comigo foi pior&quot;) é um marcador importante.</p>"},
+                    {"title": "Relação com admiração", "body": "<p>Quanto do seu bem-estar depende de ser notado. A autoestima que se sustenta de dentro difere da que precisa de abastecimento externo constante — e a segunda desgasta quem está por perto.</p>"},
+                    {"title": "Assunção de responsabilidade", "body": "<p>Conseguir pedir desculpa genuína e revisar a própria parte no fim de uma relação. A incapacidade de se enxergar errado é o coração do padrão narcísico.</p>"},
+                ],
+            },
+            {
+                "heading": "O que fazer com um resultado alto",
+                "html": "<p>Um resultado alto não é uma condenação — é um diagnóstico de <em>custo</em>. Traços narcísicos quase sempre nascem de feridas antigas: pessoas que precisaram se blindar para sobreviver, e a blindagem virou prisão. O tratamento existe e funciona.</p>"
+                "<p>O passo mais transformador é procurar um psicólogo especializado em questões de personalidade e vínculo. Leia também nosso artigo sobre <a href=\"/artigos/amor-proprio-narcisismo-saudavel.html\">amor-próprio versus narcisismo</a> para entender a fronteira entre cuidar de si e se fechar para o outro.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Todo mundo tem um pouco de narcisismo?", "a": "<p>Sim. O narcisismo saudável é o amor-próprio que nos permite estabelecer limites, cuidar de nós e buscar realização. Ele vira problema quando se torna rígido, quando o outro vira ferramenta e quando a crítica é impossível de ser recebida.</p>"},
+            {"q": "Fazer este teste significa que tenho transtorno de personalidade narcisista?", "a": "<p>Não. O teste mede traços e padrões de comportamento, não faz diagnóstico clínico — que exige avaliação profissional presencial. Apenas um psicólogo ou psiquiatra pode diagnosticar transtorno de personalidade.</p>"},
+            {"q": "Dá para mudar traços narcísicos?", "a": "<p>Dá, quando existe desejo genuíno. O desafio é que o próprio padrão tende a resistir à mudança (a crítica é vivida como ataque). Por isso o acompanhamento terapêutico é tão importante: ele cria um espaço seguro para olhar esses padrões sem defesa.</p>"},
+            {"q": "Meu resultado foi alto. Por onde começo?", "a": "<p>Comece reconhecendo o que já fez: responder honestamente é o primeiro e mais difícil passo. Depois, busque um psicólogo. Leia nosso artigo sobre <a href=\"/artigos/narcisismo.html\">narcisismo</a> para entender o espectro e os caminhos de tratamento.</p>"},
+        ],
+    },
+
+    "parceiro-pronto-relacionamento": {
+        "dimensions": [
+            {"label": "Pronto(a) (0–8)", "min": 0, "max": 8},
+            {"label": "Em processo (9–16)", "min": 9, "max": 16},
+            {"label": "Pouco disponível (17–25)", "min": 17, "max": 25},
+            {"label": "Não está pronto(a) (26+)", "min": 26, "max": 35},
+        ],
+        "sections": [
+            {
+                "heading": "O que significa estar pronto para um relacionamento",
+                "html": "<p>Gostar de alguém e estar <strong>disponível</strong> para essa pessoa são duas coisas diferentes — e confundir as duas é a causa de muito sofrimento. Prontidão não é sobre o tamanho do sentimento: é sobre <em>capacidade real</em> de se comprometer, de fazer espaço na vida e de suportar o trabalho que uma relação exige.</p>"
+                "<p>Este teste avalia o que se vê, não o que se escuta. Palavras bonitas e promessas não sustentam um vínculo; <strong>coerência</strong>, <strong>constância</strong> e <strong>reparação</strong> sim.</p>",
+            },
+            {
+                "heading": "Os sinais que o teste procura",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Clareza e intenção", "body": "<p>Uma pessoa pronta fala o que quer sem ambiguidade. Quem vive de &quot;não gosto de rótulos&quot;, de conversas vagas e de deixar tudo &quot;em aberto&quot; está, na prática, te dizendo que não quer se comprometer — só não tem coragem de falar claro.</p>"},
+                    {"title": "Disponibilidade real", "body": "<p>Tempo, energia e espaço na vida. Alguém que aparece e some conforme a conveniência, que só sobra espaço quando interessa, não está pronto — independente do quanto diz que te ama.</p>"},
+                    {"title": "Vulnerabilidade", "body": "<p>Estar pronto inclui a capacidade de se abrir, admitir medo e insegurança, e deixar o outro entrar. Quem se fecha por completo ou transforma tudo em piada ainda não está disponível para intimidade.</p>"},
+                    {"title": "Resolução do passado", "body": "<p>Uma pessoa que ainda fala mal de todos os ex, que recém saiu de uma relação sem processar, ou que ainda está emocionalmente presa ao passado, não tem espaço livre para construir um novo vínculo.</p>"},
+                ],
+            },
+            {
+                "heading": "O que fazer se ele(a) não está pronto",
+                "html": "<p>A resposta mais difícil e mais libertadora é esta: <strong>você não pode fabricar a prontidão do outro</strong>. Você pode esperar, insistir, fazer tudo certo — e ainda assim a disponibilidade só nasce de dentro, no tempo (e na terapia) da pessoa.</p>"
+                "<p>Em vez de tentar convencer alguém a querer o que não quer, pergunte-se o que <em>você</em> quer e o quanto está disposto(a) a esperar. Leia nosso artigo sobre <a href=\"/artigos/dependencia-emocional-psicanalise.html\">dependência emocional</a> para reconhecer quando a espera virou apego doentio.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Ele(a) diz que me ama mas some. Isso é prontidão?", "a": "<p>Não. Amor é comportamento, não declaração. Uma pessoa que ama de verdade mas não consegue estar presente pode ter feridas a tratar — mas o efeito sobre você é o mesmo. Consistência é o teste definitivo de prontidão.</p>"},
+            {"q": "Posso ajudar alguém a ficar pronto(a)?", "a": "<p>Você pode apoiar, mas não pode fazer o trabalho pelo outro. A prontidão emocional se constrói com autoconhecimento e, muitas vezes, terapia. Virar terapeuta do parceiro é um atalho para o esgotamento.</p>"},
+            {"q": "Quanto tempo é razoável esperar?", "a": "<p>Não há um número mágico, mas há um sinal: a tendência. Se em meses os comportamentos não mudam, dificilmente mudarão apenas com o tempo. Coloque um limite interno de quanto de você está disposto(a) a investir sem reciprocidade.</p>"},
+            {"q": "E se a pessoa é maravilhosa mas tem medo de se comprometer?", "a": "<p>Esse é o caso mais doloroso, porque o medo é real e a pessoa não é vilã. Ainda assim, medo não justifica comportamento inconsistente indefinidamente. A questão é se o medo está sendo tratado ou apenas administrado às suas custas. Veja <a href=\"/artigos/medo-de-amar-contraintimidade.html\">medo de amar e contraintimidade</a>.</p>"},
+        ],
+    },
+
+    "por-que-afasto-pessoas": {
+        "dimensions": [
+            {"key": "medo_intimidade", "label": "Medo de intimidade"},
+            {"key": "medo_abandono", "label": "Medo de abandono"},
+            {"key": "autossabotagem", "label": "Autossabotagem"},
+            {"key": "controle", "label": "Necessidade de controle"},
+        ],
+        "sections": [
+            {
+                "heading": "Por que algumas pessoas afastam o que mais desejam",
+                "html": "<p>Quando os relacionamentos parecem sempre começar bem e terminar do mesmo jeito, raramente é azar. É <strong>padrão</strong> — um conjunto de respostas automáticas que você aprendeu cedo e repete sem perceber. O padrão te protegeu em algum momento; hoje, ele te isola.</p>"
+                "<p>Este teste ajuda a nomear o seu padrão dominante. Dar nome é o primeiro passo, porque só se muda o que se vê.</p>",
+            },
+            {
+                "heading": "Os quatro padrões de afastamento",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Medo de intimidade", "body": "<p>Você ergue muros justamente quando a relação começa a dar certo. A proximidade é vivida como invasão ou perda de liberdade, então você cria distância — e chama isso de independência. O muro que protege é o mesmo que isola.</p>"},
+                    {"title": "Medo de abandono", "body": "<p>Você se agarra tão forte que sufoca. O pavor de ser deixado(a) vira testes, cobranças e uma ansiedade que esgota o outro — e acaba produzindo exatamente o abandono que temia.</p>"},
+                    {"title": "Autossabotagem", "body": "<p>Você rejeita antes de ser rejeitado(a). Lá no fundo não acredita que merece amor, então encontra defeitos, termina cedo demais ou se boicota quando tudo vai bem. A narrativa antiga vira profecia.</p>"},
+                    {"title": "Necessidade de controle", "body": "<p>A imprevisibilidade do outro te dá vertigem. Você cobra, analisa, estabelece regras e quer prever cada passo — e ninguém respira nesse regime. Confiar e tolerar incerteza é o que te libertaria.</p>"},
+                ],
+            },
+            {
+                "heading": "Como reescrever o padrão",
+                "html": "<p>Padrões relacionais nascem na infância e se consolidam no vínculo — por isso são tão teimosos. A boa notícia é que <strong>padrão se reescreve em vínculo</strong>: justamente numa relação segura (terapêutica ou afetiva) você pode experimentar formas novas de estar com o outro.</p>"
+                "<p>Comece pequeno: na próxima vez que sentir o impulso de fugir, agarrar, sabotar ou controlar, <strong>pausa e nomeia</strong>. Diga o que sente em vez de agir o padrão. Leia nosso artigo sobre <a href=\"/artigos/estilos-de-apego-no-amor.html\">estilos de apego no amor</a> para entender a raiz desses comportamentos.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Eu posso ter mais de um padrão?", "a": "<p>Sim. Os padrões se misturam e variam conforme a pessoa com quem você se relaciona. O teste aponta o dominante, mas é comum reconhecer traços de dois ou mais.</p>"},
+            {"q": "De onde vêm esses padrões?", "a": "<p>Quase sempre da infância, do tipo de apego que você desenvolveu com os cuidadores. Um lar imprevisível pode gerar medo de abandono; um lar que sufocava, medo de intimidade. Veja <a href=\"/artigos/estilos-de-apego-no-amor.html\">estilos de apego</a>.</p>"},
+            {"q": "É possível mudar sozinho(a)?", "a": "<p>É possível começar sozinho(a) — reconhecer o padrão e pausar antes de agir já é mudança. Mas como esses padrões nascem em vínculo, a transformação mais profunda costuma acontecer em vínculo: terapia ou uma relação consciente.</p>"},
+            {"q": "Como parar de afastar alguém que eu amo?", "a": "<p>O antídoto do padrão é a comunicação honesta: em vez de fugir, agarrar, sabotar ou controlar, diga o que sente e o que precisa. Compartilhe o resultado deste teste com a pessoa — entender juntos o mecanismo desarma boa parte da repetição.</p>"},
+        ],
+    },
+
+    "autossabotagem-amorosa": {
+        "dimensions": [
+            {"label": "Pouca sabotagem (0–7)", "min": 0, "max": 7},
+            {"label": "Sabotagem leve (8–15)", "min": 8, "max": 15},
+            {"label": "Sabotagem frequente (16–24)", "min": 16, "max": 24},
+            {"label": "Sabotagem severa (25+)", "min": 25, "max": 35},
+        ],
+        "sections": [
+            {
+                "heading": "O que é autossabotagem amorosa",
+                "html": "<p>Autossabotagem é quando você boicota aquilo que mais deseja — geralmente sem perceber. No amor, ela aparece de formas reconhecíveis: terminar cedo demais, criar brigas quando está tudo bem, não acreditar no afeto que recebe, ou escolher sistematicamente pessoas indisponíveis.</p>"
+                "<p>O mecanismo é uma <strong>proteção invertida</strong>: por medo de ser rejeitado(a), você rejeita primeiro. Por medo de dar errado, você estraga antes. É o controle que você acha que tem sobre uma dor que acha inevitável.</p>",
+            },
+            {
+                "heading": "As faces da autossabotagem",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Término preventivo", "body": "<p>Terminar uma relação boa &quot;do nada&quot;, sem motivo claro, movido por uma ansiedade difusa. Depois vem o arrependimento — e a repetição. É o medo de ser abandonado(a) agindo antes que o outro o faça.</p>"},
+                    {"title": "Criação de crises", "body": "<p>Quando a relação está calma e estável, um incômodo cresce até virar briga. A calmaria é vivida como suspeita, então você a interrompe com um problema. Brigar é uma forma (disfuncional) de sentir que a relação é real.</p>"},
+                    {"title": "Descrédito do afeto", "body": "<p>Desconfiar de elogios, minimizar declarações, achar que o outro &quot;vai se decepcionar&quot; quando te conhecer de verdade. Você não acredita que merece amor, então não deixa o amor chegar.</p>"},
+                    {"title": "Atração pelo indisponível", "body": "<p>Escolher sempre quem não pode ou não quer te amar: gente casada, distante, comprometida com outra coisa. É o jeito mais seguro de nunca precisar se entregar de verdade.</p>"},
+                ],
+            },
+            {
+                "heading": "Como quebrar o ciclo",
+                "html": "<p>O primeiro passo é <strong>reconhecer o padrão</strong> e perceber que ele é uma repetição, não uma coincidência. A autossabotagem é, antes de tudo, uma forma de ansiedade: você antecipa a dor para tentar controlá-la.</p>"
+                "<p>Terapia — especialmente abordagens focadas em vínculos e em esquemas — é o caminho mais eficaz. Leia nosso artigo sobre <a href=\"/artigos/repeticao-compulsiva-no-amor.html\">repetição compulsiva no amor</a> para entender por que você reencena a mesma história.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Por que eu saboto uma relação boa?", "a": "<p>Porque a relação boa ameaça a sua crença de que você não merece amor. Quando algo contradiz uma crença profunda, a mente tenta restaurar a coerência — às vezes estragando exatamente o que a contradiz. É inconsciente, por isso precisa ser trazido à consciência.</p>"},
+            {"q": "Autossabotagem é falta de amor?", "a": "<p>Não. É geralmente o oposto: excesso de medo. Você ama, mas o medo de perder (ou de não merecer) é maior que a confiança no vínculo. O amor existe; o que falta é a segurança interna para recebê-lo.</p>"},
+            {"q": "Como saber se estou me sabotando agora?", "a": "<p>Pergunte-se: essa decisão vem do medo ou do amor? Quando você age para fugir de uma dor imaginária (terminar antes de ser trocado, brigar antes de ser criticado), é sabotagem. Quando age para construir algo real, é entrega.</p>"},
+            {"q": "Isso tem cura?", "a": "<p>Sim, com trabalho. Não é um defeito de caráter — é um padrão aprendido que pode ser desaprendido. A combinação de autoconhecimento, terapia e a experiência de uma relação segura é o que reescreve o padrão. Veja <a href=\"/artigos/tracos-carater.html\">traços de caráter</a>.</p>"},
+        ],
+    },
+
+    "ciume-inveja-relacionamento": {
+        "dimensions": [
+            {"label": "Emoções equilibradas (0–7)", "min": 0, "max": 7},
+            {"label": "Presentes, sob controle (8–15)", "min": 8, "max": 15},
+            {"label": "Intensas (16–24)", "min": 16, "max": 24},
+            {"label": "Dominantes (25+)", "min": 25, "max": 35},
+        ],
+        "sections": [
+            {
+                "heading": "Ciúme e inveja: duas emoções que se confundem",
+                "html": "<p>Ciúme é o <strong>medo de perder</strong> o que se tem. Inveja é o <strong>incômodo com o que o outro tem</strong>. No relacionamento elas se misturam e se alimentam: a inveja da vida do outro pode virar medo de que ele te troque, e o ciúme pode mascarar a inveja de quem o outro é ou conquistou.</p>"
+                "<p>Nenhuma das duas é, em si, má — são emoções humanas e informativas. O problema é quando elas comandam suas atitudes em vez de apenas passar por você.</p>",
+            },
+            {
+                "heading": "O que suas emoções estão tentando dizer",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Ciúme — o alarme da insegurança", "body": "<p>Ciúme fala de medo de abandono e de autoestima frágil. É um alarme — mas um alarme que apita para a sua insegurança, não necessariamente para uma ameaça real. Quem confia em si sente menos ciúme, não porque o outro é perfeito, mas porque não depende do outro para se sentir seguro.</p>"},
+                    {"title": "Inveja — a comparação que adoece", "body": "<p>A inveja compara sua vida à do outro e sai perdendo. Ela diz mais sobre o que você sente que falta em você do que sobre o que o outro tem. Transformada em consciência, a inveja pode virar bússola: ela aponta o que você deseja para si.</p>"},
+                    {"title": "A projeção que confunde tudo", "body": "<p>Muitas vezes o ciúme é inveja projetada: você se incomoda com a liberdade, o sucesso ou a felicidade do outro e transforma isso em suspeita de traição. Separar as duas é o primeiro passo para não descontar no outro o que é seu.</p>"},
+                ],
+            },
+            {
+                "heading": "Do alarme à consciência",
+                "html": "<p>A meta não é nunca sentir ciúme ou inveja — é <strong>sentir e não obedecer</strong>. Emoção nomeada perde força; emoção agida vira estrago. Na próxima vez que o ciúme ou a inveja baterem, pare e pergunte: o que isso está me mostrando sobre o que eu preciso trabalhar em mim?</p>"
+                "<p>Leia nosso artigo <a href=\"/artigos/ciume-o-que-ele-revela.html\">ciúme e o que ele revela</a> para ir mais fundo nessa emoção que, bem lida, vira autoconhecimento.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Ciúme é prova de amor?", "a": "<p>Não. Ciúme é prova de medo e insegurança. Amor é confiança, respeito e desejo de bem do outro. A crença de que &quot;quem não sente ciúme não ama&quot; romantiza o controle e é uma das portas de entrada para relações abusivas.</p>"},
+            {"q": "Qual a diferença entre ciúme normal e ciúme doentio?", "a": "<p>O ciúme normal é passageiro e não controla suas ações. O doentio é intenso, frequente e te leva a fiscalizar, cobrar e controlar. Quando o ciúme vira comportamento de posse, é sinal de alerta. Veja <a href=\"/artigos/ciume-o-que-ele-revela.html\">ciúme e o que ele revela</a>.</p>"},
+            {"q": "Como lidar com a inveja do sucesso do parceiro?", "a": "<p>Nomeie o sentimento para si sem culpa. Depois, transforme a comparação em pergunta: o que a conquista do outro desperta em mim que eu quero para a minha vida? A inveja consciente vira motor de crescimento; a inveja negada vira ressentimento.</p>"},
+            {"q": "Essas emoções podem acabar com a relação?", "a": "<p>Podem, quando não são tratadas. Ciúme e inveja intensos corroem a confiança e a admiração — dois pilares do vínculo. Mas trabalhadas (com autoconhecimento e, se preciso, terapia), elas podem se tornar ponto de partida para uma relação mais consciente. Leia <a href=\"/artigos/dependencia-emocional-psicanalise.html\">dependência emocional</a>.</p>"},
+        ],
+    },
+
+    "red-flags-precoces": {
+        "dimensions": [
+            {"label": "Poucas red flags (0–7)", "min": 0, "max": 7},
+            {"label": "Algumas red flags (8–15)", "min": 8, "max": 15},
+            {"label": "Muitas red flags (16–24)", "min": 16, "max": 24},
+            {"label": "Red flags sérias (25+)", "min": 25, "max": 36},
+        ],
+        "sections": [
+            {
+                "heading": "Por que as red flags aparecem no início",
+                "html": "<p>O início de uma relação é quando as red flags estão mais visíveis — e é justamente quando menos as enxergamos. O encantamento, a novidade e a esperança funcionam como um filtro cor-de-rosa que esconde sinais que, vistos de fora, seriam óbvios.</p>"
+                "<p>Este teste te ajuda a olhar os primeiros encontros com honestidade. A premissa é simples: <strong>como alguém trata você no começo é a versão mais generosa</strong> do que virá depois. Se já há alertas agora, a tendência é que aumentem.</p>",
+            },
+            {
+                "heading": "Red flags que o teste procura",
+                "type": "dimensions",
+                "items": [
+                    {"title": "Love bombing", "body": "<p>Intensidade avassaladora desde o primeiro encontro: declarações, planos de futuro e promessas desproporcionais ao tempo de relação. A pressa de te conquistar é, muitas vezes, pressa de te controlar antes que você perceba quem ele(a) é.</p>"},
+                    {"title": "Desrespeito disfarçado", "body": "<p>Piadas que machucam &quot;sem querer&quot;, comentários que diminuem, grosseria com garçons e funcionários. Como a pessoa trata quem não pode retribuir é um dos preditores mais confiáveis de como te tratará quando o encanto passar.</p>"},
+                    {"title": "Ciúme e controle precoces", "body": "<p>Ciúme apresentado como cuidado no primeiro mês, querer saber onde você está o tempo todo, se incomodar com suas amizades. Controle no início vira prisão no futuro — ele não diminui, só muda de forma.</p>"},
+                    {"title": "Gaslighting embrionário", "body": "<p>Fazer você duvidar da sua memória ou percepção (&quot;isso nunca aconteceu&quot;, &quot;você está exagerando&quot;) já nos primeiros meses. É o início de uma dinâmica que, sem intervenção, vira abuso psicológico.</p>"},
+                ],
+            },
+            {
+                "heading": "O que fazer quando você identifica red flags",
+                "html": "<p>O objetivo deste teste não é te deixar paranoico(a), é te devolver a <strong>lucidez</strong> que o encantamento rouba. Uma red flag isolada pode ser um erro humano; um <strong>conjunto delas</strong> é um padrão — e padrão é o que prevê o futuro.</p>"
+                "<p>Se o resultado apontou muitos alertas, converse com alguém de confiança e conte o que tem vivido — o isolamento é o terreno onde essas dinâmicas prosperam. Leia nosso artigo sobre <a href=\"/artigos/narcisismo.html\">narcisismo</a> e sobre <a href=\"/artigos/como-sair-de-relacao-com-narcisista.html\">sair de relação narcisista</a>. Em situações de violência, CVV 188 atende 24h.</p>",
+            },
+        ],
+        "faq": [
+            {"q": "Qual a red flag mais perigosa no início?", "a": "<p>O love bombing combinado com pressa de exclusividade. É o padrão que mais se confunde com paixão e o que mais rapidamente evolui para controle. Desconfie de quem te coloca num pedestal cedo demais.</p>"},
+            {"q": "Uma red flag é motivo para terminar?", "a": "<p>Não necessariamente. Um deslize isolado pode ser conversado e corrigido. O que pede atenção é a repetição e a escalada. Converse, observe a reação: se a pessoa nega, minimiza ou te culpa, é uma segunda red flag.</p>"},
+            {"q": "Por que eu ignoro red flags que todo mundo vê?", "a": "<p>Porque o encantamento desativa o julgamento crítico, e porque às vezes você repete padrões antigos de escolha. Reconhecer que ignorou não é vergonha — é o começo da mudança. Veja <a href=\"/artigos/repeticao-compulsiva-no-amor.html\">repetição compulsiva</a>.</p>"},
+            {"q": "Consigo mudar um parceiro com red flags?", "a": "<p>Você não muda ninguém — e tentar é o caminho mais comum para se perder em relações abusivas. As pessoas mudam por escolha própria, geralmente com ajuda profissional. Seu trabalho é escolher com lucidez, não reformar o outro.</p>"},
+        ],
+    },
 }
 
 

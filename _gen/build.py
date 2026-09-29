@@ -25,6 +25,7 @@ from psicanalise_batch3 import ARTICLES as PSI3
 from infidelidade_batch import ARTICLES as INFID
 from quiz_batch1 import PERSONALIDADE, LINGUAGEM
 from quiz_batch2 import NARCISISTA, COMPATIBILIDADE
+from quiz_batch3 import MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS
 from borderline_quizzes import AUTO, PARCEIRO
 from quiz_landing import enrich as enrich_quiz
 from casos_batch import CASOS, write_caso
@@ -41,7 +42,8 @@ def build(output):
         articles.append(article)
         write_article(article, output / "artigos")
 
-    for quiz in [PERSONALIDADE, LINGUAGEM, NARCISISTA, COMPATIBILIDADE, AUTO, PARCEIRO]:
+    for quiz in [PERSONALIDADE, LINGUAGEM, NARCISISTA, COMPATIBILIDADE, AUTO, PARCEIRO,
+                 MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS]:
         write_quiz(enrich_quiz(quiz), output / "testes")
     for story in CASOS:
         write_caso(story, output / "casos")
