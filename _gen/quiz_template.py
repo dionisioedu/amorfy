@@ -42,7 +42,7 @@ TEMPLATE = """<!DOCTYPE html>
     "description": "{desc}",
     "publisher": {{"@type": "Organization", "name": "Amorfy"}}
   }}
-  </script>
+  </script>{ld_faq}
 </head>
 <body>
 
@@ -56,6 +56,7 @@ TEMPLATE = """<!DOCTYPE html>
       <li><a href="/artigos/">Artigos</a></li>
       <li><a href="/casos/">Casos Reais</a></li>
       <li><a href="/sobre.html">Sobre</a></li>
+      <li><a href="/perguntas-frequentes.html">FAQ</a></li>
     </ul></nav>
   </div>
 </header>
@@ -88,6 +89,8 @@ TEMPLATE = """<!DOCTYPE html>
     </div>
   </div>
 
+{landing_html}
+
   <section class="container" style="max-width:650px;margin-bottom:3rem">
     <div class="card"><div class="card-body">
       <h3 class="card-title">&#128218; Leitura recomendada</h3>
@@ -100,7 +103,7 @@ TEMPLATE = """<!DOCTYPE html>
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-col"><h4>Amorfy &#128150;</h4><p style="color:var(--text-secondary);font-size:.9rem">Seu guia completo sobre relacionamentos, autoconhecimento e amor pr&oacute;prio.</p></div>
-    <div class="footer-col"><h4>Navegue</h4><ul><li><a href="/testes/">Testes</a></li><li><a href="/artigos/">Artigos</a></li><li><a href="/casos/">Casos Reais</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+    <div class="footer-col"><h4>Navegue</h4><ul><li><a href="/testes/">Testes</a></li><li><a href="/artigos/">Artigos</a></li><li><a href="/casos/">Casos Reais</a></li><li><a href="/perguntas-frequentes.html">FAQ</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
     <div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacidade.html">Pol&iacute;tica de Privacidade</a></li><li><a href="/termos.html">Termos de Uso</a></li></ul></div>
   </div>
   <div class="footer-bottom">&copy; 2026 Amorfy. Desenvolvido por <a href="https://dionisio.dev">Dionisio Software</a>.</div>
@@ -119,6 +122,65 @@ window.QUIZ_DATA = {quiz_data};
 DISCLAIMER = """<p style="text-align:center;color:var(--text-secondary);font-size:.85rem;margin-top:1rem">&#9878;&#65039; Este teste tem car&aacute;ter informativo e educacional. N&atilde;o substitui avalia&ccedil;&atilde;o, diagn&oacute;stico ou tratamento por profissional de sa&uacute;de mental.</p>"""
 
 
+def render_landing(sections, faq):
+    """Render the rich SEO landing content + FAQ accordion below the quiz.
+
+    sections: list of {"type": "text"|"dimensions", "heading", "html", "items"}
+    faq: list of {"q", "a"} -> rendered as a <details> accordion
+    """
+    import json
+
+    parts = []
+    for sec in sections or []:
+        heading = sec.get("heading", "")
+        if sec.get("type") == "dimensions":
+            cards = []
+            for it in sec["items"]:
+                cards.append(
+                    '<div class="dimension-card"><h3>{h}</h3>{p}</div>'.format(
+                        h=it["title"], p=it["body"]))
+            body = "".join(cards)
+        else:
+            body = sec.get("html", "")
+        parts.append(
+            '<section class="landing-section">'
+            '<h2>{h}</h2>{b}'
+            '</section>'.format(h=heading, b=body))
+
+    faq_html = ""
+    ld_faq = ""
+    if faq:
+        items = []
+        for q in faq:
+            items.append(
+                '<details class="accordion-item">'
+                '<summary>{q}</summary>'
+                '<div class="accordion-body">{a}</div>'
+                '</details>'.format(q=q["q"], a=q["a"]))
+        faq_html = (
+            '<section class="landing-section">'
+            '<h2>Perguntas frequentes</h2>'
+            '<div class="accordion">' + "".join(items) + '</div>'
+            '</section>')
+        ld = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": q["q"],
+                 "acceptedAnswer": {"@type": "Answer", "text": _strip(q["a"])}}
+                for q in faq
+            ],
+        }
+        ld_faq = '\n  <script type="application/ld+json">\n  ' + json.dumps(ld, ensure_ascii=False) + '\n  </script>'
+
+    return parts and "".join(parts) + faq_html or "", ld_faq
+
+
+def _strip(html_str):
+    import re
+    return re.sub(r"<[^>]+>", "", html_str).strip()
+
+
 def write_quiz(meta, out_dir=None):
     import os, json
     out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "testes"
@@ -127,6 +189,9 @@ def write_quiz(meta, out_dir=None):
     meta["quiz_data"] = json.dumps(meta["quiz_data"], ensure_ascii=False, indent=2)
     meta["disclaimer"] = DISCLAIMER if meta.get("show_disclaimer") else ""
     meta.pop("show_disclaimer", None)
+    landing, ld_faq = render_landing(meta.pop("landing_sections", None), meta.pop("faq", None))
+    meta["landing_html"] = landing
+    meta["ld_faq"] = ld_faq
     html = TEMPLATE.format(**meta)
     path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:

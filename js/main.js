@@ -58,8 +58,64 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .story-card, .article-body h2, .article-body h3').forEach(function(el) {
+    document.querySelectorAll('.card, .story-card, .step, .dimension-card, .article-body h2, .article-body h3').forEach(function(el) {
       observer.observe(el);
     });
   }
+
+  // Reading progress bar (articles only)
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+    const body = document.querySelector('.article-body');
+    if (!body) return;
+    const bar = document.createElement('div');
+    bar.className = 'read-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    let ticking = false;
+    function update() {
+      const rect = body.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      const scrolled = -rect.top;
+      const pct = total > 0 ? Math.min(100, Math.max(0, (scrolled / total) * 100)) : 0;
+      bar.style.width = pct + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+    } catch (e) { /* minimal DOM */ }
+  });
+
+  // Auto-build a table of contents from h2s in long articles
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+    const body = document.querySelector('.article-body');
+    if (!body) return;
+    const h2s = Array.from(body.querySelectorAll('h2'));
+    if (h2s.length < 3) return; // only for substantial articles
+    const slugify = function(s) {
+      return s.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 60);
+    };
+    const used = {};
+    const items = h2s.map(function(h) {
+      let id = h.id || slugify(h.textContent);
+      if (used[id]) { used[id]++; id = id + '-' + used[id]; } else { used[id] = 1; }
+      h.id = id;
+      return { id: id, text: h.textContent.trim() };
+    });
+    const nav = document.createElement('nav');
+    nav.className = 'article-toc';
+    nav.setAttribute('aria-label', 'Sumário do artigo');
+    nav.innerHTML = '<h4>Neste artigo</h4><ol>' +
+      items.map(function(i) { return '<li><a href="#' + i.id + '">' + i.text + '</a></li>'; }).join('') +
+      '</ol>';
+    const firstH2 = h2s[0];
+    body.insertBefore(nav, firstH2);
+    } catch (e) { /* minimal DOM */ }
+  });
 })();

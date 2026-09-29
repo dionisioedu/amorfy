@@ -35,6 +35,8 @@ def _entry(rel):
         # Páginas estáticas na raiz.
         if rel == "sobre.html":
             return 1, "/" + rel, "0.5", "monthly"
+        if rel == "perguntas-frequentes.html":
+            return 1, "/" + rel, "0.6", "monthly"
         if rel in ("privacidade.html", "termos.html"):
             return 1, "/" + rel, "0.3", "yearly"
         return 1, "/" + rel, "0.5", "monthly"

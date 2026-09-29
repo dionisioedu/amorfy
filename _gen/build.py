@@ -26,8 +26,10 @@ from infidelidade_batch import ARTICLES as INFID
 from quiz_batch1 import PERSONALIDADE, LINGUAGEM
 from quiz_batch2 import NARCISISTA, COMPATIBILIDADE
 from borderline_quizzes import AUTO, PARCEIRO
+from quiz_landing import enrich as enrich_quiz
 from casos_batch import CASOS, write_caso
 from static_pages import PAGES, write_page
+import faq_page
 from temas import write_temas
 from sitemap import write_sitemap
 
@@ -40,11 +42,12 @@ def build(output):
         write_article(article, output / "artigos")
 
     for quiz in [PERSONALIDADE, LINGUAGEM, NARCISISTA, COMPATIBILIDADE, AUTO, PARCEIRO]:
-        write_quiz(quiz, output / "testes")
+        write_quiz(enrich_quiz(quiz), output / "testes")
     for story in CASOS:
         write_caso(story, output / "casos")
     for page in PAGES:
         write_page(page, output)
+    faq_page.build(output)
 
     write_temas(articles, output)
     write_sitemap(output)

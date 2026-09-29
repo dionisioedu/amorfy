@@ -80,9 +80,10 @@
         if (!res) res = data.results[data.results.length - 1];
       }
       var html = '<div class="quiz-card"><div class="quiz-result">';
-      html += '<div style="font-size:3.5rem;margin-bottom:.5rem">' + (res.emoji || '💖') + '</div>';
+      html += '<div class="result-emoji">' + (res.emoji || '💖') + '</div>';
       html += '<h2 tabindex="-1">' + res.title + '</h2>';
       html += '<div class="result-text">' + res.text + '</div>';
+      html += scoreBars();
       if (res.link) html += '<a href="' + res.link + '" class="btn btn-primary" style="margin-bottom:1rem">' + (res.linkText || 'Saiba mais') + '</a>';
       html += '<div class="share-buttons">';
       html += '<button class="btn btn-secondary" id="quiz-retry">🔄 Refazer teste</button>';
@@ -90,12 +91,69 @@
       html += '</div></div></div>';
       root.innerHTML = html;
       focusHeading();
+      animateScores();
       var retry = document.getElementById('quiz-retry');
       if (retry) retry.addEventListener('click', function() {
         current = 0; scores = {}; total = 0; render(true);
       });
       // Refresh ads after result
       try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+    }
+
+    // Builds dimension score bars if the quiz data declares `dimensions`.
+    // dimensions: [{key, label}] for category mode, or [{label, min, max}] for sum mode.
+    function scoreBars() {
+      var dims = data.dimensions;
+      if (!dims || !dims.length) return '';
+      var rows = [];
+      if (data.mode === 'category') {
+        var maxScore = 0;
+        dims.forEach(function(d) { maxScore = Math.max(maxScore, scores[d.key] || 0); });
+        if (maxScore <= 0) return '';
+        dims.slice().sort(function(a, b) { return (scores[b.key] || 0) - (scores[a.key] || 0); })
+          .forEach(function(d) {
+            var v = scores[d.key] || 0;
+            var pct = Math.round((v / maxScore) * 100);
+            rows.push(dimRow(d.label, v, maxScore, pct, false));
+          });
+      } else {
+        var lo = Infinity, hi = -Infinity;
+        dims.forEach(function(d) {
+          if (typeof d.min === 'number') lo = Math.min(lo, d.min);
+          if (typeof d.max === 'number') hi = Math.max(hi, d.max);
+        });
+        // Sum mode: render each declared band with a tick for the achieved total.
+        dims.forEach(function(d) {
+          var mid = (d.min + d.max) / 2;
+          var pct = (typeof d.max === 'number' && typeof d.min === 'number')
+            ? Math.round(((mid - lo) / ((hi - lo) || 1)) * 100)
+            : 0;
+          rows.push(dimRow(d.label, null, null, pct, total <= d.max));
+        });
+      }
+      return '<div class="quiz-scores"><h3>Seu perfil</h3>' + rows.join('') + '</div>';
+    }
+
+    function dimRow(label, value, max, pct, highlight) {
+      var h = '<div class="score-row">';
+      h += '<div class="score-row-head"><span>' + label + '</span>';
+      if (value !== null && value !== undefined) h += '<span>' + value + '/' + max + '</span>';
+      h += '</div>';
+      h += '<div class="score-track"><div class="score-fill' + (highlight ? '' : ' dim') + '" data-w="' + pct + '%"></div></div>';
+      h += '</div>';
+      return h;
+    }
+
+    function animateScores() {
+      var fills = root.querySelectorAll('.score-fill');
+      if (!fills.length) return;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) { fills.forEach(function(f) { f.style.width = f.dataset.w; }); return; }
+      requestAnimationFrame(function() {
+        setTimeout(function() {
+          fills.forEach(function(f) { f.style.width = f.dataset.w; });
+        }, 60);
+      });
     }
 
     render();
