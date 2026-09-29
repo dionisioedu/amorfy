@@ -18,7 +18,7 @@ TEMPLATE = """<!DOCTYPE html>
   <meta property="og:url" content="https://amorfy.com.br/testes/{slug}.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:image" content="https://amorfy.com.br/og.png">
+  <meta property="og:image" content="https://amorfy.com.br/og/testes-{slug}.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@ TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{desc}">
-  <meta name="twitter:image" content="https://amorfy.com.br/og.png">
+  <meta name="twitter:image" content="https://amorfy.com.br/og/testes-{slug}.png">
   <meta name="twitter:image:alt" content="Amorfy">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

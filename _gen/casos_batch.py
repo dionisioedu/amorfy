@@ -10,6 +10,7 @@ def write_caso(meta, out_dir=None):
     html = render_article(meta)
     html = html.replace('href="https://amorfy.com.br/artigos/' + meta["slug"], 'href="https://amorfy.com.br/casos/' + meta["slug"])
     html = html.replace('content="https://amorfy.com.br/artigos/' + meta["slug"], 'content="https://amorfy.com.br/casos/' + meta["slug"])
+    html = html.replace('/og/artigos-' + meta["slug"], '/og/casos-' + meta["slug"])
     html = html.replace('<li><a href="/artigos/">Artigos</a></li>\n      <li>' + meta["breadcrumb"], '<li><a href="/casos/">Casos Reais</a></li>\n      <li>' + meta["breadcrumb"])
     html = html.replace('</main>', STORY_CTA + '</main>')
     path = f"{out_dir}/{meta['slug']}.html"

@@ -153,6 +153,7 @@ def build(out_dir=None):
         "desc": DESC,
         "h1": "Perguntas Frequentes",
         "body": body,
+        "og_image": f"https://amorfy.com.br/og/{SLUG}.png",
     }
     head = HEAD.format(**meta)
     # HEAD already emitted <main><article>...{body}...</article></main>; drop its tail

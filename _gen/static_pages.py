@@ -18,13 +18,13 @@ HEAD = """<!DOCTYPE html>
   <meta property="og:description" content="{desc}">
   <meta property="og:url" content="https://amorfy.com.br/{slug}.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://amorfy.com.br/og.png">
+  <meta property="og:image" content="{og_image}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Amorfy — testes, artigos e histórias reais sobre relacionamentos">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="https://amorfy.com.br/og.png">
+  <meta name="twitter:image" content="{og_image}">
   <meta name="twitter:image:alt" content="Amorfy">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -211,6 +211,8 @@ PAGES = [
 def write_page(meta, out_dir=None):
     out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent
     out_dir.mkdir(parents=True, exist_ok=True)
+    meta = dict(meta)
+    meta["og_image"] = f"https://amorfy.com.br/og/{meta['slug']}.png"
     html = HEAD.format(**meta) + FOOT
     path = out_dir / f"{meta['slug']}.html"
     path.write_text(html, encoding="utf-8")
