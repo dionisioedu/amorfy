@@ -18,6 +18,19 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "og"
 W, H = 1200, 630
 
+FONT_DIR = ROOT / "_gen" / "fonts"
+FRAUNCES = str(FONT_DIR / "fraunces-v38-latin-700.ttf")   # display serif (marca)
+LORA = str(FONT_DIR / "lora-v37-latin-500.ttf")           # serif (corpo)
+INTER = str(FONT_DIR / "inter-v20-latin-600.ttf")         # sans (labels)
+# fallbacks (se as fontes da marca não estiverem presentes)
+_FALLBACK_SERIF = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"
+_FALLBACK_SANS = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+
+
+def _font(path, size, fallback):
+    import os
+    return ImageFont.truetype(path if os.path.exists(path) else fallback, size)
+
 # Tokens da marca (css/style.css)
 BG = (250, 246, 241)      # --bg warm paper
 TEXT = (51, 34, 43)       # --text
@@ -27,11 +40,6 @@ PURPLE = (123, 79, 181)   # --purple
 PURPLE_DARK = (93, 58, 145)
 GOLD = (217, 142, 43)     # --gold
 MUTED = (150, 130, 138)   # texto secundário
-
-SERIF_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"
-SERIF = "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf"
-SANS_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-SANS = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 EMOJI_RE = re.compile(r'[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F\u200D\u2B00-\u2BFF]')
 
@@ -119,17 +127,17 @@ def card(title, eyebrow, accent):
 
     # ---- topo: coração + wordmark (esquerda) / eyebrow (direita) ----
     draw_heart(d, 96, 92, 20, ROSE)
-    f_word = ImageFont.truetype(SERIF_BOLD, 44)
-    d.text((132, 66), 'Amorfy', font=f_word, fill=ROSE)
+    f_word = _font(FRAUNCES, 46, _FALLBACK_SERIF)
+    d.text((132, 64), 'Amorfy', font=f_word, fill=ROSE)
 
-    f_eyebrow = ImageFont.truetype(SANS_BOLD, 26)
+    f_eyebrow = _font(INTER, 26, _FALLBACK_SANS)
     eb_w = d.textlength(eyebrow, font=f_eyebrow)
     d.text((W - 88 - eb_w, 76), eyebrow, font=f_eyebrow, fill=accent)
 
     # ---- título grande, serif, até 3 linhas ----
     max_w = W - 176
     for size in (76, 68, 60, 52, 46):
-        f_title = ImageFont.truetype(SERIF_BOLD, size)
+        f_title = _font(FRAUNCES, size, _FALLBACK_SERIF)
         lines = wrap(d, title, f_title, max_w)
         if len(lines) <= 3:
             break
