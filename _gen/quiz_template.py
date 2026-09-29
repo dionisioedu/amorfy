@@ -76,8 +76,7 @@ TEMPLATE = """<!DOCTYPE html>
       <p>{intro}</p>
     </div>
   </section>
-
-  <div class="quiz-container">
+{related_article_html}  <div class="quiz-container">
     <div id="quiz"></div>
     {disclaimer}
   </div>
@@ -181,6 +180,26 @@ def _strip(html_str):
     return re.sub(r"<[^>]+>", "", html_str).strip()
 
 
+def _related_article_html(meta):
+    link = meta.get("related_link")
+    if not link:
+        return ""
+    import html as _html
+    label = _html.escape(meta.get("related_label", "Leitura relacionada"), quote=True)
+    strip = (
+        f'<aside class="quiz-cta">'
+        f'<span class="quiz-cta-emoji">&#128214;</span>'
+        f'<div class="quiz-cta-body">'
+        f'<span class="quiz-cta-label">Leitura relacionada</span>'
+        f'<h3><a href="{link}">{label}</a></h3>'
+        f'<p>Entenda o tema a fundo antes de responder.</p>'
+        f'</div>'
+        f'<a class="btn btn-secondary" href="{link}">Ler artigo &#8594;</a>'
+        f'</aside>'
+    )
+    return f'\n  <div class="container" style="max-width:650px">\n    {strip}\n  </div>\n'
+
+
 def write_quiz(meta, out_dir=None):
     import os, json
     out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "testes"
@@ -192,6 +211,7 @@ def write_quiz(meta, out_dir=None):
     landing, ld_faq = render_landing(meta.pop("landing_sections", None), meta.pop("faq", None))
     meta["landing_html"] = landing
     meta["ld_faq"] = ld_faq
+    meta["related_article_html"] = _related_article_html(meta)
     html = TEMPLATE.format(**meta)
     path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:
