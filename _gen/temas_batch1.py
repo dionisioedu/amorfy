@@ -192,7 +192,7 @@ ARTICLES = [
 
 <div class="highlight-box">
   <h3>Continue sua leitura</h3>
-  <p>Comece pelo <a href="/artigos/narcisismo.html">guia sobre narcisismo</a>, proteja seus filhos com <a href="/artigos/coparentalidade-com-narcisista.html">co-parentalidade com um narcisista</a> e inspire-se no relato de <a href="/casos/recomeco-apos-narcisista.html">recomeço após um narcisista</a>.</p>
+  <p>Comece pelo <a href="/artigos/narcisismo.html">guia sobre narcisismo</a>, proteja seus filhos com <a href="/artigos/coparentalidade-com-narcisista.html">co-parentalidade com um narcisista</a> e inspire-se no relato de <a href="/casos/recomeco-apos-narcisista.html">recomeço após um narcisista</a>. E identifique os primeiros sinais com o <a href="/testes/red-flags-precoces.html">teste de red flags no início da relação</a>.</p>
 </div>"""
 },
 {
@@ -251,7 +251,7 @@ ARTICLES = [
 
 <div class="highlight-box">
   <h3>Continue sua leitura</h3>
-  <p>Entenda a origem de muitos padrões em <a href="/artigos/traumas.html">como traumas afetam os relacionamentos</a> e em <a href="/artigos/filhos-de-pais-narcisistas.html">filhos de pais narcisistas</a>. Depois, pratique com <a href="/artigos/inteligencia-emocional.html">inteligência emocional no amor</a> e <a href="/artigos/comunicacao.html">comunicação não-violenta</a>.</p>
+  <p>Entenda a origem de muitos padrões em <a href="/artigos/traumas.html">como traumas afetam os relacionamentos</a> e em <a href="/artigos/filhos-de-pais-narcisistas.html">filhos de pais narcisistas</a>. Depois, pratique com <a href="/artigos/inteligencia-emocional.html">inteligência emocional no amor</a> e <a href="/artigos/comunicacao.html">comunicação não-violenta</a>. E identifique qual padrão te afasta no <a href="/testes/por-que-afasto-pessoas.html">teste por que eu afasto as pessoas</a>.</p>
 </div>"""
 },
 ]

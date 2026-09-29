@@ -62,7 +62,7 @@ ARTICLES = [
 
 <div class="highlight-box">
   <h3>💡 Casais e as danças de caráter</h3>
-  <p>Traços se atraem em pares previsíveis: oral com psicopático (o carente e o controlador), masoquista com rígido (o que se submete e o que exige). A relação pode reencenar as feridas — ou, com consciência, ser exatamente o lugar onde cada um cura o que faltou.</p>
+  <p>Traços se atraem em pares previsíveis: oral com psicopático (o carente e o controlador), masoquista com rígido (o que se submete e o que exige). A relação pode reencenar as feridas — ou, com consciência, ser exatamente o lugar onde cada um cura o que faltou. Descubra qual padrão domina você no <a href="/testes/por-que-afasto-pessoas.html">teste por que eu afasto as pessoas</a>.</p>
 </div>
 
 <h2>O caminho: da armadura à escolha</h2>

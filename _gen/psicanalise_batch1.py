@@ -49,7 +49,7 @@ ARTICLES = [
 
 <div class="highlight-box">
   <h3>Continue sua leitura</h3>
-  <p>Entenda como a repetição aparece no palco amoroso em <a href="/artigos/transferencia-por-que-nos-apaixonamos.html">a transferência explicada</a>. Aprofunde a relação entre amor e agressividade em <a href="/artigos/amor-e-odio-ambivalencia.html">a ambivalência que todo casal sente</a>. E veja como os primeiros vínculos moldam o presente em <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>.</p>
+  <p>Entenda como a repetição aparece no palco amoroso em <a href="/artigos/transferencia-por-que-nos-apaixonamos.html">a transferência explicada</a>. Aprofunde a relação entre amor e agressividade em <a href="/artigos/amor-e-odio-ambivalencia.html">a ambivalência que todo casal sente</a>. E veja como os primeiros vínculos moldam o presente em <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>. Confira também se você <a href="/testes/autossabotagem-amorosa.html">sabota seus relacionamentos</a> sem perceber.</p>
 </div>"""
 },
 {
@@ -147,7 +147,7 @@ ARTICLES = [
 
 <div class="highlight-box">
   <h3>Continue sua leitura</h3>
-  <p>Leia o relato real de <a href="/casos/dependencia-emocional.html">quem viveu a dependência emocional</a>. Entenda por que o padrão se repete em <a href="/artigos/repeticao-compulsiva-no-amor.html">a compulsão à repetição</a>. E reconheça os sinais de vínculos tóxicos em <a href="/artigos/narcisismo.html">narcisismo nos relacionamentos</a>.</p>
+  <p>Leia o relato real de <a href="/casos/dependencia-emocional.html">quem viveu a dependência emocional</a>. Entenda por que o padrão se repete em <a href="/artigos/repeticao-compulsiva-no-amor.html">a compulsão à repetição</a>. E reconheça os sinais de vínculos tóxicos em <a href="/artigos/narcisismo.html">narcisismo nos relacionamentos</a>. E avalie se <a href="/testes/parceiro-pronto-relacionamento.html">seu parceiro está pronto para um relacionamento</a>.</p>
 </div>"""
 },
 {

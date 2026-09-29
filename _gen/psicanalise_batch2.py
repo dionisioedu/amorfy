@@ -116,7 +116,7 @@ ARTICLES = [
 
 <p><em>Este artigo tem caráter educativo e não substitui acompanhamento psicológico. Se o ciúme está causando sofrimento intenso ou comportamentos de controle, procure um psicoterapeuta.</em></p>
 
-<div class="highlight-box"><h3>Continue sua leitura</h3><p>Para ir além, leia sobre <a href="/artigos/transferencia-por-que-nos-apaixonamos.html">por que nos apaixonamos por quem nos apaixonamos</a>, <a href="/artigos/amor-e-odio-ambivalencia.html">a ambivalência entre amor e ódio</a> e <a href="/artigos/comunicacao.html">comunicação não-violenta</a>.</p></div>"""
+<div class="highlight-box"><h3>Continue sua leitura</h3><p>Para ir além, leia sobre <a href="/artigos/transferencia-por-que-nos-apaixonamos.html">por que nos apaixonamos por quem nos apaixonamos</a>, <a href="/artigos/amor-e-odio-ambivalencia.html">a ambivalência entre amor e ódio</a> e <a href="/artigos/comunicacao.html">comunicação não-violenta</a>. Descubra se o que você sente é <a href="/testes/ciume-inveja-relacionamento.html">ciúme ou inveja</a>.</p></div>"""
 },
 {
 "slug": "medo-de-amar-contraintimidade",
@@ -167,7 +167,7 @@ ARTICLES = [
 
 <p><em>Este artigo tem caráter educativo e não substitui acompanhamento psicológico. Se a evitação afetiva causa sofrimento recorrente, procure um psicoterapeuta.</em></p>
 
-<div class="highlight-box"><h3>Continue sua leitura</h3><p>Prossiga com <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>, <a href="/artigos/repeticao-compulsiva-no-amor.html">a compulsão à repetição</a> e <a href="/artigos/luto-do-termino.html">o luto do término</a>.</p></div>"""
+<div class="highlight-box"><h3>Continue sua leitura</h3><p>Prossiga com <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>, <a href="/artigos/repeticao-compulsiva-no-amor.html">a compulsão à repetição</a> e <a href="/artigos/luto-do-termino.html">o luto do término</a>. Depois, descubra <a href="/testes/por-que-afasto-pessoas.html">por que você afasta as pessoas</a> e <a href="/testes/autossabotagem-amorosa.html">se você sabota seus relacionamentos</a>.</p></div>"""
 },
 {
 "slug": "luto-do-termino",
