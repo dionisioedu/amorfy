@@ -374,6 +374,16 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 .cat-nav a{padding:.45rem 1rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-secondary);font-size:.88rem;font-weight:500;transition:all .2s}
 .cat-nav a:hover{border-color:var(--rose);color:var(--rose);background:var(--rose-bg)}
 
+/* === Artigo: faixa de teste relacionado === */
+.quiz-cta{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap;max-width:750px;margin:0 auto 1.5rem;padding:1.25rem 1.5rem;border:1px solid var(--border-light);border-left:4px solid var(--gold);border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--gold-bg),var(--rose-bg));box-shadow:var(--shadow-sm)}
+.quiz-cta-emoji{font-size:1.9rem;line-height:1;flex:0 0 auto}
+.quiz-cta-body{flex:1 1 240px}
+.quiz-cta-label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#96601a;margin-bottom:.3rem}
+.quiz-cta-body h3{margin:0 0 .3rem;font-size:1.15rem;font-family:var(--font-display);line-height:1.3}
+.quiz-cta-body h3 a{color:var(--text);text-decoration:none}
+.quiz-cta-body h3 a:hover{color:var(--rose)}
+.quiz-cta-body p{margin:0;font-size:.92rem;color:var(--text-secondary);line-height:1.5}
+
 /* === Print === */
 @media print{
   .site-header,.site-footer,.ad-container,.newsletter,.nav-links,.nav-toggle{display:none}

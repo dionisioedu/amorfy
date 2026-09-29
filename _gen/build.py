@@ -9,6 +9,7 @@ from pathlib import Path
 from article_template import write_article
 from article_extras import apply_extras
 from sponsors import inject_sponsored
+from quiz_related import apply_related
 from quiz_template import write_quiz
 from batch1 import ARTICLES as BATCH1
 from batch2 import ARTICLES as BATCH2
@@ -38,7 +39,7 @@ from sitemap import write_sitemap
 def build(output):
     articles = []
     for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID]:
-        article = inject_sponsored(apply_extras(raw))
+        article = apply_related(inject_sponsored(apply_extras(raw)))
         articles.append(article)
         write_article(article, output / "artigos")
 

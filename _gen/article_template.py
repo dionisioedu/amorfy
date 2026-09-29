@@ -96,8 +96,7 @@ TEMPLATE = """<!DOCTYPE html>
         <span>&#128214; {read_min} min de leitura</span>
       </div>
     </header>
-
-    <div class="ad-container ad-article-top">
+{related_quiz_html}    <div class="ad-container ad-article-top">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6858130394830057" data-ad-slot="auto" data-ad-format="auto"></ins>
     </div>
     <div class="ad-label">Publicidade</div>
@@ -145,6 +144,28 @@ def _hero_html(meta):
     )
 
 
+def _related_quiz_html(meta):
+    rq = meta.get("related_quiz")
+    if not rq:
+        return ""
+    emoji = rq.get("emoji", "🎯")
+    title = html.escape(rq["title"], quote=True)
+    tagline = html.escape(rq.get("tagline", ""), quote=True)
+    slug = rq["slug"]
+    strip = (
+        f'<aside class="quiz-cta">'
+        f'<span class="quiz-cta-emoji">{emoji}</span>'
+        f'<div class="quiz-cta-body">'
+        f'<span class="quiz-cta-label">Teste relacionado</span>'
+        f'<h3><a href="/testes/{slug}.html">{title}</a></h3>'
+        f'<p>{tagline}</p>'
+        f'</div>'
+        f'<a class="btn btn-primary" href="/testes/{slug}.html">Fazer teste &#8594;</a>'
+        f'</aside>'
+    )
+    return f"\n    {strip}\n"
+
+
 def render_article(meta):
     values = dict(meta)
     for key in ("title", "desc"):
@@ -154,6 +175,7 @@ def render_article(meta):
     cats = _categories_html(meta.get("categories"))
     values["categories_block"] = f'<div class="article-cats">{cats}</div>' if cats else ""
     values["hero_html"] = _hero_html(meta)
+    values["related_quiz_html"] = _related_quiz_html(meta)
     return TEMPLATE.format(**values)
 
 
