@@ -36,7 +36,7 @@ CASOS = [
 "desc": "Carla passou 5 anos num relacionamento com um narcisista sem perceber. Conheça a história real de como ela identificou o abuso e se reconstruiu.",
 "breadcrumb": "Recomeço Após um Narcisista",
 "tag": "Superação", "tag_color": "purple",
-"date": "2025-07-12", "date_human": "12 Jul 2025", "read_min": "6",
+"date": "2026-09-08", "date_human": "08 Set 2026", "read_min": "6",
 "body": DISCLAIMER + """
 <p>Carla, 34 anos, analista financeira, conheceu Rodrigo num aplicativo de namoro. "Ele parecia perfeito demais. E era exatamente isso: <em>parecia</em>."</p>
 
@@ -68,7 +68,7 @@ CASOS = [
 "desc": "Depois de 12 anos casados e uma crise que quase terminou em divórcio, Marcos e Ana reconstruíram a relação. A história real de um recomeço a dois.",
 "breadcrumb": "Casamento Reconstruído",
 "tag": "Sucesso", "tag_color": "rose",
-"date": "2025-07-06", "date_human": "06 Jul 2025", "read_min": "6",
+"date": "2026-09-01", "date_human": "01 Set 2026", "read_min": "6",
 "body": DISCLAIMER + """
 <p>Marcos, 41, e Ana, 39, estavam casados havia 12 anos quando sentaram na mesa da cozinha para conversar sobre divórcio. "Não tinha traição, não tinha briga feia", conta Ana. "Tinha algo pior: indiferença. A gente tinha virado sócio de uma empresa chamada família."</p>
 
@@ -107,7 +107,7 @@ CASOS = [
 "desc": "Júlia emendava um relacionamento no outro e aceitava migalhas por medo de ficar só. A história real de como ela quebrou o ciclo da dependência emocional.",
 "breadcrumb": "Vencendo a Dependência Emocional",
 "tag": "Superação", "tag_color": "pink",
-"date": "2025-06-30", "date_human": "30 Jun 2025", "read_min": "5",
+"date": "2026-08-18", "date_human": "18 Ago 2026", "read_min": "5",
 "body": DISCLAIMER + """
 <p>Júlia, 29, designer, nunca tinha ficado solteira mais de dois meses desde os 16 anos. "Eu emendava um relacionamento no outro. Não por amor — por pânico de ficar sozinha. Qualquer pessoa que me desse atenção virava 'o amor da minha vida' em duas semanas."</p>
 
@@ -146,7 +146,7 @@ CASOS = [
 "desc": "Viúvo aos 52, Fernando achou que o amor tinha ficado no passado. A história real de um recomeço afetivo na maturidade — com medos, filhos adultos e esperança.",
 "breadcrumb": "Amor Depois dos 50",
 "tag": "Sucesso", "tag_color": "gold",
-"date": "2025-06-22", "date_human": "22 Jun 2025", "read_min": "5",
+"date": "2026-08-04", "date_human": "04 Ago 2026", "read_min": "5",
 "body": DISCLAIMER + """
 <p>Fernando, 56, engenheiro aposentado, perdeu a esposa para um câncer após 27 anos de casamento. "Nos primeiros dois anos, a pergunta nem existia. Depois ela apareceu tímida: <em>será que acabou para mim?</em> Eu tinha certeza que sim. Amor era coisa do passado, capítulo encerrado."</p>
 

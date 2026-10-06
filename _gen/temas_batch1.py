@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Co-parentalidade com um narcisista: comunicação paralela, limites, guarda e como proteger os filhos da manipulação sem perder a própria sanidade.",
 "breadcrumb": "Co-parentalidade com Narcisista",
 "tag": "Alerta", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-06", "date_human": "06 Ago 2026", "read_min": 11,
 "body": """<p>Dividir a criação dos filhos já é desafiador mesmo quando a separação foi respeitosa. Mas quando o outro genitor é narcisista, a co-parentalidade deixa de ser uma parceria e se transforma em um campo de batalha silencioso: provocações disfarçadas, culpa constante, mensagens ambíguas e a sensação de que tudo o que você faz é usado contra você. Se você termina cada troca de mensagens exausto(a) e em dúvida sobre a própria sanidade, respire fundo: o problema não é você. Neste guia, você vai aprender a proteger seus filhos e a si mesmo(a) com estratégias práticas que reduzem o desgaste e devolvem o controle para as suas mãos.</p>
 
 <p>Antes de avançar nas técnicas, é essencial entender o padrão por trás desse comportamento. Recomendo começar pelo nosso guia completo sobre <a href="/artigos/narcisismo.html">narcisismo nos relacionamentos</a>, que explica as fases do abuso e os sinais de alerta.</p>
@@ -68,7 +68,7 @@ ARTICLES = [
 "desc": "Filhos de pais narcisistas carregam marcas invisíveis: culpa, people-pleasing e baixa autoestima. Reconheça os sinais e inicie a cura na vida adulta.",
 "breadcrumb": "Filhos de Pais Narcisistas",
 "tag": "Superação", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-07", "date_human": "07 Ago 2026", "read_min": 12,
 "body": """<p>Se você cresceu se sentindo responsável pelas emoções de um dos seus pais, se aprendeu cedo a se anular para evitar explosões, ou se ainda hoje sente uma culpa difusa que não consegue explicar, este texto foi escrito para você. Filhos de pais narcisistas carregam marcas invisíveis que ecoam na vida adulta — nos relacionamentos, no trabalho e na relação consigo mesmo(a). A boa notícia: reconhecer essas marcas é o primeiro passo de uma cura real e possível. Aqui, você vai identificar os sinais e aprender por onde começar.</p>
 
 <h2>Filhos de pais narcisistas: os sinais que aparecem na vida adulta</h2>
@@ -129,7 +129,7 @@ ARTICLES = [
 "desc": "Como sair de uma relação com narcisista com segurança: preparação financeira, rede de apoio, contato zero e recuperação. Um plano para retomar sua vida.",
 "breadcrumb": "Sair de Relação Narcisista",
 "tag": "Essencial", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-08", "date_human": "08 Ago 2026", "read_min": 10,
 "body": """<p>Você já tentou terminar, voltou, tentou de novo e se sentiu pior do que antes. Talvez até tenha se perguntado: por que eu não consigo simplesmente ir embora? Saiba que essa dificuldade não é fraqueza — é a consequência de um vínculo construído com manipulação. Sair de uma relação com narcisista exige mais do que coragem: exige um plano. Neste guia, você vai aprender a se preparar, a sair com segurança e a não voltar — retomando, passo a passo, a vida que é sua.</p>
 
 <h2>Reconhecer que é hora de sair</h2>
@@ -201,7 +201,7 @@ ARTICLES = [
 "desc": "Estilos de apego no amor: seguro, ansioso, evitativo e desorganizado. Entenda como se formam na infância e como caminhar rumo a um apego seguro no casal.",
 "breadcrumb": "Estilos de Apego",
 "tag": "Psicologia", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-09", "date_human": "09 Ago 2026", "read_min": 10,
 "body": """<p>Você já reparou que reage de um jeito muito específico quando alguém se aproxima — ou se afasta? Que sente um aperto no peito quando a pessoa demora a responder, ou que se sente sufocado(a) quando a relação fica íntima demais? Essas reações não são defeito seu: são os <strong>estilos de apego</strong> se manifestando. Neste guia, você vai entender os estilos de apego no amor, de onde eles vêm e — o mais importante — como mudar o padrão rumo a um apego mais seguro.</p>
 
 <h2>O que são os estilos de apego e como se formam na infância</h2>

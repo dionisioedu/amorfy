@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Por que você repete o mesmo tipo de relacionamento? Entenda a compulsão à repetição de Freud, o retorno do recalcado e como quebrar o ciclo.",
 "breadcrumb": "Compulsão à Repetição",
 "tag": "Psicologia", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-19", "date_human": "19 Ago 2026", "read_min": 12,
 "body": """<p>Você já reparou que os seus relacionamentos trocam de rosto, mas não de enredo? O mesmo tipo de parceiro distante ou indisponível, a mesma discussão, a mesma forma de terminar — como se um roteiro invisível se repetisse a cada novo amor, por mais que você jure que desta vez será diferente. A psicanálise tem um nome preciso para esse fenômeno: <strong>compulsão à repetição</strong>. Neste artigo, você vai entender por que repetimos, sem perceber, padrões que nos fazem sofrer — e, mais importante, o que é preciso para interromper esse ciclo com consciência e elaboração.</p>
 
 <p>Antes de seguir, vale situar essa ideia em um quadro maior: a forma como nos vinculamos na infância molda os nossos <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>. A repetição que vamos explorar aqui é, em grande parte, a linguagem pela qual esse apego antigo continua falando no presente.</p>
@@ -58,7 +58,7 @@ ARTICLES = [
 "desc": "Amor e ódio andam juntos. Entenda a ambivalência do casal pela psicanálise de Melanie Klein: cisão, idealização, posição depressiva e reparação.",
 "breadcrumb": "Amor e Ódio",
 "tag": "Fundamental", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-20", "date_human": "20 Ago 2026", "read_min": 12,
 "body": """<p>Você já amou profundamente alguém e, no instante seguinte, sentiu uma raiva quase insuportável daquela mesma pessoa? Já se surpreendeu odiando justamente quem mais ama — e, pior, se sentiu culpado(a) por isso, como se esse ódio fosse a prova de que o amor não é verdadeiro? Respire: a <strong>ambivalência</strong> não é a falência do amor, é a sua condição. Neste artigo, você vai entender, a partir da obra da psicanalista Melanie Klein, por que amor e ódio nascem juntos — e como a maturidade afetiva consiste, justamente, em integrar essa dupla face em vez de negá-la.</p>
 
 <p>Esse tema dialoga diretamente com a forma como lidamos com <a href="/artigos/conflitos.html">conflitos no casal</a>. Boa parte das brigas que parecem sem explicação é, na verdade, a ambivalência tentando encontrar palavras.</p>
@@ -107,7 +107,7 @@ ARTICLES = [
 "desc": "Dependência emocional: o que a psicanálise diz sobre o amor que vicia. Entenda a falta (manque) de Lacan, o objeto a e o caminho do tratamento.",
 "breadcrumb": "Dependência Emocional",
 "tag": "Superação", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-21", "date_human": "21 Ago 2026", "read_min": 12,
 "body": """<p>Você já sentiu que a sua vida inteira gira em torno de uma pessoa? Que sem ela nada faz sentido, que a ausência dela dói fisicamente e que você aceita migalhas de afeto como se fossem banquetes? Esse estado, que o senso comum chama de "amar demais", a psicanálise entende como <strong>dependência emocional</strong> — não um excesso de amor, mas um amor organizado em torno de uma falta. Neste artigo, você vai entender, com os instrumentos de Freud, Melanie Klein e Jacques Lacan, o que está por trás desse amor que vicia — e por onde começa a saída.</p>
 
 <p>Este texto é um aprofundamento teórico. Se você quer ver como essa história se desenrola na prática, leia o relato real de <a href="/casos/dependencia-emocional.html">dependência emocional</a> que publicamos — ele ilumina, com a vida concreta, tudo o que vamos discutir aqui.</p>
@@ -156,7 +156,7 @@ ARTICLES = [
 "desc": "Por que nos apaixonamos por quem nos apaixonamos? Entenda a transferência de Freud, o reencontro do objeto perdido e como distinguir amor de reencenação.",
 "breadcrumb": "A Transferência",
 "tag": "Psicologia", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-22", "date_human": "22 Ago 2026", "read_min": 12,
 "body": """<p>Há pessoas que, no primeiro encontro, parecem nos conhecer desde sempre. Algo nelas nos toca de um jeito imediato e inexplicável — um jeito de olhar, um timbre de voz, uma forma de se calar — e, de repente, estamos apaixonados. Mas será que é por essa pessoa que nos apaixonamos? Ou por alguém que ela nos lembra? A psicanálise responde com um conceito poderoso: a <strong>transferência</strong>. Neste artigo, você vai entender por que nos apaixonamos por quem nos apaixonamos — e aprender a distinguir o amor real da reencenação de uma história antiga.</p>
 
 <p>Este tema é a chave-mestra de muitos outros: ele explica a <a href="/artigos/repeticao-compulsiva-no-amor.html">compulsão à repetição</a> e ilumina os primeiros vínculos que discutimos em <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego no amor</a>.</p>

@@ -11,6 +11,7 @@ mantidas manualmente fora do pipeline, por isso são incluídas mesmo quando nã
 estão presentes no diretório de output (ex.: builds de verificação em /tmp).
 """
 
+import re
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -50,8 +51,30 @@ def _entry(rel):
     return group, f"/{section}/{name}", priority, "monthly"
 
 
+def _date_from_html(candidate):
+    """Extrai dateModified/datePublished do JSON-LD embutido no HTML."""
+    try:
+        html = candidate.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return None
+    for key in ("dateModified", "datePublished"):
+        m = re.search(r'"%s"\s*:\s*"(\d{4}-\d{2}-\d{2})"' % key, html)
+        if m:
+            return m.group(1)
+    return None
+
+
 def _lastmod(rel, output):
-    """Data (YYYY-MM-DD) do último commit git do arquivo; fallback: mtime."""
+    """Data (YYYY-MM-DD) real do conteúdo; fallback: último commit git; depois mtime."""
+    # 1) Data de publicação/modificação declarada no JSON-LD da própria página.
+    candidate = output / rel
+    if not candidate.exists():
+        candidate = REPO / rel
+    if candidate.exists():
+        declared = _date_from_html(candidate)
+        if declared:
+            return declared
+    # 2) Último commit git do arquivo.
     rel_str = rel.as_posix()
     try:
         r = subprocess.run(
@@ -64,13 +87,10 @@ def _lastmod(rel, output):
                 return dates[0]
     except Exception:
         pass
-    # Fallback: mtime do arquivo (no output se existir, senão no repositório).
-    candidate = output / rel
-    if not candidate.exists():
-        candidate = REPO / rel
+    # 3) mtime do arquivo.
     if candidate.exists():
         return datetime.fromtimestamp(candidate.stat().st_mtime, tz=timezone.utc).strftime("%Y-%m-%d")
-    # Último recurso: data de hoje (UTC).
+    # 4) Último recurso: data de hoje (UTC).
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 

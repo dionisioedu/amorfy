@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Entenda o Transtorno de Personalidade Borderline (TPB), como ele afeta os relacionamentos amorosos e quais os caminhos para o tratamento e a estabilidade emocional.",
 "breadcrumb": "Borderline e Relacionamentos",
 "tag": "Saúde Mental", "tag_color": "pink",
-"date": "2025-07-14", "date_human": "14 Jul 2025", "read_min": "10",
+"date": "2026-09-11", "date_human": "11 Set 2026", "read_min": "10",
 "body": """<p>O Transtorno de Personalidade Borderline (TPB) é um dos transtornos mais estigmatizados e incompreendidos. Estima-se que afete <strong>1,6% da população geral</strong> e até 20% dos pacientes psiquiátricos internados. Nos relacionamentos amorosos, seus efeitos podem ser intensos — mas com tratamento adequado, <strong>a recuperação e a estabilidade são totalmente possíveis</strong>.</p>
 
 <h2>O que é o TPB?</h2>
@@ -98,7 +98,7 @@ ARTICLES = [
 "desc": "Guia completo sobre narcisismo nos relacionamentos: sinais de alerta, fases do abuso narcisista, perfil do narcisista e caminhos para a recuperação emocional.",
 "breadcrumb": "Narcisismo nos Relacionamentos",
 "tag": "Alerta", "tag_color": "purple",
-"date": "2025-07-12", "date_human": "12 Jul 2025", "read_min": "12",
+"date": "2026-09-10", "date_human": "10 Set 2026", "read_min": "12",
 "body": """<p>O narcisismo nos relacionamentos é um dos temas mais buscados atualmente — e não é por acaso. Estima-se que entre <strong>1% e 6% da população</strong> tenha Transtorno de Personalidade Narcisista (TPN), e muitas outras pessoas apresentam traços narcisistas significativos sem o diagnóstico completo.</p>
 
 <p>Este artigo vai ajudar você a entender, identificar e, principalmente, <strong>se proteger e se curar</strong> de relacionamentos com pessoas narcisistas.</p>
@@ -185,7 +185,7 @@ ARTICLES = [
 "desc": "Colérico, melancólico, fleumático e sanguíneo. Descubra como seu temperamento influencia seus relacionamentos amorosos e aprenda a lidar com cada perfil.",
 "breadcrumb": "Os 4 Temperamentos e o Amor",
 "tag": "Psicologia", "tag_color": "rose",
-"date": "2025-07-10", "date_human": "10 Jul 2025", "read_min": "8",
+"date": "2026-07-21", "date_human": "21 Jul 2026", "read_min": "8",
 "body": """<p>Você já se perguntou por que algumas pessoas são intensas e passionais, enquanto outras são calmas e ponderadas no amor? A resposta pode estar nos quatro temperamentos — uma das teorias mais antigas da psicologia da personalidade, que remonta a Hipócrates e foi refinada ao longo dos séculos.</p>
 
 <p>Entender os temperamentos não é sobre rotular pessoas, mas sobre <strong>compreender padrões de comportamento</strong> que influenciam profundamente como amamos, nos comunicamos e lidamos com conflitos nos relacionamentos.</p>

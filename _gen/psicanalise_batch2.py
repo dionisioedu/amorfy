@@ -9,7 +9,7 @@ ARTICLES = [
 "desc": "O amor é uma arte que se aprende. Entenda os quatro pilares de Erich Fromm — cuidado, responsabilidade, respeito, conhecimento — e como amar sem se anular.",
 "breadcrumb": "A Arte de Amar",
 "tag": "Clássico", "tag_color": "gold",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-23", "date_human": "23 Ago 2026", "read_min": 10,
 "body": """<p>Se você acredita que o amor é uma loteria — algo que simplesmente acontece quando encontramos a pessoa certa — Erich Fromm tem uma notícia que pode mudar sua vida amorosa: o amor não é um sentimento que nos atinge, mas uma <strong>arte que se aprende</strong>. Em <em>A Arte de Amar</em> (1956), o psicanalista alemão derruba a ideia de que amar depende de sorte e propõe algo mais esperançoso e, ao mesmo tempo, mais exigente: amar é uma habilidade que exige conhecimento e prática, como qualquer outra arte. Se você já se perguntou por que algumas pessoas amam bem e outras vivem se machucando, este texto vai te dar um mapa — e, ao final, um exercício para começar a praticar hoje.</p>
 
 <h2>A ideia central de Fromm: amar é uma arte, não um acidente</h2>
@@ -72,7 +72,7 @@ ARTICLES = [
 "desc": "O ciúme dói, mas também revela. Entenda o ciúme como ferida narcísica, projeção e triangulação edípica, e saiba distinguir o normal do possessivo.",
 "breadcrumb": "Ciúme",
 "tag": "Reflexão", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-24", "date_human": "24 Ago 2026", "read_min": 10,
 "body": """<p>O ciúme chega sem pedir licença: um aperto no peito, um pensamento que não larga, a urgência de checar o celular ou de perguntar quem era aquela pessoa. Quando ele aparece, costumamos olhar para fora — para o outro, para o rival, para a ameaça. Mas a psicanálise propõe um movimento inverso e mais corajoso: olhar para dentro. Porque o ciúme, quase sempre, fala menos sobre o que o outro está fazendo e mais sobre você e a sua história. Entender o que o ciúme revela é o primeiro passo para deixar de ser vítima dele.</p>
 
 <h2>O ciúme como ferida narcísica</h2>
@@ -124,7 +124,7 @@ ARTICLES = [
 "desc": "Por que a intimidade assusta? Entenda o medo de amar, o falso self de Winnicott e a contraintimidade, e descubra como se entregar sem se perder.",
 "breadcrumb": "Medo de Amar",
 "tag": "Autoconhecimento", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-25", "date_human": "25 Ago 2026", "read_min": 11,
 "body": """<p>Você já percebeu que, quanto mais alguém se aproxima, mais você sente vontade de correr? Que no exato momento em que a relação fica séria, um desconforto toma conta — e você começa a procurar defeitos, arrumar brigas ou simplesmente sumir? Isso tem nome: <strong>medo de amar</strong>, ou, como a psicoterapia contemporânea chama, contraintimidade. E ele é muito mais comum do que se imagina. A boa notícia: entendê-lo já é começar a desarmá-lo.</p>
 
 <h2>O que o medo de amar realmente esconde</h2>
@@ -175,7 +175,7 @@ ARTICLES = [
 "desc": "Perder um amor dói como uma morte. Entenda o trabalho de luto segundo Freud, a diferença entre luto e melancolia e como atravessar a dor do fim.",
 "breadcrumb": "Luto do Término",
 "tag": "Superação", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-26", "date_human": "26 Ago 2026", "read_min": 10,
 "body": """<p>Terminar um relacionamento pode doer como uma morte. E, de certa forma, é uma: morre um projeto, um futuro imaginado, uma versão de você que só existia naquela relação. Se você está atravessando o <strong>luto do término</strong> e sente que ninguém entende a intensidade dessa dor, saiba que o que você sente tem nome, tem lógica e — o mais importante — tem fim. Este texto explica, com a ajuda da psicanálise, por que dói tanto e o que realmente ajuda a atravessar.</p>
 
 <h2>Por que um término dói como uma morte</h2>

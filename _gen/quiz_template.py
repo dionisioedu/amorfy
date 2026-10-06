@@ -37,7 +37,7 @@ TEMPLATE = """<!DOCTYPE html>
     "@type": "Quiz",
     "name": "{title}",
     "description": "{desc}",
-    "publisher": {{"@type": "Organization", "name": "Amorfy"}}
+{quiz_schema_fields}
   }}
   </script>{ld_faq}
 </head>
@@ -71,6 +71,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="container hero-content">
       <h1>{h1}</h1>
       <p>{intro}</p>
+      <div class="article-meta" style="justify-content:center">{byline}</div>
     </div>
   </section>
 {related_article_html}  <div class="quiz-container">
@@ -199,6 +200,7 @@ def _related_article_html(meta):
 
 def write_quiz(meta, out_dir=None):
     import os, json
+    from authorship import byline_html, quiz_schema_fields
     out_dir = Path(out_dir) if out_dir is not None else Path(__file__).resolve().parent.parent / "testes"
     os.makedirs(out_dir, exist_ok=True)
     meta = dict(meta)
@@ -209,6 +211,8 @@ def write_quiz(meta, out_dir=None):
     meta["landing_html"] = landing
     meta["ld_faq"] = ld_faq
     meta["related_article_html"] = _related_article_html(meta)
+    meta["byline"] = byline_html()
+    meta["quiz_schema_fields"] = quiz_schema_fields()
     html = TEMPLATE.format(**meta)
     path = f"{out_dir}/{meta['slug']}.html"
     with open(path, "w", encoding="utf-8") as f:

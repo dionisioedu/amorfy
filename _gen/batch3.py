@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Oral, masoquista, rígido, psicopático e esquizoide: entenda os 5 traços de caráter da psicologia corporal e como cada estrutura ama, sofre e se defende.",
 "breadcrumb": "Traços de Caráter e o Amor",
 "tag": "Caráter", "tag_color": "gold",
-"date": "2025-06-05", "date_human": "05 Jun 2025", "read_min": "11",
+"date": "2026-06-09", "date_human": "09 Jun 2026", "read_min": "11",
 "body": """<p>Se o <a href="/artigos/temperamentos.html">temperamento</a> é nossa "configuração de fábrica", o caráter é a armadura que construímos para sobreviver às dores da infância. A psicologia corporal — de Wilhelm Reich a Alexander Lowen — mapeou 5 estruturas de caráter, cada uma formada em uma fase do desenvolvimento e cada uma com um jeito próprio de amar e de se defender do amor.</p>
 
 <p><strong>Importante:</strong> ninguém é um traço puro. Somos combinações, com um ou dois traços dominantes. E ter um traço não é doença — é história inscrita no corpo e no comportamento.</p>
@@ -76,7 +76,7 @@ ARTICLES = [
 "desc": "Alma gêmea, amor à primeira vista, 'quem ama aceita tudo'. Desconstruímos os mitos românticos que sabotam relacionamentos reais, com base científica.",
 "breadcrumb": "Mitos e Verdades Sobre o Amor",
 "tag": "Reflexão", "tag_color": "pink",
-"date": "2025-05-28", "date_human": "28 Mai 2025", "read_min": "5",
+"date": "2026-05-26", "date_human": "26 Mai 2026", "read_min": "5",
 "body": """<p>Crescemos alimentados por filmes, novelas e músicas que ensinam uma versão do amor que... simplesmente não existe. E o problema é sério: <strong>expectativas irreais são uma das maiores causas de frustração e término</strong>. Hora de separar mito de realidade.</p>
 
 <h2>❌ Mito 1: "Existe uma alma gêmea perfeita para mim"</h2>
@@ -118,7 +118,7 @@ ARTICLES = [
 "desc": "A confiança é a base de qualquer relação. Aprenda como ela se forma, como se quebra e o passo a passo realista para reconstruí-la depois de uma traição.",
 "breadcrumb": "Construindo Confiança",
 "tag": "Construção", "tag_color": "purple",
-"date": "2025-05-20", "date_human": "20 Mai 2025", "read_min": "9",
+"date": "2026-05-12", "date_human": "12 Mai 2026", "read_min": "9",
 "body": """<p>Confiança é o oxigênio do relacionamento: invisível quando existe, sufocante quando falta. E há um mal-entendido comum: achar que confiança é um grande voto que se dá de uma vez. Não é. <strong>Confiança é construída em milhares de micro-momentos</strong> — e pode ser destruída em um só.</p>
 
 <h2>Como a confiança realmente se constrói</h2>

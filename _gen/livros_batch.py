@@ -9,8 +9,8 @@ ARTICLES = [
         "breadcrumb": "Sexo no Cativeiro",
         "tag": "Íntimo",
         "tag_color": "purple",
-        "date": "2026-09-26",
-        "date_human": "26 Set 2026",
+        "date": "2026-09-02",
+        "date_human": "02 Set 2026",
         "read_min": 10,
         "body": """<p>Há um enigma que atormenta milhares de casais: quanto mais o relacionamento se aprofunda em amor, segurança e intimidade, mais o desejo sexual parece escapar. É exatamente essa dor que <strong>Sexo no Cativeiro</strong> (no original, <em>Mating in Captivity</em>), da psicoterapeuta belga Esther Perel, se propõe a destrinchar. E a resposta que ela oferece é tão desconfortável quanto libertadora.</p>
 
@@ -70,8 +70,8 @@ ARTICLES = [
         "breadcrumb": "Casos e Casos",
         "tag": "Clássico",
         "tag_color": "gold",
-        "date": "2026-09-26",
-        "date_human": "26 Set 2026",
+        "date": "2026-09-03",
+        "date_human": "03 Set 2026",
         "read_min": 11,
         "body": """<p>Descobrir uma traição é uma das experiências mais devastadoras de uma vida a dois. E, paradoxalmente, também é uma das mais comuns. É sobre esse território — o da infidelidade — que Esther Perel mergulha em <strong>Casos e Casos: Repensando a Infidelidade</strong> (no original, <em>The State of Affairs</em>). Como em <em>Sexo no Cativeiro</em>, a terapeuta belga recusa o julgamento fácil e oferece uma leitura ao mesmo tempo corajosa e compassiva do assunto.</p>
 

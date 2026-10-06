@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Palavras de afirmação, tempo de qualidade, presentes, atos de serviço e toque físico. Entenda as 5 linguagens do amor de Gary Chapman e transforme seu relacionamento.",
 "breadcrumb": "As 5 Linguagens do Amor",
 "tag": "Clássico", "tag_color": "gold",
-"date": "2025-07-08", "date_human": "08 Jul 2025", "read_min": "7",
+"date": "2026-09-17", "date_human": "17 Set 2026", "read_min": "7",
 "body": """<p>Já sentiu que ama alguém intensamente, mas a pessoa parece não perceber? Ou que seu parceiro diz que demonstra amor, mas você não sente? O problema pode não ser falta de amor — pode ser que vocês estejam falando <strong>linguagens diferentes</strong>.</p>
 
 <p>O conceito das 5 linguagens do amor foi criado pelo conselheiro matrimonial Gary Chapman, após décadas atendendo casais. Ele percebeu um padrão: cada pessoa tem uma forma preferida de dar e receber amor. Quando as linguagens não coincidem, o amor "se perde na tradução".</p>
@@ -78,7 +78,7 @@ ARTICLES = [
 "desc": "Todo relacionamento passa por fases: paixão, desilusão, ajuste e amor maduro. Entenda cada etapa e por que a crise pode ser o começo do amor verdadeiro.",
 "breadcrumb": "As Fases de um Relacionamento",
 "tag": "Relacionamento", "tag_color": "rose",
-"date": "2025-07-05", "date_human": "05 Jul 2025", "read_min": "6",
+"date": "2026-09-16", "date_human": "16 Set 2026", "read_min": "6",
 "body": """<p>"O amor acabou." Quantos relacionamentos terminam com essa frase — quando, na verdade, o que acabou foi apenas a <strong>primeira fase</strong> do amor? Entender as etapas naturais de uma relação pode ser a diferença entre desistir cedo demais e construir algo extraordinário.</p>
 
 <h2>🔥 Fase 1: Paixão (o encantamento)</h2>
@@ -129,7 +129,7 @@ ARTICLES = [
 "desc": "Desejo, comunicação sexual, diferenças de libido e como manter a chama acesa a longo prazo. Um guia honesto sobre intimidade no relacionamento.",
 "breadcrumb": "Sexualidade e Conexão",
 "tag": "Íntimo", "tag_color": "purple",
-"date": "2025-07-02", "date_human": "02 Jul 2025", "read_min": "9",
+"date": "2026-09-15", "date_human": "15 Set 2026", "read_min": "9",
 "body": """<p>Sexualidade é um dos pilares mais importantes — e menos conversados — dos relacionamentos. Casais falam sobre dinheiro, filhos e planos, mas travam na hora de falar sobre desejo, frustração ou necessidades íntimas. O resultado? Distanciamento silencioso que corrói a relação.</p>
 
 <h2>Desejo não é constante — e isso é normal</h2>
@@ -188,7 +188,7 @@ ARTICLES = [
 "desc": "Autoconsciência, autorregulação, empatia e habilidades sociais aplicadas ao relacionamento. Aprenda a usar inteligência emocional para amar melhor.",
 "breadcrumb": "Inteligência Emocional no Amor",
 "tag": "Fundamental", "tag_color": "rose",
-"date": "2025-06-28", "date_human": "28 Jun 2025", "read_min": "8",
+"date": "2026-09-12", "date_human": "12 Set 2026", "read_min": "8",
 "body": """<p>Você pode amar alguém profundamente e ainda assim destruir a relação — por não saber lidar com as próprias emoções. Inteligência emocional (QE) é o conjunto de habilidades que transforma amor em relacionamento funcional. E a boa notícia: diferente do QI, o QE pode ser treinado.</p>
 
 <h2>Os 4 pilares da inteligência emocional no relacionamento</h2>

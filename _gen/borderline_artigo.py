@@ -11,7 +11,7 @@ ARTIGO = {
 "desc": "Guia prático para quem ama alguém com TPB: comunicação validante, limites saudáveis, manejo de crises, autocuidado e quando buscar ajuda. Amar alguém com borderline é possível — com as ferramentas certas.",
 "breadcrumb": "Relacionamento com Pessoa Borderline",
 "tag": "Saúde Mental", "tag_color": "pink",
-"date": "2025-07-16", "date_human": "16 Jul 2025", "read_min": "12",
+"date": "2026-08-25", "date_human": "25 Ago 2026", "read_min": "12",
 "body": """<p>Amar alguém com Transtorno de Personalidade Borderline (TPB) pode ser uma das experiências mais intensas da vida — para o bem e para o mal. Num dia, você é amado com uma profundidade que nunca conheceu; no outro, é o alvo de uma raiva que parece vinda do nada. Se você vive isso, saiba de duas coisas: <strong>não é culpa sua, e um relacionamento saudável é possível</strong> — mas exige conhecimento, ferramentas e limites.</p>
 
 <p>Este guia é para parceiros e parceiras de pessoas com TPB (diagnosticado ou com fortes traços). Se você ainda está entendendo o transtorno, comece pelo nosso <a href="/artigos/borderline.html">guia completo sobre borderline</a>.</p>

@@ -118,4 +118,37 @@
     body.insertBefore(nav, firstH2);
     } catch (e) { /* minimal DOM */ }
   });
+
+  // Cookie consent (LGPD) — banner global, uma decisão por navegador
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+    var KEY = 'amorfy_consent';
+    var stored = null;
+    try { stored = window.localStorage.getItem(KEY); } catch (e) { stored = null; }
+    if (stored) return;
+
+    var banner = document.createElement('div');
+    banner.className = 'cookie-consent';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Consentimento de cookies');
+    banner.innerHTML =
+      '<div class="cookie-consent-inner">' +
+      '<p>Usamos cookies e tecnologias similares para exibir anúncios e entender como o site é usado. ' +
+      'Ao continuar, você concorda com o uso de cookies conforme nossa ' +
+      '<a href="/privacidade.html">Política de Privacidade</a>.</p>' +
+      '<div class="cookie-consent-actions">' +
+      '<button type="button" class="btn btn-secondary" data-consent="essential">Só o essencial</button>' +
+      '<button type="button" class="btn btn-primary" data-consent="all">Aceitar</button>' +
+      '</div></div>';
+    document.body.appendChild(banner);
+
+    function decide(value) {
+      try { window.localStorage.setItem(KEY, value); } catch (e) { /* ignore */ }
+      banner.classList.add('cookie-consent-hidden');
+    }
+    banner.querySelectorAll('[data-consent]').forEach(function(btn) {
+      btn.addEventListener('click', function() { decide(this.getAttribute('data-consent')); });
+    });
+    } catch (e) { /* minimal DOM */ }
+  });
 })();

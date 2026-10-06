@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Amando alguém com transtorno bipolar? Entenda mania, hipomania e depressão e aprenda a apoiar em cada fase, criar limites e montar um plano de crise.",
 "breadcrumb": "Amando Alguém com Bipolaridade",
 "tag": "Saúde Mental", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-15", "date_human": "15 Ago 2026", "read_min": 12,
 "body": """<p>Amando alguém com transtorno bipolar, você aprende a amar uma pessoa inteira — e uma pessoa que, em diferentes momentos, pode parecer várias versões de si mesma. Num mês, a energia transborda, os planos se multiplicam, a fala acelera; no outro, a mesma pessoa mal consegue sair da cama. Se você vive isso, saiba de duas coisas: <strong>não é culpa sua, não é culpa dela(e), e é possível construir uma relação estável e amorosa</strong> — desde que os dois entendam o que está acontecendo. Neste guia, você vai aprender a reconhecer os ciclos, a apoiar em cada fase sem se anular e a montar um plano de crise que protege o casal.</p>
 
 <p>Se você está começando a entender o tema, vale também ler nosso <a href="/artigos/borderline.html">guia sobre transtorno borderline</a> para diferenciar os dois quadros — eles são frequentemente confundidos.</p>
@@ -112,7 +112,7 @@ ARTICLES = [
 "desc": "Vivendo e amando com bipolaridade: rotina de sono, medicação e terapia para estabilizar o humor e construir vínculos que sustentam. Guia acolhedor.",
 "breadcrumb": "Vivendo e Amando com Bipolaridade",
 "tag": "Fundamental", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-16", "date_human": "16 Ago 2026", "read_min": 11,
 "body": """<p>Receber o diagnóstico de bipolaridade pode parecer o fim de tudo — mas, para muitas pessoas, é exatamente o ponto de virada: a partir dali, os ciclos ganham nome, explicação e tratamento. <strong>Vivendo e amando com bipolaridade, você descobre que é possível construir uma vida estável e vínculos profundos</strong> — não apesar do diagnóstico, mas aprendendo a manejá-lo. Neste guia, você vai encontrar o caminho prático: aceitar o diagnóstico sem se reduzir a ele, montar uma rotina que estabiliza, decidir como e quando contar ao parceiro, e cuidar do vínculo mesmo quando o humor oscila.</p>
 
 <p>Se você ama alguém com o transtorno e chegou aqui, o artigo <a href="/artigos/amando-alguem-com-bipolaridade.html">Amando alguém com transtorno bipolar</a> é para você. Este aqui é para quem vive o diagnóstico na própria pele.</p>
@@ -198,7 +198,7 @@ ARTICLES = [
 "desc": "Bipolaridade em casa: como reconhecer sinais de crise, agir sem julgamento e montar um plano de segurança em família. Com recursos do CAPS e SUS.",
 "breadcrumb": "Bipolaridade em Casa",
 "tag": "Relacionamento", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-17", "date_human": "17 Ago 2026", "read_min": 10,
 "body": """<p>Quando a <strong>bipolaridade em casa</strong> deixa de ser um termo médico e vira a realidade da sua família, tudo muda: as refeições, as conversas, os planos de fim de semana e, principalmente, as emoções de quem convive. Este guia é para você — mãe, pai, filho, irmã, companheiro — que quer apoiar sem adoecer, agir bem na hora da crise e, sobretudo, manter a família unida entre uma fase e outra. Você vai aprender a reconhecer os sinais, o que fazer (e o que não fazer), como se comunicar sem julgamento e onde buscar ajuda.</p>
 
 <p>Se você é parceiro(a) romântico da pessoa, o guia <a href="/artigos/amando-alguem-com-bipolaridade.html">Amando alguém com transtorno bipolar</a> aprofunda o lado do casal.</p>
@@ -304,7 +304,7 @@ ARTICLES = [
 "desc": "Sexualidade além da norma: entenda identidade, orientação e expressão, sair do armário em casal e vencer o preconceito internalizado em relações LGBTQIA+.",
 "breadcrumb": "Sexualidade LGBTQIA+",
 "tag": "Íntimo", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-18", "date_human": "18 Ago 2026", "read_min": 11,
 "body": """<p>A <strong>sexualidade além da norma</strong> é, antes de tudo, uma história sobre liberdade de ser — e sobre o preço que às vezes se paga por ela. Para quem vive uma relação LGBTQIA+, amar envolve camadas que a heteronormatividade nunca precisou explicar: nomear a própria identidade, decidir quando e como se revelar, lidar com olhares, famílias e um crítico interno que repete o que a sociedade ensinou. Neste guia, você vai entender a diferença entre identidade, orientação e expressão, atravessar o "sair do armário" como casal e construir um vínculo em que o desejo e a aceitação caminham juntos.</p>
 
 <p>Para uma base sobre o desejo e a intimidade em geral, comece pelo nosso guia de <a href="/artigos/sexualidade.html">sexualidade e conexão</a> — este artigo aprofunda o recorte LGBTQIA+.</p>

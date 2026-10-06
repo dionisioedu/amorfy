@@ -5,6 +5,8 @@ import html
 import json
 from pathlib import Path
 
+from authorship import article_schema_fields, byline_html
+
 # Categorias/temas canônicos (chips clicáveis → /temas/<slug>.html).
 CATEGORIES = {
     "relacionamentos": ("Relacionamentos", "cat-relacionamentos"),
@@ -48,8 +50,7 @@ TEMPLATE = """<!DOCTYPE html>
     "@type": "Article",
     "headline": {title_json},
     "description": {desc_json},
-    "author": {{"@type": "Organization", "name": "Amorfy"}},
-    "publisher": {{"@type": "Organization", "name": "Amorfy", "logo": {{"@type": "ImageObject", "url": "https://amorfy.com.br/favicon.svg"}}}},
+{schema_fields}
     "datePublished": "{date}",
     "dateModified": "{date_modified}"
   }}
@@ -88,7 +89,7 @@ TEMPLATE = """<!DOCTYPE html>
       {categories_block}
       <h1>{title}</h1>
       <div class="article-meta">
-        <span>&#9997;&#65039; Equipe Amorfy</span>
+        {byline}
         <span>&#128197; {date_human}</span>
         <span>&#128214; {read_min} min de leitura</span>
       </div>
@@ -173,6 +174,8 @@ def render_article(meta):
     values["categories_block"] = f'<div class="article-cats">{cats}</div>' if cats else ""
     values["hero_html"] = _hero_html(meta)
     values["related_quiz_html"] = _related_quiz_html(meta)
+    values["byline"] = byline_html()
+    values["schema_fields"] = article_schema_fields()
     return TEMPLATE.format(**values)
 
 

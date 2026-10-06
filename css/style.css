@@ -398,9 +398,19 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 .quiz-cta-body h3 a:hover{color:var(--rose)}
 .quiz-cta-body p{margin:0;font-size:.92rem;color:var(--text-secondary);line-height:1.5}
 
+/* === Cookie consent (LGPD) === */
+.cookie-consent{position:fixed;left:0;right:0;bottom:0;z-index:1200;background:var(--surface,#fff);border-top:2px solid var(--rose);box-shadow:0 -6px 28px rgba(0,0,0,.12);padding:1rem}
+.cookie-consent-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;justify-content:space-between}
+.cookie-consent-inner p{margin:0;font-size:.88rem;line-height:1.5;color:var(--text-secondary);flex:1 1 380px}
+.cookie-consent-inner p a{color:var(--rose);text-decoration:underline}
+.cookie-consent-actions{display:flex;gap:.6rem;flex:0 0 auto}
+.cookie-consent-actions .btn{white-space:nowrap}
+.cookie-consent-hidden{display:none}
+@media(max-width:560px){.cookie-consent-actions{width:100%}.cookie-consent-actions .btn{flex:1}}
+
 /* === Print === */
 @media print{
-  .site-header,.site-footer,.ad-container,.newsletter,.nav-links,.nav-toggle{display:none}
+  .site-header,.site-footer,.ad-container,.newsletter,.nav-links,.nav-toggle,.cookie-consent{display:none}
   body{background:#fff;color:#000}
   body::before{display:none}
 }

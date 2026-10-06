@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Por que as pessoas traem mesmo em relacionamentos felizes? Entenda as motivações reais da infidelidade e o que o caso revela sobre o desejo.",
 "breadcrumb": "Por Que as Pessoas Traem",
 "tag": "Reflexão", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-09-04", "date_human": "04 Set 2026", "read_min": 11,
 "body": """<p>Existe uma pergunta que atormenta tanto quem foi traído quanto quem traiu sem nunca imaginar que seria capaz disso: <strong>por que as pessoas traem</strong>, mesmo quando dizem amar, mesmo quando o relacionamento parecia estável? Se você busca uma resposta simples — "falta de caráter", "falta de sexo", "falta de amor" — saiba que ela costuma estar errada. A infidelidade raramente é só sobre sexo, e quase sempre é sobre algo que a pessoa foi procurar em outro lugar. Neste artigo, você vai entender as motivações reais da traição, sem julgamento raso, para enxergar com clareza um dos fenômenos mais dolorosos — e mais humanos — da vida amorosa.</p>
 
 <p>Antes de continuar, um aviso importante: compreender não é justificar. Entender por que alguém traiu não apaga a dor causada nem diminui a responsabilidade de quem traiu. Mas é exatamente essa compreensão que abre a porta para a reparação — ou para uma saída mais consciente. Se você quer uma visão ampla sobre o tema, comece pela nossa leitura do livro de Esther Perel em <a href="/artigos/casos-e-casos-repensando-a-infidelidade.html">Casos e Casos: repensando a infidelidade</a>.</p>
@@ -62,7 +62,7 @@ ARTICLES = [
 "desc": "Descobri uma traição. E agora? Entenda o choque, os sintomas de trauma, o que não fazer no impulso e os primeiros passos para se estabilizar.",
 "breadcrumb": "Descobri uma Traição",
 "tag": "Superação", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-09-05", "date_human": "05 Set 2026", "read_min": 11,
 "body": """<p>Você descobriu. Talvez tenha sido uma mensagem no celular, uma conversa de amiga, uma confissão — ou uma intuição que, enfim, se confirmou. No instante em que a verdade aparece, o chão se abre: o coração dispara, o estômago embrulha, o mundo parece irreal. <strong>Descobri uma traição</strong> é uma frase que ninguém quer ter que dizer — e, se você está lendo isto logo depois de descobrir uma traição, respire: este texto foi escrito para segurar a sua mão agora. Você vai entender o que está acontecendo com o seu corpo e a sua mente, o que não fazer no calor da emoção e quais são os primeiros passos para se estabilizar antes de qualquer decisão.</p>
 
 <p>Antes de mais nada, saiba: você não precisa resolver nada hoje. A descoberta de uma traição é um evento que desorganiza — e o primeiro cuidado é com você, não com o futuro da relação.</p>
@@ -121,7 +121,7 @@ ARTICLES = [
 "desc": "É possível reconstruir a confiança depois da traição? Veja a responsabilidade de quem traiu, o tempo do perdão e os passos concretos da reparação.",
 "breadcrumb": "Reconstruir a Confiança",
 "tag": "Construção", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-09-06", "date_human": "06 Set 2026", "read_min": 11,
 "body": """<p>Depois que a poeira da descoberta baixa, vem a pergunta que define tudo: <strong>é possível reconstruir a confiança depois da traição?</strong> A resposta honesta é: sim, em muitos casos — mas não por acaso, e não sem trabalho. Reconstruir uma relação atravessada por uma infidelidade não é "voltar a ser como antes". É construir algo diferente, sobre bases mais conscientes. Neste artigo, você vai entender o que a reparação exige de quem traiu, o papel do tempo no perdão, como decidir entre ficar e partir, e os passos concretos de um caminho que pode, sim, levar a uma relação mais forte.</p>
 
 <p>Se você ainda está no impacto da descoberta, talvez seja cedo para este texto. A reparação é uma fase que só começa depois da estabilização. Quando estiver pronto(a), volte aqui — e, se precisar, comece por <a href="/artigos/descobri-uma-traicao-e-agora.html">o primeiro passo depois da descoberta</a>.</p>

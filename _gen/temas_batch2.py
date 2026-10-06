@@ -9,7 +9,7 @@ ARTICLES = [
 "desc": "Borderline na família: entenda o TPB sem estigma e aprenda comunicação validante, limites saudáveis e rede de apoio para cuidar sem se perder.",
 "breadcrumb": "Borderline na Família",
 "tag": "Saúde Mental", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-11", "date_human": "11 Ago 2026", "read_min": 11,
 "body": """<p>Conviver com alguém que tem Transtorno de Personalidade Borderline (TPB) dentro de casa é viver entre dois polos: a vontade imensa de ajudar e o cansaço de quem já não sabe mais o que fazer. Se você ama uma pessoa com <strong>borderline na família</strong> — filha, filho, irmão, mãe, pai ou parceiro — este guia vai te ajudar a apoiar de verdade, sem adoecer no processo. Você vai aprender a entender o transtorno sem estigma, a se comunicar de um jeito que acalma, a colocar limites que protegem todo mundo e a montar uma rede de apoio que sustenta a longo prazo.</p>
 
 <h2>O que significa ter borderline na família</h2>
@@ -70,7 +70,7 @@ ARTICLES = [
 "desc": "Eu tenho borderline e quero amar: entenda os desafios do TPB no amor, as habilidades DBT para casais e a esperança realista de um relacionamento estável.",
 "breadcrumb": "Tenho Borderline e Quero Amar",
 "tag": "Reflexão", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-12", "date_human": "12 Ago 2026", "read_min": 12,
 "body": """<p>Se você chegou até aqui, é provável que carregue duas coisas: um diagnóstico (ou uma forte suspeita) de Transtorno de Personalidade Borderline e um medo silencioso de que isso signifique que você nunca vai conseguir amar — ou ser amado — de forma estável. <strong>Eu tenho borderline e quero amar</strong> não é uma contradição; é uma declaração de coragem. E a boa notícia é real: com tratamento e habilidades, pessoas com TPB constroem relacionamentos profundos, leais e duradouros. Este artigo vai te mostrar o caminho — dos desafios às ferramentas concretas, da comunicação do diagnóstico à esperança que é honesta, não ingênua.</p>
 
 <h2>Os desafios do TPB no amor — e por que eles acontecem</h2>
@@ -129,7 +129,7 @@ ARTICLES = [
 "desc": "Desregulação emocional no casal: o que é, gatilhos comuns, técnicas de aterramento e um plano de crise para o casal atravessar a tempestade juntos.",
 "breadcrumb": "Desregulação Emocional no Casal",
 "tag": "Saúde Mental", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-13", "date_human": "13 Ago 2026", "read_min": 10,
 "body": """<p>Todo casal conhece a cena: uma conversa começa pequena e, em minutos, alguém está gritando, chorando ou saindo batendo a porta. Quando isso acontece com frequência, pode ser sinal de <strong>desregulação emocional no casal</strong> — a dificuldade de voltar ao equilíbrio depois que uma emoção forte é ativada. Este artigo vai te ajudar a entender o que é, reconhecer os gatilhos e, o mais importante, construir ferramentas práticas para que os dois atravessem a tempestade juntos, em vez de um contra o outro.</p>
 
 <h2>O que é a desregulação emocional no casal</h2>
@@ -200,7 +200,7 @@ ARTICLES = [
 "desc": "Libidos diferentes no casal: entenda o desejo espontâneo e responsivo, as causas e como conversar sem culpa para reacender a intimidade sem pressão.",
 "breadcrumb": "Libidos Diferentes no Casal",
 "tag": "Íntimo", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 9,
+"date": "2026-08-14", "date_human": "14 Ago 2026", "read_min": 9,
 "body": """<p>Um quer mais, o outro quer menos — e a diferença vira fonte silenciosa de mágoa, rejeição e culpa. Se você vive <strong>libidos diferentes no casal</strong>, saiba que isso é muito mais comum do que se fala, e que a diferença de desejo não é sentença de fracasso. Este artigo vai te ajudar a entender por que isso acontece, a conversar sobre o tema sem culpa nem pressão e a reconstruir uma intimidade que respeite o ritmo dos dois. Ao final, você terá ferramentas concretas — e a certeza de que não está sozinho nisso.</p>
 
 <h2>Desejo espontâneo versus desejo responsivo</h2>

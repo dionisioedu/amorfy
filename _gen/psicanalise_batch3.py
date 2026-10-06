@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Amor-próprio não é egoísmo. Entenda o narcisismo saudável segundo Freud e como a autoestima é a base para amar o outro sem se anular nem se fechar.",
 "breadcrumb": "Amor-Próprio",
 "tag": "Autoconhecimento", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 10,
+"date": "2026-08-27", "date_human": "27 Ago 2026", "read_min": 10,
 "body": """<p>Se você já se sentiu culpado(a) por dizer não, por reservar um tempo para si ou por colocar suas próprias necessidades na frente das de alguém, talvez tenha ouvido — dos outros ou da própria voz interna — a acusação de egoísmo. É exatamente aqui que muita gente se perde: confunde amor-próprio com narcisismo doentio e acaba se anulando por medo de parecer centrada demais em si. Este artigo desfaz essa confusão. Você vai entender o que é o narcisismo saudável na visão da psicanálise, por que a autoestima é a base para amar o outro de verdade e como cultivar amor-próprio sem virar autocentramento.</p>
 
 <p>Antes de seguir, vale a pena entender o outro lado dessa moeda: leia nosso guia sobre <a href="/artigos/narcisismo.html">narcisismo nos relacionamentos</a> para reconhecer quando o amor-próprio vira patologia e machuca quem está por perto.</p>
@@ -52,7 +52,7 @@ ARTICLES = [
 "desc": "Fantasia e desejo no casal: o papel da imaginação na vida sexual segundo Lacan. Aprenda a conversar sobre fantasia sem julgamento e aqueça a relação.",
 "breadcrumb": "Fantasia e Desejo",
 "tag": "Íntimo", "tag_color": "purple",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 11,
+"date": "2026-08-28", "date_human": "28 Ago 2026", "read_min": 11,
 "body": """<p>Poucos assuntos carregam tanta vergonha silenciosa dentro de um relacionamento quanto a fantasia. Muitas pessoas guardam seus desejos imaginários como um segredo do qual se envergonham — com medo de que revelá-los mude a forma como o parceiro as vê. O resultado é um casal que transa cada vez menos, ou que transa mecanicamente, enquanto cada um vive a parte mais viva do próprio erotismo trancada na cabeça. Este artigo propõe outro caminho: entender o que a fantasia é de verdade na leitura psicanalítica e descobrir como a imaginação — longe de ameaçar o amor — é uma das principais fontes de desejo entre duas pessoas.</p>
 
 <p>Se o desejo entre vocês anda morno, vale começar entendendo as raízes dele. Leia sobre <a href="/artigos/libidos-diferentes-no-casal.html">libidos diferentes no casal</a> e sobre o que acontece quando o desejo morre na rotina em <a href="/artigos/sexo-no-cativeiro.html">sexo no cativeiro</a>.</p>
@@ -95,7 +95,7 @@ ARTICLES = [
 "desc": "A capacidade de ficar só (Winnicott) é o alicerce invisível dos relacionamentos maduros. Entenda o que é e como desenvolvê-la para amar sem se anular.",
 "breadcrumb": "Capacidade de Ficar Só",
 "tag": "Fundamental", "tag_color": "rose",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 12,
+"date": "2026-08-29", "date_human": "29 Ago 2026", "read_min": 12,
 "body": """<p>Existe um tipo de solidão que assusta: aquela em que o silêncio da casa parece pesado demais, e a ausência de alguém por perto vira um vazio insuportável. Quem vive esse incômodo costuma buscar relações de forma desesperada — não por amor, mas para fugir de si. Este artigo fala de uma habilidade que quase ninguém ensina e que, no entanto, sustenta todos os relacionamentos maduros: a <strong>capacidade de ficar só</strong>. Você vai entender o que ela é na visão do psicanalista Donald Winnicott, por que ela se aprende na presença de alguém, e como desenvolvê-la para amar sem se anular nem se agarrar.</p>
 
 <p>Se o medo de ficar só já te levou a escolhas das quais se arrepende, vale ler também sobre <a href="/artigos/medo-de-amar-contraintimidade.html">medo de amar e contraintimidade</a> e sobre como os <a href="/artigos/estilos-de-apego-no-amor.html">estilos de apego</a> explicam essa ânsia por presença constante.</p>
@@ -142,7 +142,7 @@ ARTICLES = [
 "desc": "Amor líquido? Uma leitura psicanalítica dos relacionamentos na era dos aplicativos: Bauman, o paradoxo da escolha e o medo de sustentar a falta.",
 "breadcrumb": "Amor na Era dos Aplicativos",
 "tag": "Reflexão", "tag_color": "pink",
-"date": "2026-09-26", "date_human": "26 Set 2026", "read_min": 9,
+"date": "2026-08-30", "date_human": "30 Ago 2026", "read_min": 9,
 "body": """<p>Você já passou horas deslizando o dedo por rostos, conversas que começam fervendo e morrem em dois dias, ou o silêncio abrupto de alguém que simplesmente desaparece — o famoso <em>ghosting</em>? Se a sensação que fica é a de que as pessoas estão se tornando descartáveis, você não está sozinho(a). O sociólogo Zygmunt Bauman deu um nome a esse mal-estar: <strong>amor líquido</strong>. Este artigo propõe uma leitura psicanalítica desse fenômeno, conectando a lógica dos aplicativos de relacionamento ao medo de compromisso, ao paradoxo da escolha infinita e à dificuldade humana de sustentar a falta. O objetivo não é demonizar a tecnologia, mas devolver a você a possibilidade de escolher com consciência.</p>
 
 <p>Se esse cansaço te parece familiar, vale entender o que o medo da entrega esconde. Leia sobre <a href="/artigos/medo-de-amar-contraintimidade.html">medo de amar e contraintimidade</a> e sobre como a <a href="/artigos/confianca.html">confiança</a> — ou a falta dela — molda a forma como nos relacionamos.</p>

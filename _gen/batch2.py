@@ -10,7 +10,7 @@ ARTICLES = [
 "desc": "Aprenda a técnica de CNV (Comunicação Não-Violenta) de Marshall Rosenberg para resolver conflitos sem machucar e fortalecer a conexão com seu parceiro.",
 "breadcrumb": "Comunicação Não-Violenta",
 "tag": "Habilidade", "tag_color": "gold",
-"date": "2025-06-25", "date_human": "25 Jun 2025", "read_min": "7",
+"date": "2026-09-14", "date_human": "14 Set 2026", "read_min": "7",
 "body": """<p>"Não é o que você disse, é como você disse." Quase toda briga de casal tem essa frase escondida em algum lugar. A Comunicação Não-Violenta (CNV), criada pelo psicólogo Marshall Rosenberg, é provavelmente a ferramenta mais poderosa já desenvolvida para transformar a forma como casais conversam.</p>
 
 <h2>O problema: comunicação violenta é o padrão</h2>
@@ -84,7 +84,7 @@ ARTICLES = [
 "desc": "Por que conhecer a si mesmo é o primeiro passo para amar outra pessoa de forma saudável. Padrões, feridas, valores e o trabalho interior que muda relações.",
 "breadcrumb": "Autoconhecimento e Amor",
 "tag": "Autoconhecimento", "tag_color": "pink",
-"date": "2025-06-20", "date_human": "20 Jun 2025", "read_min": "6",
+"date": "2026-09-13", "date_human": "13 Set 2026", "read_min": "6",
 "body": """<p>Existe uma verdade desconfortável sobre relacionamentos: <strong>você não se relaciona com o outro — você se relaciona com o outro através de quem você é</strong>. Suas feridas, seus medos, suas expectativas inconscientes: tudo entra no pacote. Por isso, sem autoconhecimento, todo relacionamento vira um palco onde repetimos os mesmos papéis.</p>
 
 <h2>Por que repetimos os mesmos padrões?</h2>
@@ -137,7 +137,7 @@ ARTICLES = [
 "desc": "Feridas de infância, relacionamentos abusivos anteriores e padrões que repetimos sem perceber. Entenda o impacto dos traumas e o caminho para a cura.",
 "breadcrumb": "Traumas e Relacionamentos",
 "tag": "Superação", "tag_color": "purple",
-"date": "2025-06-15", "date_human": "15 Jun 2025", "read_min": "10",
+"date": "2026-07-07", "date_human": "07 Jul 2026", "read_min": "10",
 "body": """<p>Você briga com seu parceiro — mas às vezes não é com ele que você está brigando. É com o pai que abandonou, com a mãe que criticava, com o ex que traiu. <strong>Traumas não curados não ficam no passado: eles dirigem o presente</strong>, escondidos no piloto automático das suas reações.</p>
 
 <h2>O que é trauma (de verdade)</h2>
@@ -197,7 +197,7 @@ ARTICLES = [
 "desc": "Estratégias práticas para transformar brigas em oportunidades de crescimento: os 4 cavaleiros de Gottman, reparação, pausa estratégica e regras de briga limpa.",
 "breadcrumb": "Como Lidar com Conflitos",
 "tag": "Prático", "tag_color": "rose",
-"date": "2025-06-10", "date_human": "10 Jun 2025", "read_min": "8",
+"date": "2026-06-23", "date_human": "23 Jun 2026", "read_min": "8",
 "body": """<p>Casais felizes não são os que nunca brigam — são os que brigam <em>bem</em>. A pesquisa é surpreendente: John Gottman, após observar milhares de casais por décadas, descobriu que <strong>69% dos conflitos de qualquer casal são perpétuos</strong> — nunca serão totalmente resolvidos. O sucesso não está em eliminar conflitos, mas em como o casal os atravessa.</p>
 
 <h2>Os 4 Cavaleiros do Apocalipse (os venenos da briga)</h2>
