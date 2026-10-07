@@ -15,7 +15,6 @@ GEN_DIR = ROOT / "_gen"
 # Pages maintained by hand that are never produced by the generator.
 MANUALLY_MAINTAINED = {
     "index.html",
-    "artigos/index.html",
     "testes/index.html",
     "casos/index.html",
     "404.html",

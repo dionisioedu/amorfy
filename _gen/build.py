@@ -24,6 +24,10 @@ from psicanalise_batch1 import ARTICLES as PSI1
 from psicanalise_batch2 import ARTICLES as PSI2
 from psicanalise_batch3 import ARTICLES as PSI3
 from infidelidade_batch import ARTICLES as INFID
+from abusivo_batch1 import ARTICLES as ABUS1
+from abusivo_batch2 import ARTICLES as ABUS2
+from dependencia_batch1 import ARTICLES as DEP1
+from dependencia_batch2 import ARTICLES as DEP2
 from quiz_batch1 import PERSONALIDADE, LINGUAGEM
 from quiz_batch2 import NARCISISTA, COMPATIBILIDADE
 from quiz_batch3 import MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS
@@ -33,12 +37,13 @@ from casos_batch import CASOS, write_caso
 from static_pages import PAGES, write_page
 import faq_page
 from temas import write_temas
+from artigos_index import write_articles_index
 from sitemap import write_sitemap
 
 
 def build(output):
     articles = []
-    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID]:
+    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID, *ABUS1, *ABUS2, *DEP1, *DEP2]:
         article = apply_related(inject_sponsored(apply_extras(raw)))
         articles.append(article)
         write_article(article, output / "artigos")
@@ -53,6 +58,7 @@ def build(output):
     faq_page.build(output)
 
     write_temas(articles, output)
+    write_articles_index(articles, output)
     write_sitemap(output)
 
 

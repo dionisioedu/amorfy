@@ -14,6 +14,8 @@ CATEGORIES = {
     "narcisismo": ("Narcisismo", "cat-narcisismo"),
     "bipolaridade": ("Bipolaridade", "cat-bipolaridade"),
     "psicanalise": ("Psicanálise", "cat-psicanalise"),
+    "relacionamento-abusivo": ("Relacionamento Abusivo", "cat-relacionamento-abusivo"),
+    "dependencia-emocional": ("Dependência Emocional", "cat-dependencia-emocional"),
 }
 
 TEMPLATE = """<!DOCTYPE html>

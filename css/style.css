@@ -39,6 +39,17 @@
   --slate-light: #94a3b8;
   --slate-bg: #f1f5f9;
 
+  /* Deep crimson — relacionamento abusivo (seriedade/sinal de alerta) */
+  --crimson: #8e2b3a;
+  --crimson-dark: #6d1f2c;
+  --crimson-light: #dc9aa5;
+  --crimson-bg: #fbeeef;
+
+  /* Dusty teal — dependência emocional (autonomia/calma) */
+  --teal: #2f6d6a;
+  --teal-light: #9ecbc8;
+  --teal-bg: #edf6f5;
+
   /* Warm paper neutrals */
   --bg: #faf6f1;
   --bg-warm: #f8efe9;
@@ -293,6 +304,10 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 .cat-bipolaridade:hover{background:var(--gold);color:#fff}
 .cat-psicanalise{color:var(--slate);border-color:var(--slate-light);background:var(--slate-bg)}
 .cat-psicanalise:hover{background:var(--slate);color:#fff}
+.cat-relacionamento-abusivo{color:var(--crimson);border-color:var(--crimson-light);background:var(--crimson-bg)}
+.cat-relacionamento-abusivo:hover{background:var(--crimson);color:#fff}
+.cat-dependencia-emocional{color:var(--teal);border-color:var(--teal-light);background:var(--teal-bg)}
+.cat-dependencia-emocional:hover{background:var(--teal);color:#fff}
 .article-cats{margin:-.1rem 0 1.1rem}
 .card-cats{margin-top:.6rem}
 

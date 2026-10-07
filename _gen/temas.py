@@ -29,6 +29,14 @@ META = {
         "desc": "Psicanálise aplicada ao amor: Freud, Melanie Klein, Lacan, Winnicott e Erich Fromm para entender desejo, vínculo, repetição e luto.",
         "intro": "Aprofunde-se na psicanálise do amor — conceitos que explicam por que amamos, repetimos e sofremos nos vínculos.",
     },
+    "relacionamento-abusivo": {
+        "desc": "Artigos sobre relacionamento abusivo: sinais, ciclo da violência, manipulação, gaslighting, isolamento e como sair com segurança. Guias práticos e acolhedores.",
+        "intro": "Reconheça os padrões do abuso — do controle velado à violência explícita — e descubra caminhos seguros para sair e se reconstruir.",
+    },
+    "dependencia-emocional": {
+        "desc": "Artigos sobre dependência emocional: por que é tão difícil desapegar, amor x necessidade, codependência, limites e reconstrução da autonomia afetiva.",
+        "intro": "Entenda a diferença entre amar e precisar — e como recuperar a autonomia sem perder a capacidade de se vincular.",
+    },
 }
 
 TEMPLATE = """<!DOCTYPE html>
@@ -110,7 +118,8 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-EMOJI = {"relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️"}
+EMOJI = {"relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
+         "relacionamento-abusivo": "🚩", "dependencia-emocional": "⛓️"}
 
 
 def short_title(title):

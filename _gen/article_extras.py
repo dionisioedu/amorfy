@@ -45,7 +45,8 @@ EXTRAS = {
     "amor-na-era-dos-aplicativos": {"categories": ["psicanalise"]},
     "repeticao-compulsiva-no-amor": {"categories": ["psicanalise"]},
     "amor-e-odio-ambivalencia": {"categories": ["psicanalise"]},
-    "dependencia-emocional-psicanalise": {"categories": ["psicanalise"]},
+    "dependencia-emocional-psicanalise": {"categories": ["psicanalise", "dependencia-emocional"]},
+    "dependencia-emocional-teoria-do-apego": {"categories": ["dependencia-emocional", "psicanalise"]},
     "transferencia-por-que-nos-apaixonamos": {"categories": ["psicanalise"]},
     "arte-de-amar-erich-fromm": {"categories": ["psicanalise"]},
     "ciume-o-que-ele-revela": {"categories": ["psicanalise"]},
@@ -58,6 +59,20 @@ EXTRAS = {
     # --- livros/referências ---
     "sexo-no-cativeiro": {"categories": ["relacionamentos"]},
     "casos-e-casos-repensando-a-infidelidade": {"categories": ["relacionamentos"]},
+    # --- relacionamento abusivo ---
+    "relacionamento-abusivo-sinais": {"categories": ["relacionamento-abusivo"]},
+    "gaslighting-o-que-e": {"categories": ["relacionamento-abusivo"]},
+    "como-sair-de-relacionamento-abusivo": {"categories": ["relacionamento-abusivo"]},
+    "isolamento-no-abuso": {"categories": ["relacionamento-abusivo"]},
+    "violencia-patrimonial": {"categories": ["relacionamento-abusivo"]},
+    "violencia-psicologica-rotina": {"categories": ["relacionamento-abusivo"]},
+    # --- dependência emocional ---
+    "dependencia-emocional-o-que-e": {"categories": ["dependencia-emocional"]},
+    "amor-ou-necessidade": {"categories": ["dependencia-emocional"]},
+    "codependencia-no-casal": {"categories": ["dependencia-emocional"]},
+    "dependencia-emocional-sinais": {"categories": ["dependencia-emocional"]},
+    "como-superar-dependencia-emocional": {"categories": ["dependencia-emocional"]},
+    "autonomia-afetiva": {"categories": ["dependencia-emocional"]},
 }
 
 
