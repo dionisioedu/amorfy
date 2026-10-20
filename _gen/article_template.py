@@ -137,10 +137,11 @@ def _hero_html(meta):
     if not img:
         return ""
     alt = html.escape(meta.get("image_alt") or meta["title"], quote=True)
+    caption = '<figcaption>Imagem ilustrativa criada com IA.</figcaption>' if meta.get("ai_assisted") else ""
     return (
-        f'<figure class="article-hero">'
-        f'<img src="{img}" alt="{alt}" width="1200" height="600" loading="eager" decoding="async">'
-        f'</figure>'
+        '<figure class="article-hero">'
+        f'<img src="{html.escape(img, quote=True)}" alt="{alt}" width="{meta.get("image_width", 1200)}" height="{meta.get("image_height", 600)}" loading="eager" decoding="async">'
+        + caption + '</figure>'
     )
 
 
@@ -178,7 +179,20 @@ def render_article(meta):
     values["related_quiz_html"] = _related_quiz_html(meta)
     values["byline"] = byline_html()
     values["schema_fields"] = article_schema_fields()
-    return TEMPLATE.format(**values)
+    if meta.get("ai_assisted"):
+        values["byline"] = '<span>Redação Amorfy · Conteúdo elaborado com apoio de IA</span>'
+        values["schema_fields"] = '    "author": {"@type": "Organization", "name": "Amorfy"},\n    "publisher": {"@type": "Organization", "name": "Amorfy"},'
+    rendered = TEMPLATE.format(**values)
+    if meta.get("social_image"):
+        url = "https://amorfy.com.br" + meta["social_image"]
+        rendered = rendered.replace(f"https://amorfy.com.br/og/artigos-{meta['slug']}.png", html.escape(url, quote=True))
+        rendered = rendered.replace('content="image/png"', 'content="image/webp"')
+        rendered = rendered.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="1536"')
+        rendered = rendered.replace('property="og:image:height" content="630"', 'property="og:image:height" content="1024"')
+        rendered = rendered.replace('content="Amorfy — testes, artigos e histórias reais sobre relacionamentos"', 'content="' + html.escape(meta["image_alt"], quote=True) + '"')
+        rendered = rendered.replace('name="twitter:image:alt" content="Amorfy"', 'name="twitter:image:alt" content="' + html.escape(meta["image_alt"], quote=True) + '"')
+        rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "image": ' + json.dumps(url) + ',', 1)
+    return rendered
 
 
 def write_article(meta, out_dir=None):

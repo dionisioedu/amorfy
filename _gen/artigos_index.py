@@ -30,7 +30,11 @@ def _card(art):
         f'<a class="cat-chip cat-{c}" href="/temas/{c}.html">{CATEGORIES.get(c, (c.title(), ""))[0]}</a>'
         for c in art.get("categories", [])
     )
-    return f'''<div class="card">
+    image = ""
+    if art.get("ai_assisted") and art.get("image"):
+        from html import escape
+        image = f'<a href="/artigos/{slug}.html" tabindex="-1" aria-hidden="true"><img class="post-card-image" src="{escape(art["image"], quote=True)}" alt="" width="1536" height="1024" loading="lazy" decoding="async"></a>'
+    return f'''<div class="card">{image}
           <div class="card-body">
             <span class="card-tag {tag_color}">{tag}</span>
             <h3 class="card-title"><a href="/artigos/{slug}.html">{title}</a></h3>

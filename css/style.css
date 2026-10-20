@@ -429,3 +429,7 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
   body{background:#fff;color:#000}
   body::before{display:none}
 }
+
+/* Illustrated editorial posts */
+.post-card-image{width:100%;aspect-ratio:3/2;object-fit:cover}
+.article-hero figcaption{font-size:.75rem;color:var(--text-secondary);text-align:center;padding:.5rem}

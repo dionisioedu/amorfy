@@ -7,6 +7,7 @@ import argparse
 from pathlib import Path
 
 from article_template import write_article
+from illustrated_posts import ARTICLES as ILLUSTRATED
 from article_extras import apply_extras
 from sponsors import inject_sponsored
 from quiz_related import apply_related
@@ -43,7 +44,7 @@ from sitemap import write_sitemap
 
 def build(output):
     articles = []
-    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID, *ABUS1, *ABUS2, *DEP1, *DEP2]:
+    for raw in [*BATCH1, *BATCH2, *BATCH3, *MANUAL, ARTIGO, *TEMAS1, *TEMAS2, *TEMAS3, *LIVROS, *PSI1, *PSI2, *PSI3, *INFID, *ABUS1, *ABUS2, *DEP1, *DEP2, *ILLUSTRATED]:
         article = apply_related(inject_sponsored(apply_extras(raw)))
         articles.append(article)
         write_article(article, output / "artigos")
