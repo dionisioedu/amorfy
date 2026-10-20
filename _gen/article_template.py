@@ -137,9 +137,10 @@ def _hero_html(meta):
     if not img:
         return ""
     alt = html.escape(meta.get("image_alt") or meta["title"], quote=True)
+    figure_class = "article-hero article-hero-photo" if meta.get("ai_assisted") else "article-hero"
     caption = '<figcaption>Imagem ilustrativa criada com IA.</figcaption>' if meta.get("ai_assisted") else ""
     return (
-        '<figure class="article-hero">'
+        f'<figure class="{figure_class}">'
         f'<img src="{html.escape(img, quote=True)}" alt="{alt}" width="{meta.get("image_width", 1200)}" height="{meta.get("image_height", 600)}" loading="eager" decoding="async">'
         + caption + '</figure>'
     )

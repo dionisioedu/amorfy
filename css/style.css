@@ -433,3 +433,6 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 /* Illustrated editorial posts */
 .post-card-image{width:100%;aspect-ratio:3/2;object-fit:cover}
 .article-hero figcaption{font-size:.75rem;color:var(--text-secondary);text-align:center;padding:.5rem}
+
+.article-hero-photo{max-width:1000px;width:calc(100% - 2rem);margin:0 auto 2rem}
+.article-hero-photo img{max-height:480px;object-fit:cover}
