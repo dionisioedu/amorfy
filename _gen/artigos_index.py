@@ -104,7 +104,7 @@ def write_articles_index(articles, output):
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/" class="logo"><img src="/images/logo.svg" alt="Amorfy" width="38" height="38">Amorfy</a>
+      <a href="/" class="logo"><img src="/favicon.svg" alt="Amorfy" width="38" height="38">Amorfy</a>
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
       <nav><ul class="nav-links" id="site-navigation">
       <li><a href="/">Início</a></li>
