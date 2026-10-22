@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenera as páginas do pipeline (artigos, testes, casos, temas, estáticas) e o sitemap.
 
-Home e índices de seção (artigos/, testes/, casos/) são mantidos manualmente fora do pipeline.
+Home e índice de artigos são gerados a partir do catálogo de conteúdo.
 """
 import argparse
 from pathlib import Path
@@ -41,6 +41,7 @@ import faq_page
 from temas import write_temas
 from artigos_index import write_articles_index
 from sitemap import write_sitemap
+from home import write_home
 
 
 def build(output):
@@ -50,8 +51,9 @@ def build(output):
         articles.append(article)
         write_article(article, output / "artigos")
 
-    for quiz in [PERSONALIDADE, LINGUAGEM, NARCISISTA, COMPATIBILIDADE, AUTO, PARCEIRO,
-                 MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS]:
+    quizzes = [PERSONALIDADE, LINGUAGEM, NARCISISTA, COMPATIBILIDADE, AUTO, PARCEIRO,
+                 MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS]
+    for quiz in quizzes:
         write_quiz(enrich_quiz(quiz), output / "testes")
     for story in CASOS:
         write_caso(story, output / "casos")
@@ -61,6 +63,7 @@ def build(output):
 
     write_temas(articles, output)
     write_articles_index(articles, output)
+    write_home(articles, quizzes, output)
     write_sitemap(output)
 
 

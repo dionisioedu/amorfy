@@ -14,7 +14,6 @@ GEN_DIR = ROOT / "_gen"
 
 # Pages maintained by hand that are never produced by the generator.
 MANUALLY_MAINTAINED = {
-    "index.html",
     "testes/index.html",
     "casos/index.html",
     "404.html",
@@ -108,6 +107,18 @@ class GenerationTest(unittest.TestCase):
                 image = ROOT / article["image"].lstrip("/")
                 self.assertEqual(image.read_bytes()[8:12], b"WEBP")
                 self.assertIn('/artigos/' + article["slug"] + '.html', (ROOT / "temas/noticias.html").read_text(encoding="utf-8"))
+
+    def test_home_catalog_links_assets_and_visible_news(self):
+        page = (ROOT / "index.html").read_text(encoding="utf-8")
+        catalog = json.loads(re.search(r'<script id="home-catalog" type="application/json">(.*?)</script>', page, re.S)[1])
+        self.assertEqual(len({a["url"] for a in catalog}), len(catalog))
+        self.assertEqual({a["kind"] for a in catalog}, {"noticia", "artigo", "teste"})
+        for item in catalog:
+            self.assertTrue((ROOT / item["url"].lstrip("/")).is_file(), item["url"])
+            if item["image"]:
+                self.assertTrue((ROOT / item["image"].lstrip("/")).is_file(), item["image"])
+        for news in _import_gen("news_posts").ARTICLES:
+            self.assertIn('href="/artigos/' + news["slug"] + '.html"', page)
 
     def test_every_content_page_has_a_card_in_its_index(self):
         for category, prefix in (("artigos", "/artigos/"), ("testes", "/testes/"), ("casos", "/casos/")):
