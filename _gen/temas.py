@@ -122,7 +122,7 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-EMOJI = {"noticias": "📰", "relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
+EMOJI = {"noticias": "", "relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
          "relacionamento-abusivo": "🚩", "dependencia-emocional": "⛓️"}
 
 
