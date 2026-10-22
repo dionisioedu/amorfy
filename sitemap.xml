@@ -385,6 +385,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://amorfy.com.br/artigos/solteiros-satisfacao-estudo-2026.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://amorfy.com.br/artigos/temperamentos.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -561,6 +567,12 @@
   <url>
     <loc>https://amorfy.com.br/temas/narcisismo.html</loc>
     <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://amorfy.com.br/temas/noticias.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

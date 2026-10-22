@@ -9,6 +9,7 @@ from authorship import article_schema_fields, byline_html
 
 # Categorias/temas canônicos (chips clicáveis → /temas/<slug>.html).
 CATEGORIES = {
+    "noticias": ("Notícias", "cat-noticias"),
     "relacionamentos": ("Relacionamentos", "cat-relacionamentos"),
     "borderline": ("Borderline", "cat-borderline"),
     "narcisismo": ("Narcisismo", "cat-narcisismo"),
@@ -139,6 +140,11 @@ def _hero_html(meta):
     alt = html.escape(meta.get("image_alt") or meta["title"], quote=True)
     figure_class = "article-hero article-hero-photo" if meta.get("ai_assisted") else "article-hero"
     caption = '<figcaption>Imagem ilustrativa criada com IA.</figcaption>' if meta.get("ai_assisted") else ""
+    if meta.get("photo_credit"):
+        credit = {k: html.escape(v, quote=True) for k, v in meta["photo_credit"].items()}
+        caption = (f'<figcaption>Foto: <a href="{credit["url"]}">{credit["author"]} / Pexels</a> · '
+                   '<a href="https://www.pexels.com/license/">Licença Pexels</a>. '
+                   'Imagem ilustrativa; as pessoas retratadas não são participantes da pesquisa.</figcaption>')
     return (
         f'<figure class="{figure_class}">'
         f'<img src="{html.escape(img, quote=True)}" alt="{alt}" width="{meta.get("image_width", 1200)}" height="{meta.get("image_height", 600)}" loading="eager" decoding="async">'
@@ -193,6 +199,8 @@ def render_article(meta):
         rendered = rendered.replace('content="Amorfy — testes, artigos e histórias reais sobre relacionamentos"', 'content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('name="twitter:image:alt" content="Amorfy"', 'name="twitter:image:alt" content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "image": ' + json.dumps(url) + ',', 1)
+    if meta.get("news"):
+        rendered = rendered.replace('"@type": "Article",', '"@type": "NewsArticle",\n    "articleSection": "Notícias",\n    "citation": ' + json.dumps(meta["sources"], ensure_ascii=False).replace("<", "\\u003c") + ',', 1)
     return rendered
 
 

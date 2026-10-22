@@ -34,7 +34,7 @@ def source_slugs():
     """Map each content section to the slugs declared in the _gen source modules."""
     articles, quizzes, casos = [], [], []
 
-    for name in ("batch1", "batch2", "batch3", "manual_batch", "temas_batch1", "temas_batch2", "temas_batch3", "livros_batch", "psicanalise_batch1", "psicanalise_batch2", "psicanalise_batch3", "infidelidade_batch", "illustrated_posts"):
+    for name in ("batch1", "batch2", "batch3", "manual_batch", "temas_batch1", "temas_batch2", "temas_batch3", "livros_batch", "psicanalise_batch1", "psicanalise_batch2", "psicanalise_batch3", "infidelidade_batch", "illustrated_posts", "news_posts"):
         mod = _import_gen(name)
         if mod is not None:
             articles.extend(entry["slug"] for entry in mod.ARTICLES)
@@ -91,6 +91,23 @@ class GenerationTest(unittest.TestCase):
                         json.loads(block)
                     if rel.split("/")[0] == "casos":
                         self.assertIn('href="/casos/#conte-sua-historia"', generated_text)
+
+    def test_news_has_sources_real_photo_credit_and_news_schema(self):
+        for article in _import_gen("news_posts").ARTICLES:
+            with self.subTest(slug=article["slug"]):
+                page = (ROOT / "artigos" / (article["slug"] + ".html")).read_text(encoding="utf-8")
+                schema = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S)[1])
+                self.assertEqual(schema["@type"], "NewsArticle")
+                self.assertEqual(schema["citation"], article["sources"])
+                self.assertTrue(schema["citation"])
+                for source in schema["citation"]:
+                    self.assertIn('href="' + source + '"', page)
+                self.assertIn(article["photo_credit"]["url"], page)
+                self.assertIn("Licença Pexels", page)
+                self.assertNotIn("Imagem ilustrativa criada com IA", page)
+                image = ROOT / article["image"].lstrip("/")
+                self.assertEqual(image.read_bytes()[8:12], b"WEBP")
+                self.assertIn('/artigos/' + article["slug"] + '.html', (ROOT / "temas/noticias.html").read_text(encoding="utf-8"))
 
     def test_every_content_page_has_a_card_in_its_index(self):
         for category, prefix in (("artigos", "/artigos/"), ("testes", "/testes/"), ("casos", "/casos/")):

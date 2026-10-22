@@ -9,6 +9,10 @@ BASE_URL = "https://amorfy.com.br"
 
 # Metadados SEO por tema.
 META = {
+    "noticias": {
+        "desc": "Notícias sobre relacionamentos e comportamento, com pesquisas verificáveis, fotografias reais e contexto para entender os resultados.",
+        "intro": "O que as pesquisas revelam sobre a vida afetiva — com fontes, contexto e espaço para as perguntas que continuam em aberto.",
+    },
     "relacionamentos": {
         "desc": "Artigos sobre relacionamentos: apego, desejo, sexualidade, comunicação e dinâmicas do amor. Guias práticos escritos com rigor e empatia.",
         "intro": "Entenda as dinâmicas que aproximam ou afastam os casais — do apego ao desejo, da comunicação à confiança.",
@@ -118,7 +122,7 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-EMOJI = {"relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
+EMOJI = {"noticias": "📰", "relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
          "relacionamento-abusivo": "🚩", "dependencia-emocional": "⛓️"}
 
 
@@ -133,6 +137,9 @@ def _chip(slug, active=False):
 
 
 def _card(article):
+    if article.get("news"):
+        from artigos_index import _card as news_card
+        return news_card(article)
     slug = article["slug"]
     title = short_title(article["title"])
     desc = article.get("desc", "")
@@ -179,6 +186,8 @@ def write_temas(articles, output):
             nav_chips=_nav_chips(slug),
             cards=cards,
         )
+        if slug == "noticias":
+            html = html.replace("Artigos sobre Notícias", "Notícias sobre relacionamentos")
         path = temas_dir / f"{slug}.html"
         path.write_text(html, encoding="utf-8")
         print(f"OK {path} ({len(by_cat[slug])} artigos)")

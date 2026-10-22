@@ -436,3 +436,8 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 
 .article-hero-photo{max-width:1000px;width:calc(100% - 2rem);margin:0 auto 2rem}
 .article-hero-photo img{max-height:480px;object-fit:cover}
+
+/* Notícias: contexto editorial e referências. */
+.cat-noticias { background: #f3e8ef; color: #74314f; border: 1px solid #d8b8c9; }
+.news-context { padding: 1rem 1.25rem; border-left: 3px solid var(--rose); background: var(--bg-secondary, #f5ede8); font-size: .9rem; }
+.news-sources { border-top: 1px solid var(--border, #e6d8d2); margin-top: 2rem; padding-top: 1rem; font-size: .9rem; overflow-wrap: anywhere; }
