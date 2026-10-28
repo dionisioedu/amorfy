@@ -16,13 +16,13 @@ Home/artigo → /profissionais/ → perfil individual → WhatsApp ou e-mail aut
 
 A página de rede reúne orientações, critérios de apresentação e um canal para profissionais solicitarem inclusão. O perfil mostra nome, título, formação, registro quando aplicável, público, modalidade, localização e contato. O vínculo com o site é público. A ordem é alfabética, sem pontuação ou ranking de qualidade.
 
-Os perfis de Eduardo e Alice aguardam dados de atuação. Os contatos recebidos estão em rascunho local fora do repositório público; não se publicou formação, disponibilidade ou título inferidos. O arquivo profiles.json só deve receber dados prontos para divulgação.
+O responsável informou atuação em Psicanálise e atendimento exclusivamente remoto por videochamada para Eduardo e Alice. Os perfis usam esses dados declarados; formação específica e público atendido permanecem explicitamente não informados. Não há selo de verificação de credenciais nem declaração de especialidades. Eduardo usa o nome já presente na autoria do site. Atualizar os detalhes quando forem fornecidos.
 
 ## Ativar um perfil
 
 Editar `_gen/professionals/profiles.json`. Os campos de texto são escapados pelo gerador; não usar HTML.
 
-1. Confirmar nome profissional completo, título de atuação, formação, público, modalidade e localização (inclusive quando somente online).
+1. Registrar nome profissional, título declarado, formação, público, modalidade e localização. Se formação específica ou público ainda não tiverem sido fornecidos, indicar explicitamente essa ausência no perfil e orientar o leitor a consultar o profissional; nunca inventar uma qualificação.
 2. Para Psicologia, confirmar o CRP e a identificação profissional no cadastro oficial. Para outras práticas, descrever a formação específica sem equiparar automaticamente a Psicologia ou Medicina. A validação de formato no código não verifica a validade de registro.
 3. Confirmar autorização de divulgação dos dados públicos e da fotografia. Não armazenar documentos comprobatórios, diplomas completos ou dados de pacientes no repositório.
 4. Usar `kind`: `psicologia`, `psicanalise` ou `terapia`; `modes`: `Online` e/ou `Presencial`; `relationship`: `owner` (responsável pelo site) ou `partner`.

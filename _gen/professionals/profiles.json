@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "slug": "eduardo",
+    "name": "Eduardo Dionisio",
+    "published": true,
+    "consent_publication": true,
+    "kind": "psicanalise",
+    "title": "Psicanalista",
+    "bio": "Eduardo Dionisio se apresenta como psicanalista e oferece atendimento exclusivamente remoto, com sessões por videochamada. O primeiro contato pode ser feito pelo WhatsApp ou por e-mail para esclarecer dúvidas e consultar disponibilidade.",
+    "formation": "Detalhes do percurso de formação ainda não informados nesta página. Solicite essas informações ao profissional antes de decidir sobre o atendimento.",
+    "audience": "Consulte diretamente o profissional sobre o público atendido e a adequação do serviço à sua procura.",
+    "location": "Atendimento exclusivamente remoto, por videochamada.",
+    "modes": [
+      "Online"
+    ],
+    "contact_url": "https://wa.me/5511996643485",
+    "email": "ceduardodfernandes@gmail.com",
+    "relationship": "owner",
+    "reviewed_on": "2026-10-28"
+  }
+]
