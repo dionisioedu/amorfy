@@ -124,7 +124,7 @@ PAGES = [
 "title": "Política de Privacidade — Amorfy",
 "desc": "Política de privacidade do Amorfy: como tratamos dados, cookies, Google AdSense e seus direitos conforme a LGPD.",
 "h1": "Política de Privacidade",
-"body": """<p><em>Última atualização: 16 de julho de 2025</em></p>
+"body": """<p><em>Última atualização: 28 de outubro de 2026</em></p>
 
 <p>Esta Política de Privacidade descreve como o <strong>Amorfy</strong> (amorfy.com.br) coleta, usa e protege informações quando você visita nosso site.</p>
 
@@ -170,6 +170,10 @@ PAGES = [
 <h2>9. Alterações nesta política</h2>
 <p>Podemos atualizar esta política periodicamente. A data da última atualização aparece no topo da página. Alterações relevantes serão destacadas no site.</p>
 
+<h2>Diretório de profissionais</h2>
+<p>O diretório publica dados profissionais autorizados para apresentação dos serviços e contato direto. Pedidos de inclusão, correção ou remoção são recebidos pelo e-mail da equipe. Não envie relatos clínicos ou dados de pacientes nesse canal.</p>
+<p>As páginas do diretório não carregam anúncios e não solicitam dados de saúde. Ao usar um contato externo, você inicia uma conversa com o profissional ou com a plataforma escolhida, sujeitos às respectivas políticas de privacidade. Não encaminhamos respostas dos testes ou histórico de leitura. Dados técnicos de acesso podem constar nos registros da hospedagem.</p>
+
 <h2>10. Contato</h2>
 <p>Dúvidas sobre esta política: <a href="mailto:contato@amorfy.com.br">contato@amorfy.com.br</a>.</p>"""
 },
@@ -178,7 +182,7 @@ PAGES = [
 "title": "Termos de Uso — Amorfy",
 "desc": "Termos de uso do Amorfy: condições de utilização do site, isenção de responsabilidade sobre conteúdos informativos e propriedade intelectual.",
 "h1": "Termos de Uso",
-"body": """<p><em>Última atualização: 16 de julho de 2025</em></p>
+"body": """<p><em>Última atualização: 28 de outubro de 2026</em></p>
 
 <p>Ao acessar o site <strong>Amorfy</strong> (amorfy.com.br), você concorda com os termos abaixo. Se não concordar, por favor não utilize o site.</p>
 
@@ -205,6 +209,9 @@ PAGES = [
 
 <h2>6. Isenção de responsabilidade</h2>
 <p>O Amorfy não se responsabiliza por decisões tomadas com base nos conteúdos do site, pela disponibilidade ininterrupta do serviço, ou por conteúdos de sites externos vinculados. O uso das informações é de responsabilidade exclusiva do usuário.</p>
+
+<h2>Diretório e contato profissional</h2>
+<p>A área de profissionais divulga informações autorizadas, com identificação do vínculo com o Amorfy. A inclusão não garante resultado de atendimento. Agendamento, honorários e condições do serviço são tratados diretamente com o profissional. O diretório não realiza avaliação clínica, encaminhamento baseado nos testes ou atendimento de urgência.</p>
 
 <h2>7. Alterações</h2>
 <p>Estes termos podem ser atualizados a qualquer momento, com vigência a partir da publicação nesta página.</p>

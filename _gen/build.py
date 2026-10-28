@@ -42,6 +42,7 @@ from temas import write_temas
 from artigos_index import write_articles_index
 from sitemap import write_sitemap
 from home import write_home
+from professionals import write_professionals
 
 
 def build(output):
@@ -64,6 +65,7 @@ def build(output):
     write_temas(articles, output)
     write_articles_index(articles, output)
     write_home(articles, quizzes, output)
+    write_professionals(output)
     write_sitemap(output)
 
 

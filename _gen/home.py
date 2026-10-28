@@ -3,6 +3,7 @@ import json
 from html import escape
 from pathlib import Path
 from article_template import CATEGORIES
+from professionals import contact_cta
 
 
 def catalog(articles, quizzes):
@@ -34,7 +35,7 @@ def write_home(articles, quizzes, output):
     featured = (news or posts)[0]
     f = {k: escape(str(v), quote=True) for k, v in featured.items()}
     feature = f'<article class="home-feature"><a href="{f["url"]}"><img src="{f["image"]}" alt="" width="1536" height="1024" fetchpriority="high"><div class="home-feature-text"><span class="home-feature-tag">EM DESTAQUE · {f["label"]}</span><h2>{f["title"]}</h2><span>{f["meta"]} <span aria-hidden="true">↗</span></span></div></a></article>'
-    values = dict(feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
+    values = dict(care=contact_cta(), feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
                   topics="".join(f'<a href="/temas/{slug}.html">{escape(label)} <span aria-hidden="true">↗</span></a>' for slug, (label, _) in CATEGORIES.items() if slug != "noticias"),
                   catalog=json.dumps(items, ensure_ascii=False).replace("<", "\\u003c"))
     template = Path(__file__).with_name("home_template.tmpl").read_text(encoding="utf-8")

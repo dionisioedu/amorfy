@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from authorship import article_schema_fields, byline_html
+from professionals import contact_cta
 
 # Categorias/temas canônicos (chips clicáveis → /temas/<slug>.html).
 CATEGORIES = {
@@ -104,6 +105,7 @@ TEMPLATE = """<!DOCTYPE html>
 
     <div class="article-body">
 {body}
+{care_cta}
     </div>
   </article>
 
@@ -176,6 +178,7 @@ def _related_quiz_html(meta):
 
 def render_article(meta):
     values = dict(meta)
+    values["care_cta"] = contact_cta()
     for key in ("title", "desc"):
         values[key] = html.escape(meta[key], quote=True)
         values[key + "_json"] = json.dumps(meta[key], ensure_ascii=False).replace("<", "\\u003c")
