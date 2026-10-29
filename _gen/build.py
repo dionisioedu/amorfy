@@ -36,6 +36,7 @@ from quiz_batch3 import MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSA
 from borderline_quizzes import AUTO, PARCEIRO
 from quiz_landing import enrich as enrich_quiz
 from casos_batch import CASOS, write_caso
+from documented_cases import CASES, write_cases_index
 from static_pages import PAGES, write_page
 import faq_page
 from temas import write_temas
@@ -56,7 +57,7 @@ def build(output):
                  MEU_NARCISISMO, PARCEIRO_PRONTO, AFASTO_PESSOAS, AUTOSSABOTAGEM, CIUME_INVEJA, RED_FLAGS]
     for quiz in quizzes:
         write_quiz(enrich_quiz(quiz), output / "testes")
-    for story in CASOS:
+    for story in [*CASOS, *CASES]:
         write_caso(story, output / "casos")
     for page in PAGES:
         write_page(page, output)
@@ -64,6 +65,7 @@ def build(output):
 
     write_temas(articles, output)
     write_articles_index(articles, output)
+    write_cases_index(output)
     write_home(articles, quizzes, output)
     write_professionals(output)
     write_sitemap(output)

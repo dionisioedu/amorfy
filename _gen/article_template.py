@@ -147,6 +147,11 @@ def _hero_html(meta):
         caption = (f'<figcaption>Foto: <a href="{credit["url"]}">{credit["author"]} / Pexels</a> · '
                    '<a href="https://www.pexels.com/license/">Licença Pexels</a>. '
                    'Imagem ilustrativa; as pessoas retratadas não são participantes da pesquisa.</figcaption>')
+    if meta.get("image_credit"):
+        credit = {k: html.escape(v, quote=True) for k, v in meta["image_credit"].items()}
+        figure_class += " article-hero-archive"
+        caption = (f'<figcaption>{credit["caption"]} Foto: <a href="{credit["url"]}">{credit["author"]}</a> · '
+                   f'<a href="{credit["license_url"]}">{credit["license"]}</a>. Redimensionada e convertida para WebP.</figcaption>')
     return (
         f'<figure class="{figure_class}">'
         f'<img src="{html.escape(img, quote=True)}" alt="{alt}" width="{meta.get("image_width", 1200)}" height="{meta.get("image_height", 600)}" loading="eager" decoding="async">'
@@ -197,11 +202,13 @@ def render_article(meta):
         url = "https://amorfy.com.br" + meta["social_image"]
         rendered = rendered.replace(f"https://amorfy.com.br/og/artigos-{meta['slug']}.png", html.escape(url, quote=True))
         rendered = rendered.replace('content="image/png"', 'content="image/webp"')
-        rendered = rendered.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="1536"')
-        rendered = rendered.replace('property="og:image:height" content="630"', 'property="og:image:height" content="1024"')
+        rendered = rendered.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="' + str(meta.get("image_width", 1536)) + '"')
+        rendered = rendered.replace('property="og:image:height" content="630"', 'property="og:image:height" content="' + str(meta.get("image_height", 1024)) + '"')
         rendered = rendered.replace('content="Amorfy — testes, artigos e histórias reais sobre relacionamentos"', 'content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('name="twitter:image:alt" content="Amorfy"', 'name="twitter:image:alt" content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "image": ' + json.dumps(url) + ',', 1)
+    if meta.get("documented"):
+        rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "citation": ' + json.dumps(meta["sources"], ensure_ascii=False).replace("<", "\\u003c") + ',', 1)
     if meta.get("news"):
         rendered = rendered.replace('"@type": "Article",', '"@type": "NewsArticle",\n    "articleSection": "Notícias",\n    "citation": ' + json.dumps(meta["sources"], ensure_ascii=False).replace("<", "\\u003c") + ',', 1)
     return rendered

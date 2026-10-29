@@ -15,7 +15,6 @@ GEN_DIR = ROOT / "_gen"
 # Pages maintained by hand that are never produced by the generator.
 MANUALLY_MAINTAINED = {
     "testes/index.html",
-    "casos/index.html",
     "404.html",
 }
 
@@ -58,6 +57,7 @@ def source_slugs():
     if mod is not None:
         casos.extend(entry["slug"] for entry in mod.CASOS)
 
+    casos.extend(entry["slug"] for entry in _import_gen("documented_cases").CASES)
     return {"artigos": articles, "testes": quizzes, "casos": casos}
 
 
@@ -88,7 +88,7 @@ class GenerationTest(unittest.TestCase):
                         r'<script type="application/ld\+json">(.*?)</script>', generated_text, re.S
                     ):
                         json.loads(block)
-                    if rel.split("/")[0] == "casos":
+                    if rel.split("/")[0] == "casos" and rel != "casos/index.html":
                         self.assertIn('href="/casos/#conte-sua-historia"', generated_text)
 
     def test_news_has_sources_real_photo_credit_and_news_schema(self):
@@ -112,7 +112,7 @@ class GenerationTest(unittest.TestCase):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
         catalog = json.loads(re.search(r'<script id="home-catalog" type="application/json">(.*?)</script>', page, re.S)[1])
         self.assertEqual(len({a["url"] for a in catalog}), len(catalog))
-        self.assertEqual({a["kind"] for a in catalog}, {"noticia", "artigo", "teste"})
+        self.assertEqual({a["kind"] for a in catalog}, {"noticia", "artigo", "teste", "caso"})
         for item in catalog:
             self.assertTrue((ROOT / item["url"].lstrip("/")).is_file(), item["url"])
             if item["image"]:

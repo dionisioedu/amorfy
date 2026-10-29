@@ -4,6 +4,7 @@ from html import escape
 from pathlib import Path
 from article_template import CATEGORIES
 from professionals import contact_cta
+from documented_cases import CASES
 
 
 def catalog(articles, quizzes):
@@ -17,6 +18,10 @@ def catalog(articles, quizzes):
     for q in quizzes:
         items.append(dict(title=q["title"].split(" — ")[0], desc=q["desc"], url=f'/testes/{q["slug"]}.html',
                           kind="teste", image="", label="Teste", date="", meta="Gratuito · Sem cadastro", topics="autoconhecimento"))
+    for c in CASES:
+        items.append(dict(title=c["title"], desc=c["desc"], url=f'/casos/{c["slug"]}.html',
+                          kind="caso", image=c["image"], label="Caso documentado", date=c["date"],
+                          meta=f'{c["read_min"]} min de leitura', topics=c["tag"]))
     return items
 
 
@@ -35,7 +40,7 @@ def write_home(articles, quizzes, output):
     featured = (news or posts)[0]
     f = {k: escape(str(v), quote=True) for k, v in featured.items()}
     feature = f'<article class="home-feature"><a href="{f["url"]}"><img src="{f["image"]}" alt="" width="1536" height="1024" fetchpriority="high"><div class="home-feature-text"><span class="home-feature-tag">EM DESTAQUE · {f["label"]}</span><h2>{f["title"]}</h2><span>{f["meta"]} <span aria-hidden="true">↗</span></span></div></a></article>'
-    values = dict(care=contact_cta(), feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
+    values = dict(cases="".join(card(a) for a in items if a["kind"] == "caso"), care=contact_cta(), feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
                   topics="".join(f'<a href="/temas/{slug}.html">{escape(label)} <span aria-hidden="true">↗</span></a>' for slug, (label, _) in CATEGORIES.items() if slug != "noticias"),
                   catalog=json.dumps(items, ensure_ascii=False).replace("<", "\\u003c"))
     template = Path(__file__).with_name("home_template.tmpl").read_text(encoding="utf-8")

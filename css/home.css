@@ -64,3 +64,5 @@
 @media(prefers-reduced-motion:reduce){.home-card{transition:none}.home-card:hover{transform:none}}
 
 .home-shortcuts{display:flex;gap:.7rem;flex-wrap:wrap;margin:0 0 1.4rem}.home-shortcuts a{display:flex;gap:1rem;justify-content:space-between;align-items:center;font-size:.78rem;font-weight:600;color:var(--text-secondary);border:1px solid var(--border);background:var(--surface);padding:.6rem .9rem;border-radius:8px;min-height:42px}.home-shortcuts a:hover{border-color:var(--rose);color:var(--rose)}.home-ad{margin-top:2rem}@media(max-width:650px){.home-shortcuts a{flex:1 1 44%;font-size:.72rem}}
+
+.home-card-caso img{object-fit:contain;background:#f5f0e9}
