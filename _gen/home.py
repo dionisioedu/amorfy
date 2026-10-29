@@ -22,7 +22,7 @@ def catalog(articles, quizzes):
         items.append(dict(title=c["title"], desc=c["desc"], url=f'/casos/{c["slug"]}.html',
                           kind="caso", image=c["image"], label="Caso documentado", date=c["date"],
                           meta=f'{c["read_min"]} min de leitura', topics=c["tag"]))
-    return items
+    return sorted(items, key=lambda item: (-int(item["date"].replace("-", "") or "0"), item["url"]))
 
 
 def card(item):
@@ -37,10 +37,13 @@ def write_home(articles, quizzes, output):
     news = [a for a in items if a["kind"] == "noticia"][:3]
     posts = [a for a in items if a["kind"] == "artigo"][:6]
     tests = [a for a in items if a["kind"] == "teste" and a["url"] in ["/testes/personalidade-amorosa.html", "/testes/linguagem-do-amor.html", "/testes/compatibilidade.html"]]
-    featured = (news or posts)[0]
+    recent = [a for a in items if a["date"]]
+    featured = recent[0]
     f = {k: escape(str(v), quote=True) for k, v in featured.items()}
-    feature = f'<article class="home-feature"><a href="{f["url"]}"><img src="{f["image"]}" alt="" width="1536" height="1024" fetchpriority="high"><div class="home-feature-text"><span class="home-feature-tag">EM DESTAQUE · {f["label"]}</span><h2>{f["title"]}</h2><span>{f["meta"]} <span aria-hidden="true">↗</span></span></div></a></article>'
-    values = dict(cases="".join(card(a) for a in items if a["kind"] == "caso"), care=contact_cta(), feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
+    feature_image = (f'<img src="{f["image"]}" alt="" width="1536" height="1024" fetchpriority="high">'
+                     if f["image"] else '<div class="home-feature-placeholder" aria-hidden="true">Amorfy</div>')
+    feature = f'<article class="home-feature home-feature-{f["kind"]}"><a href="{f["url"]}">{feature_image}<div class="home-feature-text"><span class="home-feature-tag">MAIS RECENTE · {f["label"]}</span><h2>{f["title"]}</h2><p>{f["desc"]}</p><span><time datetime="{f["date"]}">{f["date"][8:10]}/{f["date"][5:7]}/{f["date"][:4]}</time> · {f["meta"]} <span aria-hidden="true">↗</span></span></div></a></article>'
+    values = dict(recent="".join(map(card, recent[3:9])), side="".join(map(card, recent[1:3])), latest_date=recent[0]["date"][8:10] + "/" + recent[0]["date"][5:7] + "/" + recent[0]["date"][:4], cases="".join(card(a) for a in items if a["kind"] == "caso"), care=contact_cta(), feature=feature, news="".join(map(card, news)), articles="".join(map(card, posts)), quizzes="".join(map(card, tests)),
                   topics="".join(f'<a href="/temas/{slug}.html">{escape(label)} <span aria-hidden="true">↗</span></a>' for slug, (label, _) in CATEGORIES.items() if slug != "noticias"),
                   catalog=json.dumps(items, ensure_ascii=False).replace("<", "\\u003c"))
     template = Path(__file__).with_name("home_template.tmpl").read_text(encoding="utf-8")
