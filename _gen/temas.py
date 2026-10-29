@@ -9,6 +9,7 @@ BASE_URL = "https://amorfy.com.br"
 
 # Metadados SEO por tema.
 META = {
+    "autoestima": {"desc": "Autoestima na clínica e na pesquisa: avaliação, psicometria, formulação cognitiva e intervenções com análise crítica das evidências.", "intro": "Leituras sobre autoestima, autocrítica e processos de mudança para estudantes, profissionais e leitores interessados em aprofundamento."},
     "noticias": {
         "desc": "Notícias sobre relacionamentos e comportamento, com pesquisas verificáveis, fotografias reais e contexto para entender os resultados.",
         "intro": "O que as pesquisas revelam sobre a vida afetiva — com fontes, contexto e espaço para as perguntas que continuam em aberto.",
@@ -23,7 +24,7 @@ META = {
     },
     "narcisismo": {
         "desc": "Artigos sobre narcisismo nos relacionamentos: como identificar, proteger-se, co-parentalidade e o caminho da cura. Guias práticos e empáticos.",
-        "intro": "Reconheça os padrões do abuso narcisista e reconstrua sua vida com segurança, limites e autoestima.",
+        "intro": "Compreenda traços, funcionamento da personalidade e relações interpessoais. Narcisismo e comportamento abusivo não são conceitos equivalentes.",
     },
     "bipolaridade": {
         "desc": "Artigos sobre Transtorno Bipolar: ciclos, relacionamentos, família e tratamento. Entenda e cuide de quem você ama — ou de si mesmo.",
@@ -122,7 +123,7 @@ TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
-EMOJI = {"noticias": "", "relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
+EMOJI = {"autoestima": "","noticias": "", "relacionamentos": "💞", "borderline": "🌊", "narcisismo": "🪞", "bipolaridade": "🌗", "psicanalise": "🛋️",
          "relacionamento-abusivo": "🚩", "dependencia-emocional": "⛓️"}
 
 
@@ -175,7 +176,7 @@ def write_temas(articles, output):
 
     for slug, (label, _cls) in CATEGORIES.items():
         meta = META[slug]
-        cards = "\n        ".join(_card(a) for a in sorted(by_cat[slug], key=lambda a: a["slug"]))
+        cards = "\n        ".join(_card(a) for a in sorted(by_cat[slug], key=lambda a: (a.get("date", ""), a.get("publication_order", 0), a["slug"]), reverse=True))
         html = TEMPLATE.format(
             title=f"Artigos sobre {label} &mdash; Amorfy",
             desc=meta["desc"],
@@ -188,6 +189,8 @@ def write_temas(articles, output):
         )
         if slug == "noticias":
             html = html.replace("Artigos sobre Notícias", "Notícias sobre relacionamentos")
+        if slug == "autoestima":
+            html = html.replace("/og/temas-autoestima.png", "/og/artigos-autoconhecimento.png")
         path = temas_dir / f"{slug}.html"
         path.write_text(html, encoding="utf-8")
         print(f"OK {path} ({len(by_cat[slug])} artigos)")

@@ -451,3 +451,6 @@ input[type=text]:focus,input[type=email]:focus,textarea:focus,select:focus{outli
 
 /* Preserve archival photographs without cropping people. */
 .article-hero-archive img{max-height:600px;object-fit:contain;background:#f5f0e9}
+
+.study-toc,.study-series{padding:1.2rem;border:1px solid var(--border);border-radius:12px;margin:1.5rem 0;background:var(--surface)}
+.study-toc li,.study-series li{margin:.5rem 0}.study-table{overflow-x:auto;margin:1.5rem 0}.study-table table{min-width:560px;width:100%;border-collapse:collapse}.study-table th,.study-table td{padding:.8rem;text-align:left;vertical-align:top;border:1px solid var(--border)}.study-table th{background:#f5edf0}.article-body h2[id]{scroll-margin-top:90px}

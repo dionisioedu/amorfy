@@ -11,8 +11,8 @@ def catalog(articles, quizzes):
     items = []
     for a in sorted(articles, key=lambda a: (a.get("date", ""), a["slug"]), reverse=True):
         items.append(dict(title=a["title"], desc=a["desc"], url=f'/artigos/{a["slug"]}.html',
-                          kind="noticia" if a.get("news") else "artigo", image=a.get("image", ""),
-                          label="Notícia" if a.get("news") else "Artigo", date=a.get("date", ""),
+                          publication_order=a.get("publication_order", 0), kind="noticia" if a.get("news") else "artigo", image=a.get("image", ""),
+                          label="Leitura técnica" if a.get("technical") else ("Notícia" if a.get("news") else "Artigo"), date=a.get("date", ""),
                           meta=f'{a.get("read_min", 5)} min de leitura',
                           topics=" ".join(CATEGORIES[c][0] for c in a.get("categories", []) if c in CATEGORIES)))
     for q in quizzes:
@@ -22,7 +22,7 @@ def catalog(articles, quizzes):
         items.append(dict(title=c["title"], desc=c["desc"], url=f'/casos/{c["slug"]}.html',
                           kind="caso", image=c["image"], label="Caso documentado", date=c["date"],
                           meta=f'{c["read_min"]} min de leitura', topics=c["tag"]))
-    return sorted(items, key=lambda item: (-int(item["date"].replace("-", "") or "0"), item["url"]))
+    return sorted(items, key=lambda item: (-int(item["date"].replace("-", "") or "0"), -item.get("publication_order", 0), item["url"]))
 
 
 def card(item):

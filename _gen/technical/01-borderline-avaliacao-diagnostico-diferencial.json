@@ -1,0 +1,44 @@
+{
+  "slug": "borderline-avaliacao-diagnostico-diferencial",
+  "title": "Borderline: avaliação clínica e diagnóstico diferencial",
+  "desc": "Avaliação do transtorno borderline para estudantes e profissionais: história longitudinal, bipolaridade, comorbidades e formulação clínica contextual.",
+  "breadcrumb": "Borderline",
+  "tag": "Estudos clínicos · 1",
+  "tag_color": "purple",
+  "date": "2026-10-29",
+  "date_human": "29 Out 2026",
+  "read_min": "6",
+  "categories": [
+    "borderline"
+  ],
+  "technical": true,
+  "ai_assisted": true,
+  "publication_order": 1,
+  "image": "/images/borderline.svg",
+  "image_alt": "Ilustração conceitual sobre borderline do acervo Amorfy.",
+  "image_width": 1200,
+  "image_height": 600,
+  "illustration_caption": "Ilustração conceitual do acervo Amorfy; não representa um paciente ou exame clínico.",
+  "social_image": "/og/artigos-borderline.png",
+  "social_image_type": "image/png",
+  "social_image_width": 1200,
+  "social_image_height": 630,
+  "body": "\n<p><strong>A avaliação do transtorno de personalidade borderline (TPB) exige reconstruir um padrão de funcionamento ao longo do tempo, e não apenas contar comportamentos observados durante uma crise.</strong> Instabilidade afetiva, impulsividade e sofrimento interpessoal precisam ser compreendidos em relação à história, ao contexto e ao prejuízo funcional.</p>\n<p>Este artigo diferencia três tarefas: descrever o fenômeno, examinar hipóteses diagnósticas e formular como os problemas se mantêm. Elas se informam mutuamente, mas não são intercambiáveis. Uma boa descrição pode permanecer útil mesmo quando a hipótese diagnóstica ainda é provisória.</p>\n<h2>Do episódio atual ao padrão longitudinal</h2>\n<p>A diretriz da American Psychiatric Association recomenda uma avaliação que inclua motivos da procura, objetivos da pessoa, sintomas, tratamentos prévios, saúde física, contexto psicossocial e cultural, estado mental e segurança. Também propõe discutir diagnóstico e plano de cuidado de maneira colaborativa. A contribuição desse enquadramento é evitar que a entrevista se reduza à confirmação de um rótulo trazido pelo encaminhamento. <a href=\"#ref-1\">[1]</a></p>\n<p>O NIMH descreve o TPB como um quadro de dificuldades na regulação emocional, com possíveis alterações da autoimagem, das relações e do comportamento. A apresentação varia entre pessoas. O diagnóstico depende de avaliação profissional abrangente, não de um teste online, uma postagem ou um conflito de casal. <a href=\"#ref-2\">[2]</a></p>\n<p>Na organização do material clínico, vale distinguir o que a pessoa relata, o que foi observado e o que o examinador está inferindo. “Faltou após uma discussão sobre honorários” é uma observação; “não tolera frustração” já é uma hipótese. Confundir esses níveis torna a formulação circular: o diagnóstico passa a explicar qualquer comportamento, e qualquer comportamento passa a confirmá-lo.</p>\n<h2>Borderline e bipolaridade: por que duração não basta</h2>\n<p>Uma revisão sistemática de 28 estudos comparativos encontrou sobreposições e diferenças entre TPB e transtorno bipolar. Sintomas depressivos, ansiedade e impulsividade podem aparecer nos dois; episódios maníacos e características do curso ajudam na diferenciação. Os resultados de neuroimagem são achados de grupos, não um exame diagnóstico para um indivíduo. <a href=\"#ref-3\">[3]</a></p>\n<p>A investigação deve combinar temporalidade, alterações de energia e sono, contexto de início, funcionamento entre episódios e história de tratamentos. A presença de um desencadeante interpessoal não exclui bipolaridade. Da mesma forma, chamar toda oscilação de “ciclagem” não demonstra um episódio bipolar. As duas condições também podem coexistir; uma hipótese não elimina automaticamente a outra.</p>\n<div class=\"study-table\" role=\"region\" aria-label=\"Perguntas para diagnóstico diferencial\" tabindex=\"0\"><table><caption>Matriz didática de investigação, não algoritmo diagnóstico</caption><thead><tr><th>Pergunta</th><th>O que documentar</th><th>Atalho a evitar</th></tr></thead><tbody><tr><td>Como a mudança começou?</td><td>Sequência temporal, eventos e alterações percebidas por diferentes fontes.</td><td>Concluir pelo evento mais recente.</td></tr><tr><td>O que mudou além do humor?</td><td>Sono, energia, atividade, julgamento e consequências.</td><td>Tratar irritabilidade como marcador específico.</td></tr><tr><td>Como funciona fora da crise?</td><td>Relações, trabalho, autocuidado e continuidade da identidade.</td><td>Tomar a avaliação de urgência como retrato permanente.</td></tr><tr><td>Que informação contradiz a hipótese?</td><td>Períodos de estabilidade, explicações alternativas e dados ainda ausentes.</td><td>Registrar somente evidências favoráveis.</td></tr></tbody></table></div>\n<h2>Comorbidades e contexto: ampliar sem perder o foco</h2>\n<p>O exame precisa considerar outros problemas de saúde mental e efeitos de substâncias, medicações e condições físicas. O ponto não é produzir uma lista extensa de possibilidades sem hierarquia, mas registrar quais dados justificam investigar cada alternativa. História de trauma, por exemplo, merece escuta e avaliação próprias; não estabelece isoladamente TPB nem explica automaticamente todo sintoma atual. <a href=\"#ref-1\">[1]</a></p>\n<p>Também é preciso perguntar se o comportamento ocorre em múltiplos contextos ou em uma situação específica. Retraimento em um ambiente humilhante pode ter função protetiva. Antes de classificá-lo como incapacidade persistente de vínculo, investigue condições de segurança, discriminação e possibilidades reais de escolha.</p>\n<h2>Vinheta fictícia: o dado que falta muda a pergunta</h2>\n<p>Uma estudante relata crises intensas após discussões e descreve uma semana em que “não parou”. Um entrevistador precipitado pode encerrar a avaliação em qualquer um dos dois diagnósticos. Uma abordagem mais útil pede exemplos: houve menos necessidade de sono ou insônia com cansaço? A atividade aumentou em várias áreas? O padrão já existia antes daquele relacionamento? Que prejuízos foram observados?</p>\n<p>A vinheta não contém informação suficiente para um diagnóstico. Esse é justamente o exercício: elaborar uma linha do tempo e explicitar lacunas antes de concluir. Em supervisão, peça ao estudante que escreva uma evidência favorável, uma evidência contrária e uma pergunta discriminativa para cada hipótese. O objetivo é treinar raciocínio, não adivinhar a resposta do supervisor.</p>\n<h2>Como escrever uma formulação útil</h2>\n<p>Uma síntese clínica pode conectar situação precipitante, significado atribuído, resposta emocional, comportamento e consequência. Acrescente recursos disponíveis e condições que interrompem o ciclo. Identifique o que é hipótese e como será revisado. A formulação é um mapa de trabalho colaborativo; não é uma biografia definitiva nem uma teoria causal comprovada sobre a infância.</p>\n<p>Exemplo de registro didático: “Após perceber crítica, a pessoa relata expectativa de rejeição e se afasta; o afastamento reduz contato e impede esclarecimento. A hipótese será examinada com episódios adicionais e com atenção à possibilidade de rejeição real”. Esse texto permite investigação e intervenção sem transformar o paciente em uma categoria moral.</p>\n<h2>Perguntas de revisão</h2>\n<h3>Uma escala confirma borderline?</h3><p>Não. Medidas podem organizar sintomas e acompanhar mudanças, mas sua interpretação precisa ser integrada à entrevista e ao contexto. Rastreio, gravidade e diagnóstico respondem a perguntas diferentes.</p>\n<h3>É necessário fechar o diagnóstico na primeira consulta?</h3><p>Nem sempre há dados suficientes. É possível documentar incertezas, priorizar necessidades imediatas e planejar a avaliação subsequente, sem atrasar o cuidado necessário.</p>\n",
+  "references": [
+    {
+      "label": "American Psychiatric Association. Diretriz atualizada sobre TPB, 2024",
+      "url": "https://www.psychiatry.org/news-room/news-releases/updated-borderline-personality-disorder-guideline",
+      "note": "Recomendações de avaliação e planejamento; não funciona como instrumento diagnóstico."
+    },
+    {
+      "label": "NIMH. Borderline Personality Disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/borderline-personality-disorder",
+      "note": "Síntese institucional de apresentação clínica e avaliação."
+    },
+    {
+      "label": "Massó Rodriguez et al. Clinical Features, Neuropsychology and Neuroimaging in Bipolar and Borderline Personality Disorder, 2021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34177664/",
+      "note": "Revisão de estudos comparativos; heterogeneidade e achados grupais limitam inferências individuais."
+    }
+  ]
+}

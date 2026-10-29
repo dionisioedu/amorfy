@@ -66,7 +66,7 @@ def write_articles_index(articles, output):
 
     blocks = []
     for k in ordered_keys:
-        items = sorted(groups[k], key=lambda a: a.get("date", ""), reverse=True)
+        items = sorted(groups[k], key=lambda a: (a.get("date", ""), a.get("publication_order", 0)), reverse=True)
         label = CATEGORIES.get(k, (k.title(), ""))[0]
         cards = "\n\n".join(_card(a) for a in items)
         blocks.append(f'''      <div class="cat-group" id="{k}">

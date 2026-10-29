@@ -12,6 +12,7 @@ from professionals import contact_cta
 CATEGORIES = {
     "noticias": ("Notícias", "cat-noticias"),
     "relacionamentos": ("Relacionamentos", "cat-relacionamentos"),
+    "autoestima": ("Autoestima", "cat-relacionamentos"),
     "borderline": ("Borderline", "cat-borderline"),
     "narcisismo": ("Narcisismo", "cat-narcisismo"),
     "bipolaridade": ("Bipolaridade", "cat-bipolaridade"),
@@ -142,6 +143,8 @@ def _hero_html(meta):
     alt = html.escape(meta.get("image_alt") or meta["title"], quote=True)
     figure_class = "article-hero article-hero-photo" if meta.get("ai_assisted") else "article-hero"
     caption = '<figcaption>Imagem ilustrativa criada com IA.</figcaption>' if meta.get("ai_assisted") else ""
+    if meta.get("illustration_caption"):
+        caption = "<figcaption>" + html.escape(meta["illustration_caption"]) + "</figcaption>"
     if meta.get("photo_credit"):
         credit = {k: html.escape(v, quote=True) for k, v in meta["photo_credit"].items()}
         caption = (f'<figcaption>Foto: <a href="{credit["url"]}">{credit["author"]} / Pexels</a> · '
@@ -201,14 +204,17 @@ def render_article(meta):
     if meta.get("social_image"):
         url = "https://amorfy.com.br" + meta["social_image"]
         rendered = rendered.replace(f"https://amorfy.com.br/og/artigos-{meta['slug']}.png", html.escape(url, quote=True))
-        rendered = rendered.replace('content="image/png"', 'content="image/webp"')
-        rendered = rendered.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="' + str(meta.get("image_width", 1536)) + '"')
-        rendered = rendered.replace('property="og:image:height" content="630"', 'property="og:image:height" content="' + str(meta.get("image_height", 1024)) + '"')
+        rendered = rendered.replace('content="image/png"', 'content="' + meta.get('social_image_type', 'image/webp') + '"')
+        rendered = rendered.replace('property="og:image:width" content="1200"', 'property="og:image:width" content="' + str(meta.get("social_image_width", meta.get("image_width", 1536))) + '"')
+        rendered = rendered.replace('property="og:image:height" content="630"', 'property="og:image:height" content="' + str(meta.get("social_image_height", meta.get("image_height", 1024))) + '"')
         rendered = rendered.replace('content="Amorfy — testes, artigos e histórias reais sobre relacionamentos"', 'content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('name="twitter:image:alt" content="Amorfy"', 'name="twitter:image:alt" content="' + html.escape(meta["image_alt"], quote=True) + '"')
         rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "image": ' + json.dumps(url) + ',', 1)
-    if meta.get("documented"):
+    if meta.get("documented") or meta.get("technical"):
         rendered = rendered.replace('"@type": "Article",', '"@type": "Article",\n    "citation": ' + json.dumps(meta["sources"], ensure_ascii=False).replace("<", "\\u003c") + ',', 1)
+    if meta.get("technical"):
+        fields = {"inLanguage": "pt-BR", "educationalLevel": "Graduação e formação continuada", "audience": {"@type": "Audience", "audienceType": "Estudantes e profissionais de saúde mental"}, "mainEntityOfPage": "https://amorfy.com.br/artigos/" + meta["slug"] + ".html"}
+        rendered = rendered.replace('"@type": "Article",', '"@type": "Article",' + json.dumps(fields, ensure_ascii=False)[1:-1] + ',', 1)
     if meta.get("news"):
         rendered = rendered.replace('"@type": "Article",', '"@type": "NewsArticle",\n    "articleSection": "Notícias",\n    "citation": ' + json.dumps(meta["sources"], ensure_ascii=False).replace("<", "\\u003c") + ',', 1)
     return rendered
