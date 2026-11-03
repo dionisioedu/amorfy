@@ -20,7 +20,7 @@ def catalog(articles, quizzes):
                           kind="teste", image="", label="Teste", date="", meta="Gratuito · Sem cadastro", topics="autoconhecimento"))
     for c in CASES:
         items.append(dict(title=c["title"], desc=c["desc"], url=f'/casos/{c["slug"]}.html',
-                          kind="caso", image=c["image"], label="Caso documentado", date=c["date"],
+                          publication_order=c.get("publication_order", 0), kind="caso", image=c["image"], label="Caso documentado", date=c["date"],
                           meta=f'{c["read_min"]} min de leitura', topics=c["tag"]))
     return sorted(items, key=lambda item: (-int(item["date"].replace("-", "") or "0"), -item.get("publication_order", 0), item["url"]))
 

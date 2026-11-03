@@ -20,9 +20,12 @@ class DocumentedCasesTest(unittest.TestCase):
                 self.assertIn('href="https://amorfy.com.br' + url + '"', page)
                 for source in case['sources']:
                     self.assertIn('href="' + html.escape(source, quote=True) + '"', page)
-                for field in ('url', 'license_url'):
+                for field in (() if case.get('illustration_caption') else ('url', 'license_url')):
                     self.assertIn(html.escape(case['image_credit'][field], quote=True), page)
-                self.assertNotIn('Imagem ilustrativa criada com IA', page)
+                if case.get('illustration_caption'):
+                    self.assertIn('não um registro histórico', page)
+                else:
+                    self.assertNotIn('Imagem ilustrativa criada com IA', page)
                 self.assertNotIn('Nomes e detalhes foram alterados', page)
                 self.assertIn('História pública documentada', page)
                 self.assertEqual((ROOT / case['image'].lstrip('/')).read_bytes()[8:12], b'WEBP')
