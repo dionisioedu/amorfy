@@ -26,7 +26,9 @@ class TechnicalPostsTest(unittest.TestCase):
             self.assertEqual(schema["citation"], [r["url"] for r in a["references"]])
             self.assertEqual(schema["inLanguage"], "pt-BR")
             self.assertIn("audience", schema)
-            self.assertIn('content="image/png"', page)
+            self.assertIn('content="' + a['social_image_type'] + '"', page)
+            if a['social_image'].endswith('.webp'):
+                self.assertEqual((ROOT / a['social_image'].lstrip('/')).read_bytes()[8:12], b'WEBP')
             for field in ("image", "social_image"):
                 self.assertTrue((ROOT / a[field].lstrip("/")).exists())
             self.assertIn(a["slug"], (ROOT / "sitemap.xml").read_text())
