@@ -655,6 +655,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://amorfy.com.br/casos/cs-lewis-luto-sem-roteiro.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://amorfy.com.br/casos/curie-parceria-autonomia.html</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -770,7 +776,7 @@
   </url>
   <url>
     <loc>https://amorfy.com.br/temas/relacionamentos.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
